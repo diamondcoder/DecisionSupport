@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) {
   res.render('main/about');
 });
-router.get('/insight', function(req, res) {
+ router.get('/insight', function(req, res) {
   res.render('main/insight');
 });
 router.get('/culture', function(req, res) {
