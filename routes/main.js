@@ -1,6 +1,7 @@
 var router = require('express').Router();
 var User =require('../models/user');
 var Country = require('../models/country');
+var SpiCountry = require('../models/spiCountry')
 
 router.get('/chart', function(req, res){
   res.render('main/charts');
@@ -37,5 +38,25 @@ router.get('/countries', function(req, res){
     res.json(countries);
   });
 });
+
+
+router.get('/spicountries', function(req, res){
+    SpiCountry.find({}, function(err, spiCountries){
+        if(err) return next();
+        res.json(spiCountries);
+    });
+});
+
+router.post('/spiCountries/create', function(req, res){
+    var spiCountry = new SpiCountry();
+    //spiCountry.body = req.body;
+
+    spiCountry.save(function(err){
+        if(err) return next(err);
+        req.flash('success', 'successfully added a spicountry');
+        return res.redirect('/add-category');
+    });
+});
+
 
 module.exports = router;
