@@ -7,6 +7,21 @@ router.get('/add-category', function(req, res, next){
 
 
 });
+router.get('/dsshome', function(req, res, next){
+	res.render('admin/dsshome');
+
+
+});
+router.get('/searchpage', function(req, res, next){
+	res.render('admin/searchpage');
+
+
+});
+router.get('/insights', function(req, res, next){
+	res.render('admin/insights');
+
+
+});
 router.post('/add-category', function(req,res, next){
 	var category = new Category();
 	category.name = req.body.name;

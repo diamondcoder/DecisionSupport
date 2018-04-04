@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from hencework.com/theme/flintstone/full-width-light/form-advanced.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:02:26 GMT -->
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Meeds Decision Support system</title>
+		<meta name="description" content="Flintstone is a Dashboard & Admin Site Responsive Template by hencework." />
+		<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+		<meta name="author" content="hencework"/>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- Bootstrap Colorpicker CSS -->
+		<link href="vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- select2 CSS -->
+		<link href="vendors/bower_components/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- switchery CSS -->
+		<link href="vendors/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- bootstrap-select CSS -->
+		<link href="vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- bootstrap-tagsinput CSS -->
+		<link href="vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
+
+		<!-- bootstrap-touchspin CSS -->
+		<link href="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- multi-select CSS -->
+		<link href="vendors/bower_components/multiselect/css/multi-select.css" rel="stylesheet" type="text/css"/>
+
+		<!-- Bootstrap Switches CSS -->
+		<link href="vendors/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- Bootstrap Datetimepicker CSS -->
+		<link href="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+
+
+
+		<!-- Custom CSS -->
+		<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="la-anim-1"></div>
+		</div>
+		<!--/Preloader-->
+
+		<div class="wrapper theme-1-active pimary-color-green">
+			<% include navadmin.ejs %>
+			<% include leftsidemenu.ejs %>
+			<% include rightsidemenu.ejs %>
+			<!-- Main Content -->
+			<div class="page-wrapper">
+				<div class="container-fluid">
+
+					<!-- Title -->
+					<div class="row heading-bg">
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+							<h5 class="txt-dark">Project to Country</h5>
+						</div>
+
+						<!-- Breadcrumb -->
+						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li><a href="#"><span>Main</span></a></li>
+								<li class="active"><span>Project/Country Search</span></li>
+							</ol>
+						</div>
+						<!-- /Breadcrumb -->
+
+					</div>
+					<!-- /Title -->
+
+					<!-- Row -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<h6 class="panel-title txt-dark">Search</h6>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="panel-wrapper collapse in">
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-sm-12 col-xs-12">
+												<div class="form-wrap">
+													<form action="#">
+														<div class="form-body">
+															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Do you have a project in mind</h6>
+															<hr class="light-grey-hr"/>
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label class="control-label mb-10">Project name</label>
+																		<input type="text" id="firstName" class="form-control" placeholder="Aforestation">
+																		<span class="help-block"> A name that describes your Project </span>
+																	</div>
+																</div>
+																<!--/span-->
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label class="control-label mb-10">Category</label>
+																		<select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+																				<option value="ICT">Information and Communication Technology (ICT)</option>
+<option value="Transport">Transport</option>
+	<option value="SPL">Social Protection and Labour</option>
+	<option value="MEFM">Macro Economics and Fiscal Management</option>
+	<option value="SURR">Social, Urban , rural and Resilience</option>
+	<option value="FM">Finance Market</option>
+		<option value="water">Water</option>
+
+<option value="agric">Agriculture</option>
+<option value="EE">Energy and Extratives</option>
+<option value="EDU">Education</option>
+<option value="HNP">Health Nutrition and population</option>
+<option value="TC">Trade and competitiveness</option>
+<option value="EN">Environment and natural resources</option>
+<option value="PE">Poverty and Equity</option>
+<option value="governance">Governance</option>
+
+
+																		</select>
+
+
+																	</div>
+																</div>
+																<!--/span-->
+															</div>
+															<!-- /Row -->
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label class="control-label mb-10">Do you have a Country in mind</label>
+																		<select class="form-control">
+																			<option>--Select--</option>
+																			<option>Ghana</option>
+																			<option>India</option>
+																			<option>Kemya</option>
+																			<option>Nigeria</option>
+																		</select>
+																		<span class="help-block">Our system can select list of countries that needs your project in order of urgency</span>
+
+
+																	</div>
+																</div>
+																<!--/span-->
+																<div class="col-md-6">
+
+																</div>
+																<!--/span-->
+															</div>
+															<!-- /Row -->
+
+
+														<div class="button-list mt-25">
+															<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#needsModal" data-whatever="@mdo">Select Project Goals</button>
+
+
+																<input type="checkbox" checked class="js-switch js-switch-1" data-color="#2ecd99"/>
+
+															<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resourceModal" data-whatever="@fat">Select resources your project will need</button>
+<input type="checkbox" checked class="js-switch js-switch-1" data-color="#2ecd99"/>
+														</div>
+														<div class="modal fade" id="needsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																		<h5 class="modal-title" id="exampleModalLabel1">Select needs your project seeks to address</h5>
+																	</div>
+																	<div class="modal-body">
+																		<form>
+																			<div class="panel panel-default card-view">
+																				<div class="panel-heading">
+																					<div class="pull-left">
+																						<h6 class="panel-title txt-dark">List of needs</h6>
+																					</div>
+
+																				</div>
+																				<div class="panel-wrapper collapse in">
+																					<div class="panel-body">
+
+																																		<div class="form-group mb-0">
+																																			<label class="control-label mb-10">Basic Human Need Multiple Selction</label>
+																																			<select class="select2 select2-multiple" multiple="multiple" data-placeholder="Choose">
+																																				<optgroup label="Nutrition and Basic Medical Care">
+
+																																														<option value="Undernourishment">Undernourishment</option>
+
+																																													<option value="	Depthoffooddeficit">	Depth of food deficit</option>
+
+																																													<option value="Maternalmortalityrate">	Maternal mortality rate</option>
+
+																																														<option value="Childmortalityrate">Child mortality rate</option>
+
+																																													<option value="	Deathsfrominfectiousdiseases">	Deaths from infectious diseases</option>
+
+
+
+																																				</optgroup>
+																																				<optgroup label="Water and Sanitation">
+																																				<option value="Accesstopipedwater">	Access to piped water
+																																					</option>
+																																					<option value="Ruralaccesstoimprovedwatersource">Rural access to improved water source
+																																						</option>	</option>
+																																					<option value="Accesstoimprovedsanitationfacilities">Access to improved sanitation facilities
+																																					</option>
+																																				</optgroup>
+																																				<optgroup label="Shelter">
+
+																																					<option value="Availabilityofaffordablehousing">Availability of affordable housing</option>
+
+																																				<option value="Accesstoelectricity">Access to electricity</option>
+
+																																					<option value="Qualityofelectricitysupply">Quality of electricity supply</option>
+
+																																					<option value="Householdairpollutionattributabledeaths">Household air pollution attributable deaths</option>
+																																				</optgroup>
+																																				<optgroup label="Personal Safety">
+																																				<option value="Homiciderate">	Homicide rate
+																																					</option>
+																																				<option value="Levelofviolentcrime">	Level of violent crime
+																																					</option>
+																																					<option value="Perceivedcriminality">Perceived criminality
+																																					</option>
+																																				<option value="Politicalterror">	Political terror
+																																					</option>
+																																				<option value="Trafficdeaths">	Traffic deaths
+																																					</option>
+																																				</optgroup>
+
+																																			</select>
+																																		</div>
+																																		<br />
+																																			<br />
+																																				<br />
+																																					<br />
+
+
+												<div class="form-group mb-0">
+													<label class="control-label mb-10">Foundations of Wellbeing Multiple selection</label>
+													<select class="select2 select2-multiple" multiple="multiple" data-placeholder="Choose">
+														<optgroup label="Access to Basic Knowledge">
+
+													<option value="Adultliteracyrate">	Adult literacy rate</option>
+
+													<option value="Primaryschoolenrollment">	Primary school enrollment</option></option>
+
+														<option value="Secondaryschoolenrollment">Secondary school enrollment (% of children)</option>
+
+													<option value="Genderparityinsecondaryenrollment">	Gender parity in secondary enrollment</option>
+
+														</optgroup>
+														<optgroup label="Access to Information and Communications">
+															<option value="Mobiletelephonesubscriptions">Mobile telephone subscriptions</option>
+															<option value="Internetusers">Internet users</option>
+															<option value="PressFreedomIndex">Press Freedom Index</option>
+															<option value="Washington">Washington</option>
+
+
+
+														</optgroup>
+														<optgroup label="Health and Wellness">
+															<option value="Lifeexpectancyatsixty">Life expectancy at 60</option>
+
+														<option value="Prematuredeathsfromnoncommunicablediseases">Premature deaths from non-communicable diseases</option>
+
+															<option value="Suiciderate">Suicide rate</option>
+														</optgroup>
+														<optgroup label="Environmental Quality">
+
+
+															<option value="Outdoorairpollutionattributabledeaths">Outdoor air pollution attributable deaths</option>
+
+															<option value="Wastewatertreatment">Wastewater treatment</option>
+
+															<option value="Biodiversityandhabitat">Biodiversity and habitat</option>
+
+															<option value="Greenhousegasemissions">Greenhouse gas emissions</option>
+														</optgroup>
+
+													</select>
+												</div>
+
+
+
+																					</div>
+																				</div>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Add</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="modal fade" id="resourceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+															<div class="modal-dialog" role="document">
+																<div class="modal-content">
+																	<div class="modal-header">
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																		<h5 class="modal-title" id="exampleModalLabel1">Resources/ Infrastructure needs for Project</h5>
+																	</div>
+																	<div class="modal-body">
+																		<form>
+																			<div class="panel panel-default card-view">
+																				<div class="panel-heading">
+																					<div class="pull-left">
+																						<h6 class="panel-title txt-dark">List of Infrastructure</h6>
+																					</div>
+
+																				</div>
+																				<div class="panel-wrapper collapse in">
+																					<div class="panel-body">
+
+																						<div class="row mt-40">
+																							<div class="panel-wrapper collapse in">
+
+												<div class="col-sm-12">
+													<select multiple id="optgroup" name="optgroup[]">
+														<optgroup label="Infrastructure">
+
+
+															<option value="ContainerPortTraffic">	Container port traffic (TEU: 20 foot equivalent units)
+															<option value="	ElectricPowerConsumption">	Electric power consumption (kWh per capita)
+																<option value="FixedBroadbandSubscriptions">Fixed broadband subscriptions (per 100 people)
+																<option value="FixedTelephoneSubscriptions">Fixed telephone subscriptions (per 100 people)
+																<option value="ImprovedWaterSource">	<option value="1">Improved water source (% of population with access)
+																<option value="ImprovedWaterSourceRural">Improved water source, rural (% of rural population with access)
+																<option value="ImprovedWaterSourceUrban">Improved water source, urban (% of urban population with access)
+																<option value="InvestmentEnergywithprivateParticipation">Investment in energy with private participation (current US$)
+															<option value="	InvestmentTelecomswithPrivateParticipation">	Investment in telecoms with private participation (current US$)
+															<option value="InvestmentinTransportwithPrivateParticipation">	Investment in transport with private participation (current US$)
+																<option value="InvestmentWaterSanitationwithPrivateParticipation">Investment in water and sanitation with private participation (current US$)
+																<option value="MobileCellularSubscriptions">Mobile cellular subscriptions (per 100 people)
+																<option value="RailLines">Rail lines (total route-km)
+																<option value="RenewableInternalFreshwaterResourcesPerCapita">Renewable internal freshwater resources per capita (cubic meters)
+																<option value="RenewableInternalFreshwaterResources">Renewable internal freshwater resources, total (billion cubic meters)
+																<option value="SecureInternetservers">Secure Internet servers (per 1 million people)
+														</optgroup>
+
+													</select>
+												</div>
+
+									</div>
+
+
+
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																		<button type="button" class="btn btn-primary">Add</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-actions mt-10">
+															<button type="submit" class="btn btn-success  mr-10">SEND</button>
+															<button type="button" class="btn btn-default">Cancel</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+
+				<!-- Footer -->
+				<footer class="footer container-fluid pl-30 pr-30">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>2017 &copy; </p>
+						</div>
+					</div>
+				</footer>
+				<!-- /Footer -->
+
+			</div>
+			<!-- /Main Content -->
+
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- JavaScripts -->
+
+		<!-- jQuery -->
+		<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Moment JavaScript -->
+		<script type="text/javascript" src="../vendors/bower_components/moment/min/moment-with-locales.min.js"></script>
+
+		<!-- Bootstrap Colorpicker JavaScript -->
+		<script src="../vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+
+		<!-- Switchery JavaScript -->
+		<script src="../vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+		<!-- Select2 JavaScript -->
+		<script src="../vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+
+		<!-- Bootstrap Select JavaScript -->
+		<script src="../vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+		<!-- Bootstrap Tagsinput JavaScript -->
+		<script src="../vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+
+		<!-- Bootstrap Touchspin JavaScript -->
+		<script src="../vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+		<!-- Multiselect JavaScript -->
+		<script src="../vendors/bower_components/multiselect/js/jquery.multi-select.js"></script>
+
+
+		<!-- Bootstrap Switch JavaScript -->
+		<script src="../vendors/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+		<!-- Bootstrap Datetimepicker JavaScript -->
+		<script type="text/javascript" src="../vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+		<!-- Form Advance Init JavaScript -->
+		<script src="dist/js/form-advance-data.js"></script>
+
+		<!-- Slimscroll JavaScript -->
+		<script src="dist/js/jquery.slimscroll.js"></script>
+
+		<!-- Fancy Dropdown JS -->
+		<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+		<!-- Owl JavaScript -->
+		<script src="../vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+		<!-- Init JavaScript -->
+		<script src="dist/js/init.js"></script>
+
+	</body>
+
+<!-- Mirrored from hencework.com/theme/flintstone/full-width-light/form-advanced.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:02:31 GMT -->
+</html>
