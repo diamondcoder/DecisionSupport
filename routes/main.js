@@ -1,7 +1,7 @@
 var router = require('express').Router();
 var User =require('../models/user');
 var Country = require('../models/country');
-var SpiCountry = require('../models/spiCountry')
+var SpiCountry = require('../models/spiCountry');
 
 router.get('/chart', function(req, res){
   res.render('main/charts');
@@ -47,9 +47,43 @@ router.get('/spicountries', function(req, res){
     });
 });
 
+router.get('/spicountries/CountryCode/:code', function(req, res){
+    var code = req.params.code;
+
+    SpiCountry.find({CountryCode: code}, function(err, spiCountries){
+        rank(spiCountries);
+        if(err) return next();
+        res.json(spiCountries);
+    });
+
+})
+
+router.get('/spicountries/:code', function(req, res){
+    var code = req.params.code;
+    var needs = code.split("&");
+    console.log(needs)
+    SpiCountry.find({CountryCode: code}, function(err, spiCountries){
+        rank(spiCountries);
+        if(err) return next();
+        res.json(spiCountries);
+    });
+
+})
+
+router.get('/spicountries/:code/prioritylist', function(req, res){
+    var code = req.params.code;
+    SpiCountry.find({CountryCode: code}, function(err, spiCountries){
+        if(err) return next();
+        console.log(spiCountries)
+        //res.json(spiCountries)
+        //rank(spiCountries);
+
+        res.toArray(spiCountries);
+    });
+})
+
 router.post('/spiCountries/create', function(req, res){
     var spiCountry = new SpiCountry();
-    //spiCountry.body = req.body;
 
     spiCountry.save(function(err){
         if(err) return next(err);
@@ -58,5 +92,14 @@ router.post('/spiCountries/create', function(req, res){
     });
 });
 
+function rank(country){
+    var countryString = country.toString();
+    //var country = country);
+    console.log(countryString);
+    var basicHumanNeeds = country.MobiletelephonesubscriptionsCapped;
+    var foundationNeeds = country.FoundationsofWellbeing;
+    console.log(basicHumanNeeds);
+    console.log(foundationNeeds);
 
+}
 module.exports = router;
