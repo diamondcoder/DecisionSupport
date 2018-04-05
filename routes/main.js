@@ -78,7 +78,7 @@ router.get('/spicountries/:code/prioritylist', function(req, res){
         //res.json(spiCountries)
         //rank(spiCountries);
 
-        res.toArray(spiCountries);
+        res.json(spiCountries);
     });
 })
 
@@ -96,7 +96,7 @@ function rank(country){
     var countryString = country.toString();
     //var country = country);
     console.log(countryString);
-    var basicHumanNeeds = country.MobiletelephonesubscriptionsCapped;
+    var basicHumanNeeds = country.BasicHumanNeeds;
     var foundationNeeds = country.FoundationsofWellbeing;
     console.log(basicHumanNeeds);
     console.log(foundationNeeds);
