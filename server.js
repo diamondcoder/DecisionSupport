@@ -60,13 +60,13 @@ app.use(function(req, res, next) {
 
 
 //spiCountries is the variable to for use in the views page
-app.use(function(req, res, next) {
+/*app.use(function(req, res, next) {
   spiCountry.find({}, function(err, countries) {
     if (err) return next(err);
     res.locals.spiCountries = countries;
     next();
   });
-});
+});*/
 app.get('/insights/spicountries/:code', function(req, res){
     var code = req.params.code;
 

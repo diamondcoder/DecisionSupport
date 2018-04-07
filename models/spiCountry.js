@@ -114,7 +114,32 @@ var SpiCountrySchema = new Schema({
             "Globallyrankeduniversities": Number,
             "Percentageoftertiarystudentsenrolledingloballyrankeduniversities": Number
     }
-},
+},"Culture": {
+        "PowerDistance": {
+            "Score": Number,
+            "Desc": String
+        },
+        "Individualism": {
+            "Score": Number,
+            "Desc": String
+        },
+        "Masculinity": {
+            "Score": Number,
+            "Desc": String
+        },
+        "UncertaintyAvoidance": {
+            "Score": Number,
+            "Desc": String
+        },
+        "LTO": {
+            "Score": Number,
+            "Desc": String
+        },
+        "INDULGENCE": {
+            "Score": Number,
+            "Desc": String
+        }
+    },
     "DepthoffooddeficitCapped": Number,
     "AdultliteracyrateCapped": Number,
     "SecondaryschoolenrollmentCapped": Number,

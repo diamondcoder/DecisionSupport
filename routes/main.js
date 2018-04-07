@@ -9,7 +9,7 @@ router.get('/chart', function(req, res){
 
 
 router.get('/', function(req, res) {
-  res.render('admin/dsshome');
+  res.render('main/home');
 });
 
 router.get('/about', function(req, res) {
@@ -39,7 +39,7 @@ router.get('/countries', function(req, res){
   });
 });
 
-//SpiCountry is the name of the mode
+
 router.get('/spicountries', function(req, res){
     SpiCountry.find({}, function(err, spiCountries){
         if(err) return next();
@@ -58,21 +58,6 @@ router.get('/spicountries/CountryCode/:code', function(req, res){
 
 })
 
-/*
-router.get('/insights/spicountries/:code', function(req, res){
-    var code = req.params.code;
-
-    SpiCountry.find({CountryCode: code})
-       .exec(function(err, spiCountries){
-        //rank(spiCountries);
-        if(err) return next(err);
-        //res.json(spiCountries);
-        res.render('admin/insights',{
-          spiCountries:spiCountries
-        });
-    });
-
-});*/
 router.get('/spicountries/:code', function(req, res){
     var code = req.params.code;
     var needs = code.split("&");
@@ -93,7 +78,7 @@ router.get('/spicountries/:code/prioritylist', function(req, res){
         //res.json(spiCountries)
         //rank(spiCountries);
 
-        res.toArray(spiCountries);
+        res.json(spiCountries);
     });
 })
 
@@ -111,7 +96,7 @@ function rank(country){
     var countryString = country.toString();
     //var country = country);
     console.log(countryString);
-    var basicHumanNeeds = country.MobiletelephonesubscriptionsCapped;
+    var basicHumanNeeds = country.BasicHumanNeeds;
     var foundationNeeds = country.FoundationsofWellbeing;
     console.log(basicHumanNeeds);
     console.log(foundationNeeds);
