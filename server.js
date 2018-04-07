@@ -16,6 +16,7 @@ var secret = require('./config/secret');
 var User = require('./models/user');
 var Country = require('./models/country');
 var Category = require('./models/category');
+var spiCountry = require('./models/spiCountry');
 
 var app = express();
 
@@ -56,6 +57,31 @@ app.use(function(req, res, next) {
     next();
   });
 });
+
+
+//spiCountries is the variable to for use in the views page
+/*app.use(function(req, res, next) {
+  spiCountry.find({}, function(err, countries) {
+    if (err) return next(err);
+    res.locals.spiCountries = countries;
+    next();
+  });
+});*/
+app.get('/insights/spicountries/:code', function(req, res){
+    var code = req.params.code;
+
+    spiCountry.find({CountryCode: code})
+       .exec(function(err, spiCountries){
+        //rank(spiCountries);
+        if(err) return next(err);
+        //res.json(spiCountries);
+        res.render('admin/insights',{
+          spiCountries:spiCountries
+        });
+    });
+
+});
+
 
 app.use(function(req, res, next) {
   Category.find({}, function(err, categories) {

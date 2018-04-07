@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from hencework.com/theme/flintstone/full-width-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:01:20 GMT -->
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Meeds Decision Support system</title>
+	<meta name="description" content="DSS" />
+	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+	<meta name="author" content="hencework"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Morris Charts CSS -->
+  <% include parts/insightcss.ejs %>
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+	<!-- /Preloader -->
+    <div class="wrapper theme-1-active pimary-color-green">
+<% include navadmin.ejs %>
+<% include leftsidemenu.ejs %>
+<% include rightsidemenu.ejs %>
+
+
+        <!-- Main Content -->
+		  <%- body -%>
+			<!-- Footer -->
+			<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>2017 &copy; Flintstone. Pampered by Hencework</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /#wrapper -->
+<% include parts/insightjs.ejs %>
+</body>
+
+
+</html>

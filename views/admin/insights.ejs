@@ -265,6 +265,15 @@
                         <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
                           <span class="counter-anim">80</span>
                         </div>
+                        <% for(var i=0; i< spiCountries.length; i++){ %>
+                          <p><%= spiCountries[i].Country %></p>
+                          <% if (spiCountries[i].Country=="Ghana") {%>
+                          <p><%= spiCountries[i].SocialProgressIndex %></p>
+
+
+                      <%    }
+                        } %>
+                        <p></p>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
                         </p>
