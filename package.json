@@ -9,6 +9,7 @@
   "author": "diamondcoder",
   "license": "ISC",
   "dependencies": {
+    "ahp": "^2.1.1",
     "asyn": "0.0.1",
     "async": "^2.6.0",
     "bcrypt-nodejs": "0.0.3",

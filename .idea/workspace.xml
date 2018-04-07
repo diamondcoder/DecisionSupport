@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4bf0e19d-ffd9-4730-bdd5-1a45c83fb83c" name="Default" comment="Updated spiCountry json model">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/mathjs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/gulpfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/samples/exportDataContextSample.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/samples/helloworld.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/samples/importDataContextSample.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/samples/outputAnalyticProcessSample.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/samples/wikiLeaderExample.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/src/ahp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/ahp/uploadCoverage.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/complex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/complex.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/examples/gamma.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/complex.js/tests/complex.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/LICENCE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/decimal.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/decimal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/decimal.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/decimal.mjs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/doc/API.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/doc/decimal.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/decimal.js/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/escape-latex/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/escape-latex/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/escape-latex/dist/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/escape-latex/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/examples/approx.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/examples/egyptian.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/examples/hesse-convergence.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/examples/integrate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/fraction.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/fraction.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/fraction.js/tests/fraction.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.gitattributes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/javascript-natural-sort.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/scopes/scope_settings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/naturalSort.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/speed-tests.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/javascript-natural-sort/unit-tests.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/CONTRIBUTING.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/NOTICE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/ROADMAP.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/algebra.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/expression_parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/matrix_operations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/matrix_operations_octave.m" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/matrix_operations_python.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/benchmark/matrix_operations_results.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/bin/cli.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/bin/repl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/dist/math.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/dist/math.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/dist/math.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/chaining.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/command_line_interface.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/configuration.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core/chaining.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core/configuration.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core/extension.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/core/serialization.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/custom_bundling.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/bignumbers.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/complex_numbers.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/fractions.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/matrices.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/numbers.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/datatypes/units.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/algebra.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/customization.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/expression_trees.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/html_classes.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/parsing.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/security.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/expressions/syntax.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/extension.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/getting_started.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/densematrix.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/fibonacciheap.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/matrixindex.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/matrixrange.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/resultset.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/sparsematrix.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/classes/unit.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/constants.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/abs.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acos.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acosh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acoth.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acsc.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/acsch.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/add.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/and.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/arg.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/asec.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/asech.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/asin.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/asinh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/atan.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/atan2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/atanh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bellNumbers.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bignumber.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bitAnd.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bitNot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bitOr.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/bitXor.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/boolean.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/catalan.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cbrt.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/ceil.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/chain.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/clone.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/combinations.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/compare.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/compareNatural.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/compile.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/complex.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/composition.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/concat.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/config.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/conj.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cos.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cosh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/coth.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/createUnit.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cross.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/csc.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/csch.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/cube.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/deepEqual.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/derivative.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/det.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/diag.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/distance.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/divide.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/dot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/dotDivide.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/dotMultiply.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/dotPow.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/equal.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/erf.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/eval.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/exp.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/eye.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/factorial.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/filter.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/fix.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/flatten.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/floor.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/forEach.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/format.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/fraction.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/gamma.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/gcd.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/help.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/hypot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/im.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/import.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/intersect.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/inv.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isInteger.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isNaN.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isNegative.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isNumeric.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isPositive.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isPrime.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/isZero.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/kldivergence.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/kron.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/larger.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/largerEq.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/lcm.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/leftShift.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/log.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/log10.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/lsolve.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/lup.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/lusolve.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/mad.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/map.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/matrix.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/max.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/mean.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/median.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/min.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/mod.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/mode.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/multinomial.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/multiply.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/norm.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/not.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/nthRoot.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/number.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/ones.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/or.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/parse.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/parser.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/partitionSelect.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/permutations.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/pickRandom.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/pow.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/print.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/prod.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/qr.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/quantileSeq.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/random.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/randomInt.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/range.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/rationalize.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/re.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/reshape.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/resize.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/rightArithShift.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/rightLogShift.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/round.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sec.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sech.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setCartesian.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setDifference.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setDistinct.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setIntersect.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setIsSubset.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setMultiplicity.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setPowerset.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setSize.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setSymDifference.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/setUnion.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sign.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/simplify.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sin.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sinh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/size.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/slu.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/smaller.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/smallerEq.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sort.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sparse.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/splitUnit.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sqrt.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/square.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/squeeze.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/std.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/stirlingS2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/string.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/subset.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/subtract.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/sum.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/tan.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/tanh.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/to.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/trace.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/transpose.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/typed.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/typeof.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/unaryMinus.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/unaryPlus.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/unequal.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/unit.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/usolve.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/var.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/xgcd.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/xor.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/functions/zeros.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/index.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/reference/units.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/docs/serialization.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/add_new_datatypes/MyType.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/add_new_datatypes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/add_new_datatypes/myAdd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/convert_fraction_to_bignumber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/custom_argument_parsing.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/custom_loading.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/expression_trees.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/function_transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/more_secure_eval.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/web_server/math_worker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/advanced/web_server/server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/algebra.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/basic_usage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/bignumbers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/angle_configuration.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/basic_usage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/currency_conversion.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/custom_separators.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/old_browsers.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/plot.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/pretty_printing_with_mathjax.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/printing_html.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/requirejs_loading.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/rocket_trajectory_optimization.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/webworkers/webworkers.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/browser/webworkers/worker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/chaining.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/complex_numbers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/expressions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/fractions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/import.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/matrices.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/objects.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/serialization.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/sparse_matrices.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/examples/units.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/constants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/core/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/core/function/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/core/function/import.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/core/function/typed.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/core/typed.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/error/ArgumentsError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/error/DimensionError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/error/IndexError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/error/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/Help.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/Parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/Infinity.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/LN10.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/LN2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/LOG10E.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/LOG2E.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/NaN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/SQRT1_2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/SQRT2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/e.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/false.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/i.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/null.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/phi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/pi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/tau.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/true.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/constants/version.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/bignumber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/boolean.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/complex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/createUnit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/fraction.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/matrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/number.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/sparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/splitUnit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/string.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/construction/unit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/core/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/core/import.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/core/typed.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/derivative.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/lsolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/lup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/lusolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/qr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/rationalize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/simplify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/slu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/algebra/usolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/abs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/add.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/cbrt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/ceil.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/cube.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/divide.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/dotDivide.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/dotMultiply.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/dotPow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/exp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/fix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/floor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/gcd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/hypot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/lcm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/log10.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/mod.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/multiply.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/norm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/nthRoot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/pow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/round.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/sign.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/sqrt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/square.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/subtract.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/unaryMinus.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/unaryPlus.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/arithmetic/xgcd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/bitAnd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/bitNot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/bitOr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/bitXor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/leftShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/rightArithShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/bitwise/rightLogShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/combinatorics/bellNumbers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/combinatorics/catalan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/combinatorics/composition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/combinatorics/stirlingS2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/complex/arg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/complex/conj.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/complex/im.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/complex/re.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/expression/eval.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/expression/help.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/geometry/distance.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/geometry/intersect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/logical/and.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/logical/not.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/logical/or.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/logical/xor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/concat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/cross.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/det.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/diag.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/dot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/eye.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/filter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/flatten.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/forEach.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/inv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/kron.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/map.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/ones.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/partitionSelect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/range.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/reshape.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/resize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/size.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/sort.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/squeeze.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/subset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/trace.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/transpose.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/matrix/zeros.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/combinations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/distribution.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/factorial.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/gamma.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/kldivergence.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/multinomial.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/permutations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/pickRandom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/random.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/probability/randomInt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/compare.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/compareNatural.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/deepEqual.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/equal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/larger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/largerEq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/smaller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/smallerEq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/relational/unequal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setCartesian.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setDifference.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setDistinct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setIntersect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setIsSubset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setMultiplicity.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setPowerset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setSize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setSymDifference.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/set/setUnion.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/special/erf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/mad.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/max.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/mean.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/median.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/mode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/prod.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/quantileSeq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/std.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/sum.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/statistics/var.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acosh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acoth.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acsc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/acsch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/asec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/asech.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/asin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/asinh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/atan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/atan2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/atanh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/cos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/cosh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/cot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/coth.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/csc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/csch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/sec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/sech.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/sin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/sinh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/tan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/trigonometry/tanh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/units/to.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/clone.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/format.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isInteger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isNaN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isNegative.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isNumeric.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isPositive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isPrime.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/isZero.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/print.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/function/utils/typeof.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/embeddedDocs/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/compile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/eval.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/help.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/function/parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/keywords.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/AccessorNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/ArrayNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/AssignmentNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/BlockNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/ConditionalNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/ConstantNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/FunctionAssignmentNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/FunctionNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/IndexNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/Node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/ObjectNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/OperatorNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/ParenthesisNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/RangeNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/SymbolNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/UpdateNode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/compile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/utils/access.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/utils/assign.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/node/utils/getUniqueArgumentName.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/operators.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/concat.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/error.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/filter.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/forEach.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/index.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/map.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/max.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/mean.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/min.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/range.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/subset.transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/expression/transform/utils/compileInlineExpression.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/decomposition/lup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/decomposition/qr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/decomposition/slu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/derivative.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/rationalize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/simplify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/simplify/resolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/simplify/simplifyConstant.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/simplify/simplifyCore.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/simplify/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/solver/lsolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/solver/lusolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/solver/usolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/solver/utils/solveValidation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_amd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_chol.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_counts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_cumsum.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_dfs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_ereach.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_etree.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_fkeep.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_flip.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_ipvec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_leaf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_lu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_mark.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_marked.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_permute.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_post.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_reach.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_spsolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_sqr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_symperm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_tdfs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/algebra/sparse/cs_unflip.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/abs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/add.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/addScalar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/cbrt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/ceil.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/cube.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/divide.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/divideScalar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/dotDivide.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/dotMultiply.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/dotPow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/exp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/fix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/floor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/gcd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/hypot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/lcm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/log10.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/mod.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/multiply.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/multiplyScalar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/norm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/nthRoot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/pow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/round.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/sign.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/sqrt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/square.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/subtract.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/unaryMinus.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/unaryPlus.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/arithmetic/xgcd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/bitAnd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/bitNot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/bitOr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/bitXor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/leftShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/rightArithShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/bitwise/rightLogShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/combinatorics/bellNumbers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/combinatorics/catalan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/combinatorics/composition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/combinatorics/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/combinatorics/stirlingS2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/complex/arg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/complex/conj.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/complex/im.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/complex/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/complex/re.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/geometry/distance.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/geometry/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/geometry/intersect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/logical/and.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/logical/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/logical/not.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/logical/or.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/logical/xor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/concat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/cross.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/det.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/diag.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/dot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/eye.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/filter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/flatten.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/forEach.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/inv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/kron.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/map.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/ones.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/partitionSelect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/range.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/reshape.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/resize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/size.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/sort.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/squeeze.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/subset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/trace.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/transpose.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/matrix/zeros.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/combinations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/distribution.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/factorial.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/gamma.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/kldivergence.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/multinomial.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/permutations.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/pickRandom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/random.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/randomInt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/probability/seededRNG.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/compare.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/compareNatural.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/deepEqual.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/equal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/equalScalar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/larger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/largerEq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/smaller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/smallerEq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/relational/unequal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setCartesian.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setDifference.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setDistinct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setIntersect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setIsSubset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setMultiplicity.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setPowerset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setSize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setSymDifference.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/set/setUnion.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/special/erf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/special/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/mad.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/max.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/mean.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/median.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/mode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/prod.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/quantileSeq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/std.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/sum.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/statistics/var.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/string/format.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/string/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/string/print.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acosh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acoth.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acsc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/acsch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/asec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/asech.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/asin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/asinh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/atan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/atan2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/atanh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/cos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/cosh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/cot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/coth.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/csc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/csch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/sec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/sech.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/sin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/sinh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/tan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/trigonometry/tanh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/unit/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/unit/to.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/clone.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isInteger.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isNaN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isNegative.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isNumeric.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isPositive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isPrime.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/isZero.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/function/utils/typeof.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/header.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/json/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/json/reviver.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/bignumber/BigNumber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/bignumber/function/bignumber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/bignumber/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/boolean.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/chain/Chain.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/chain/function/chain.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/chain/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/complex/Complex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/complex/function/complex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/complex/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/fraction/Fraction.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/fraction/function/fraction.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/fraction/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/DenseMatrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/FibonacciHeap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/ImmutableDenseMatrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/Matrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/MatrixIndex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/Range.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/Spa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/SparseMatrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/function/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/function/matrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/function/sparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm01.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm02.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm03.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm04.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm05.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm06.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm07.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm08.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm09.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm10.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm11.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm12.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm13.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/matrix/utils/algorithm14.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/number.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/resultset/ResultSet.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/resultset/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/string.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/Unit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/function/createUnit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/function/splitUnit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/function/unit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/type/unit/physicalConstants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/array.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/bitAnd.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/bitNot.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/bitOr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/bitXor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/bitwise.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/constants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/formatter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/isBigNumber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/leftShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/nearlyEqual.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/bignumber/rightArithShift.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/boolean.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/containsCollections.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/deepForEach.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/deepMap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/isCollection.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/isMatrix.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/reduce.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/collection/scatter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/customs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/emitter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/function.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/latex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/number.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/object.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/string.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/utils/types.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/lib/version.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/approx.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/cli/cli.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/cli/script1" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/cli/script2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/constants.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/core/config.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/core/import.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/core/index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/core/typed.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/deprecated.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/error/ArgumentsError.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/error/DimensionError.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/error/IndexError.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/error/index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/Help.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/Parser.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/function/compile.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/function/eval.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/function/help.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/function/parse.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/function/parser.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/keywords.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/AccessorNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/ArrayNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/AssignmentNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/BlockNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/ConditionalNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/ConstantNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/FunctionAssignmentNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/FunctionNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/IndexNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/Node.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/ObjectNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/OperatorNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/ParenthesisNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/RangeNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/SymbolNode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/node/index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/operators.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/parse.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/security.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/expression/transforms.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/decomposition/lup.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/decomposition/qr.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/decomposition/slu.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/derivative.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/rationalize.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/simplify.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/solver/lsolve.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/solver/lusolve.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/solver/usolve.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/sparse/cs_amd.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/algebra/sparse/cs_lu.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/abs.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/add.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/addScalar.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/cbrt.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/ceil.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/cube.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/divide.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/dotDivide.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/dotMultiply.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/dotPow.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/exp.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/fix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/floor.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/gcd.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/hypot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/lcm.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/log.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/log10.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/mod.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/multiply.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/norm.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/nthRoot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/pow.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/round.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/sign.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/sqrt.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/square.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/subtract.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/unaryMinus.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/unaryPlus.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/arithmetic/xgcd.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/bitAnd.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/bitNot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/bitOr.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/bitXor.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/leftShift.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/rightArithShift.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/bitwise/rightLogShift.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/combinatorics/bellNumbers.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/combinatorics/catalan.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/combinatorics/composition.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/combinatorics/stirlingS2.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/complex/arg.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/complex/conj.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/complex/im.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/complex/re.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/geometry/distance.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/geometry/intersect.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/logical/and.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/logical/not.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/logical/or.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/logical/xor.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/concat.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/cross.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/det.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/diag.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/dot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/eye.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/filter.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/flatten.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/forEach.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/inv.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/kron.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/map.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/ones.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/partitionSelect.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/range.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/reshape.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/resize.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/size.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/sort.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/squeeze.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/subset.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/trace.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/transpose.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/matrix/zeros.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/combinations.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/distribution.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/factorial.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/gamma.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/kldivergence.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/multinomial.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/permutations.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/pickRandom.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/random.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/randomInt.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/probability/seededrandom.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/compare.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/compareNatural.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/deepEqual.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/equal.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/larger.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/largerEq.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/smaller.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/smallerEq.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/relational/unequal.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setCartesian.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setDifference.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setDistinct.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setIntersect.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setIsSubset.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setMultiplicity.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setPowerset.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setSize.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setSymDifference.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/set/setUnion.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/special/erf.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/special/erf.values.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/mad.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/max.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/mean.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/median.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/min.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/mode.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/prod.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/quantileSeq.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/std.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/sum.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/statistics/var.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/string/format.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/string/print.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acos.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acosh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acoth.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acsc.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/acsch.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/asec.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/asech.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/asin.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/asinh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/atan.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/atan2.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/atanh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/cos.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/cosh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/cot.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/coth.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/csc.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/csch.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/sec.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/sech.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/sin.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/sinh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/tan.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/trigonometry/tanh.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/unit/to.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/clone.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isInteger.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isNaN.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isNegative.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isNumeric.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isPositive.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isPrime.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/isZero.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/function/utils/typeof.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/json/replacer.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/json/reviver.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/pi_bailey-borwein-plouffe.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/pi_machin.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/test.min.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/test_bignumber.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/bignumber/BigNumber.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/bignumber/function/bignumber.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/boolean.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/chain/Chain.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/chain/function/chain.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/complex/Complex.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/complex/function/complex.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/fraction/Fraction.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/fraction/function/fraction.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/DenseMatrix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/FibonacciHeap.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/ImmutableDenseMatrix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/Index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/Matrix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/Range.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/Spa.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/SparseMatrix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/collection.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/function/index.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/function/matrix.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/function/sparse.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/utils/deepForEach.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/utils/deepMap.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/utils/isCollection.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/matrix/utils/reduce.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/number.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/resultset/ResultSet.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/string.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/unit/Unit.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/unit/function/createUnit.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/unit/function/splitUnit.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/unit/function/unit.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/type/unit/physicalConstants.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/array.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/bignumber/constants.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/bignumber/formatter.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/bignumber/nearlyEqual.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/boolean.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/customs.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/function.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/latex.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/number.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/object.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/string.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/mathjs/test/utils/types.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/numericjs/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/numericjs/numeric-1.2.6.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/numericjs/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/numericjs/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/seed-random/test/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/dist/tinyemitter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/dist/tinyemitter.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/instance.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/tiny-emitter/test/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/benchmark/benchmark.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/any_type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/basic_usage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/browser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/browser_amd.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/custom_type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/merge_typed_functions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/multiple_signatures.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/type_conversion.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/examples/variable_arguments.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/any_type.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/browser.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/compose.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/construction.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/conversion.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/convert.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/errors.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/find.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/merge.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/security.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/strictEqualArray.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/union_types.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/test/variable_arguments.test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/typed-function.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/typed-function/typed-function.min.js" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1844">
+              <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spiCountry.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/spiCountry.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/passport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="secret.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/secret.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="country.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/country.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cho</find>
+      <find>sea</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/controller/services.js" />
+        <option value="$PROJECT_DIR$/views/admin/dsshome.ejs" />
+        <option value="$PROJECT_DIR$/models/spiCountry.js" />
+        <option value="$PROJECT_DIR$/routes/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DecisionSupport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DecisionSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bf0e19d-ffd9-4730-bdd5-1a45c83fb83c" name="Default" comment="" />
+      <created>1522173025075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522173025075</updated>
+      <workItem from="1522173027927" duration="2975000" />
+      <workItem from="1522738716452" duration="22017000" />
+      <workItem from="1522890161475" duration="21934000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adding Spi Country List">
+      <created>1522776538191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522776538191</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding Spi Country List">
+      <created>1522805285683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522805285683</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated spiCountry json model">
+      <created>1522925967154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522925967154</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated spiCountry json model">
+      <created>1523141790523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523141790523</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46926000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18322763" sideWeight="0.48380566" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2601626" sideWeight="0.48625794" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25369978" sideWeight="0.51619434" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2601626" sideWeight="0.5137421" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Spi Country List" />
+    <MESSAGE value="Updated spiCountry json model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated spiCountry json model" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="2" lean-forward="true" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/leftsidemenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/spiCountry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/secret.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/country.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/charts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/culture.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/insight.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/about.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/countrylist.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/culture.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/about.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-resource/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/secret.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/add-category.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/country.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/insight.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/charts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/spiCountry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="144" column="46" lean-forward="false" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/leftsidemenu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/dsshome.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="71" column="19" lean-forward="false" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1844">
+          <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
