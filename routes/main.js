@@ -203,31 +203,39 @@ function index(need) {
 
 }
  function ahpTest(){
-     ahpContext.addItems(['VendorA', 'VendorB', 'VendorC']);
+     ahpContext.addItems(['Rural Water Project', 'Food Project', 'Shelter Project']);
 
-     ahpContext.addCriteria(['price', 'functionality', 'UX']);
+     ahpContext.addCriteria(['Food', 'Water', 'Shelter', 'Health']);
 
-     ahpContext.rankCriteriaItem('price', [
-         ['VendorB', 'VendorC', 1 / 2],
-         ['VendorA', 'VendorC', 1 / 2],
-         ['VendorA', 'VendorB', 1]
+     ahpContext.rankCriteriaItem('Food', [
+         ['Rural Water Project', 'Food Project', 1/3],
+         ['Rural Water Project', 'Shelter Project', 3],
+         ['Food Project', 'Shelter Project', 5]
      ]);
-     ahpContext.rankCriteriaItem('functionality', [
-         ['VendorB', 'VendorC', 1],
-         ['VendorA', 'VendorC', 5],
-         ['VendorA', 'VendorB', 5]
+     ahpContext.rankCriteriaItem('Water', [
+         ['Rural Water Project', 'Food Project', 3],
+         ['Rural Water Project', 'Shelter Project', 5],
+         ['Food Project', 'Shelter Project', 3]
      ]);
-     ahpContext.rankCriteriaItem('UX', [
-         ['VendorB', 'VendorC', 10],
-         ['VendorA', 'VendorC', 10],
-         ['VendorA', 'VendorB', 1]
+     ahpContext.rankCriteriaItem('Shelter', [
+         ['Rural Water Project', 'Food Project', 1],
+         ['Rural Water Project', 'Shelter Project', 1/5],
+         ['Food Project', 'Shelter Project', 1/5]
+     ]);
+     ahpContext.rankCriteriaItem('Health', [
+         ['Rural Water Project', 'Food Project', 1],
+         ['Rural Water Project', 'Shelter Project', 3],
+         ['Food Project', 'Shelter Project', 3]
      ]);
 
      ahpContext.rankCriteria(
          [
-             ['price', 'functionality', 3],
-             ['price', 'UX', 3],
-             ['functionality', 'UX', 1]
+             ['Food', 'Water', 1],
+             ['Food', 'Shelter', 5],
+             ['Food', 'Health', 3],
+             ['Water', 'Shelter', 5],
+             ['Water', 'Health', 3],
+             ['Shelter', 'Health', 1/3]
          ]
      );
 
