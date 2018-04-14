@@ -87,7 +87,7 @@
 							<div class="panel panel-default card-view">
 								<div class="panel-heading">
 									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Search now</h6>
+										<h6 class="panel-title txt-dark">Search </h6>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -105,7 +105,7 @@
 																<div class="col-md-6">
 																	<div class="form-group">
 																		<label class="control-label mb-10">Do you have a Country in mind</label>
-																		<select class="form-control" id="country">
+																		<select class="form-control" id="country" name="country">
 																			<option>--Optional--</option>
 																			<option>India</option>
 																			<option>Sri Lanka</option>
@@ -116,18 +116,27 @@
 
 																	</div>
 																</div>
+
 																<!--/span-->
 																<div class="col-md-6">
 
 																</div>
 																<!--/span-->
 															</div>
-															<!-- /Row -->
+															<script type="text/javascript">
+																		var needs= <%= myVar %>;
+
+
+																		</script>
+
+
+
+															<!-- /Row -->		<% for (var i=0; i<myVar; i++) { %>
 															<div class="row">
 																<div class="col-md-6">
 																	<div class="form-group">
-																		<label class="control-label mb-10">Project name</label>
-																		<input type="text" id="projectName" class="form-control" placeholder="Deforestation">
+																		<label class="control-label mb-10"> Project <%= i+1 %>  </label>
+																		<input type="text" id="projectName<%=i+1%>" name="projectName<%=i+1%>" class="form-control" placeholder="Name of Project">
 																		<span class="help-block"> A name that describes your Project </span>
 																	</div>
 																</div>
@@ -135,22 +144,22 @@
 																<div class="col-md-6">
 																	<div class="form-group">
 																		<label class="control-label mb-10">Category</label>
-																		<select class="form-control" id="projectCat" data-placeholder="Choose a Category" tabindex="1">
-																				<option value="Category 1">Transport and Information and Communication Technology (ICT)</option>
-	<option value="Category 1">Social Protection and Labour</option>
-	<option value="Category 1">Macro Economics and Fiscal Management</option>
-	<option value="Category 1">Social, Urban , rural and Resilience</option>
-	<option value="Category 1">Finance Market</option>
-		<option value="Category 1">Water</option>
+																		<select class="form-control" id="projectCat<%=i+1%>" name="projectCat<%=i+1%>" data-placeholder="Choose a Category" tabindex="1">
+																				<option value="Transport">Transport and Information and Communication Technology (ICT<%=i+1%>)</option>
+	<option value="SocialProtection">Social Protection and Labour</option>
+	<option value="MacroEconomics">Macro Economics and Fiscal Management</option>
+	<option value="SocialUrban">Social, Urban , rural and Resilience</option>
+	<option value="FinanceMarket">Finance Market</option>
+		<option value="Water">Water</option>
 
-<option value="Category 1">Agriculture</option>
-<option value="Category 1">Energy and Extratives</option>
-<option value="Category 1">Education</option>
-<option value="Category 1">Health Nutrition and population</option>
-<option value="Category 1">Trade and competitiveness</option>
-<option value="Category 1">Environment and natural resources</option>
-<option value="Category 1">Poverty and Equity</option>
-<option value="Category 1">Governance</option>
+<option value="Agriculture">Agriculture</option>
+<option value="Energy">Energy and Extratives</option>
+<option value="Education">Education</option>
+<option value="HeatlthNutrition">Health Nutrition and population</option>
+<option value="Trade">Trade and competitiveness</option>
+<option value="Environment">Environment and natural resources</option>
+<option value="Poverty">Poverty and Equity</option>
+<option value="Governance">Governance</option>
 
 
 																		</select>
@@ -163,38 +172,39 @@
 
 
 <div class="row">
+
          	<div class="col-md-2">
 												Nutrition and Basic Medical Care
 														</div>
 														<div class="col-sm-2">
 																	<div class="radio radio-primary">
-																		<input type="radio" name="Nutrition" id="nutrition" value="1" checked>
-																		<label for="radio1"> 1 </label>
+																		<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="1" checked>
+																		<label for="nutrition<%=i+1%>"> 1 </label>
 																	</div>
 													</div>
 													<div class="col-sm-2">
 																<div class="radio radio-primary">
-																	<input type="radio" name="Nutrition" id="nutrition" value="3">
-																	<label for="radio3"> 3 </label>
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="3">
+																	<label for="nutrition<%=i+1%>"> 3 </label>
 																</div>
 													</div>
 
 													<div class="col-sm-2">
 																<div class="radio radio-primary">
-																	<input type="radio" name="Nutrition" id="nutrition" value="5">
-																	<label for="radio3">5 </label>
+																	<input type="radio" name="Nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="5">
+																	<label for="nutrition<%=i+1%>">5 </label>
 																</div>
 													</div>
 													<div class="col-sm-2">
 																<div class="radio radio-primary">
-																	<input type="radio" name="Nutrition" id="nutrition" value="7">
-																	<label for="radio3"> 7 </label>
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="7">
+																	<label for="nutrition<%=i+1%>"> 7 </label>
 																</div>
 													</div>
 													<div class="col-sm-2">
 																<div class="radio radio-primary">
-																	<input type="radio" name="Nutrition" id="nutrition" value="9">
-																	<label for="radio3"> 9 </label>
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="9">
+																	<label for="nutrition<%=i+1%>"> 9 </label>
 																</div>
 													</div>
 
@@ -204,68 +214,68 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="Water" id="water" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="1" checked>
+																<label for="wash<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Water" id="water" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="3">
+															<label for="wash<%=i+1%>"> 3 </label>
 														</div>
 											</div>
 
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Water" id="water" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="5">
+															<label for="wash<%=i+1%>">5 </label>
 														</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Water" id="water" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="wash<%=i+1%>" id="wash" value="7">
+															<label for="wash<%=i+1%>"> 7 </label>
 														</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Water" id="water" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="wash<%=i+1%>" id="wash" value="9">
+															<label for="wash<%=i+1%>"> 9 </label>
 														</div>
 											</div>
 									</div>
 									<div class="row">
-												<div class="col-md-2">		shelter
+												<div class="col-md-2">shelter
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="shelter" id="shelter" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="shelter<%=i+1%>" id="shelter" value="1" checked>
+																<label for="shelter<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="shelter" id="shelter" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="3">
+															<label for="shelter<%=i+1%>"> 3 </label>
 											      </div>
 											</div>
 
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="shelter" id="shelter" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="5">
+															<label for="shelter<%=i+1%>">5 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="shelter" id="shelter" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="7">
+															<label for="shelter<%=i+1%>"> 7 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="shelter" id="shelter" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="9">
+															<label for="shelter<%=i+1%>"> 9 </label>
 											      </div>
 											</div>
 									</div>
@@ -274,33 +284,33 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="Safety" id="safety" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="safety<%=i+1%>" id="safety" value="1" checked>
+																<label for="safety<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Safety" id="safety" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="3">
+															<label for="safety<%=i+1%>"> 3 </label>
 											      </div>
 											</div>
 
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Safety" id="safety" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="5">
+															<label for="safety<%=i+1%>">5 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Safety" id="safety" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="7">
+															<label for="safety<%=i+1%>"> 7 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Safety" id="safety" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="9">
+															<label for="safety<%=i+1%>"> 9 </label>
 											      </div>
 											</div>
 									</div>
@@ -309,33 +319,33 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="BasicKnowledge" id="basicKnowledge" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="1" checked>
+																<label for="basicKnowledge<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="BasicKnowledge" id="basicKnowledge" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="3">
+															<label for="basicKnowledge<%=i+1%>"> 3 </label>
 											      </div>
 											</div>
 
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="BasicKnowledge" id="basicKnowledge" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="5">
+															<label for="basicKnowledge<%=i+1%>">5 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="BasicKnowledge" id="basicKnowledge" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="7">
+															<label for="basicKnowledge<%=i+1%>"> 7 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="BasicKnowledge" id="basicKnowledge" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="9">
+															<label for="basicKnowledge<%=i+1%>"> 9 </label>
 											      </div>
 											</div>
 									</div>
@@ -344,33 +354,33 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="ICT" id="ICT" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="1" checked>
+																<label for="ICT<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="ICT" id="ICT" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="3">
+															<label for="ICT<%=i+1%>"> 3 </label>
 											      </div>
 											</div>
 
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="ICT" id="ICT" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="5">
+															<label for="ICT<%=i+1%>">5 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="ICT" id="radio3" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="ICT<%=i+1%>" id="radio3" value="7">
+															<label for="ICT<%=i+1%>"> 7 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="ICT" id="ICT" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="9">
+															<label for="ICT<%=i+1%>"> 9 </label>
 											      </div>
 											</div>
 									</div>
@@ -379,33 +389,33 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="Health" id="Health" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="1" checked>
+																<label for="Health<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Health" id="Health" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="3">
+															<label for="Health<%=i+1%>"> 3 </label>
 														</div>
 											</div>
 
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Health" id="Health" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="5">
+															<label for="Health<%=i+1%>">5 </label>
 														</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Health" id="Health" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="7">
+															<label for="Health<%=i+1%>"> 7 </label>
 														</div>
 											</div>
 											<div class="col-sm-2">
 														<div class="radio radio-primary">
-															<input type="radio" name="Health" id="Health" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="9">
+															<label for="Health<%=i+1%>"> 9 </label>
 														</div>
 											</div>
 									</div>
@@ -414,36 +424,37 @@
 												</div>
 												<div class="col-sm-2">
 															<div class="radio radio-primary">
-																<input type="radio" name="Environmental" id="environmental" value="1" checked>
-																<label for="radio1"> 1 </label>
+																<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="1" checked>
+																<label for="environmental<%=i+1%>"> 1 </label>
 															</div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Environmental" id="environmental" value="3">
-															<label for="radio3"> 3 </label>
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="3">
+															<label for="environmental<%=i+1%>"> 3 </label>
 											      </div>
 											</div>
 
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Environmental" id="environmental" value="5">
-															<label for="radio3">5 </label>
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="5">
+															<label for="environmental<%=i+1%>">5 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Environmental" id="environmental" value="7">
-															<label for="radio3"> 7 </label>
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="7">
+															<label for="environmental<%=i+1%>"> 7 </label>
 											      </div>
 											</div>
 											<div class="col-sm-2">
 											    	<div class="radio radio-primary">
-															<input type="radio" name="Environmental" id="environmental" value="9">
-															<label for="radio3"> 9 </label>
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="9">
+															<label for="environmental<%=i+1%>"> 9 </label>
 											      </div>
 											</div>
 									</div>
+									<% } %>
 
 
 
@@ -491,7 +502,25 @@
 		<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
 				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script type="text/javascript">
-		  $(function(){  $(function(){
+		   $(function(){
+				 $( document ).on( "click", "#addProjnum", function(event) {
+					  event.preventDefault();
+					// num=$("#numProj").val();
+					 var i;
+
+					// for (i=0; i<num; i++){
+ $("#addProjnum").append(needs);
+ 				 //}
+
+})
+			/*	 $("#addProjnum").live("click", function(e){
+					  e.preventDefault();
+					  num=$("#numProj").val();
+						alert(num);*/
+					// for(var i=0; i<=num; i++){
+
+					// }
+		//		});
 		$("#proj").submit(function( event ) {
 
 		// Stop form from submitting normally
@@ -502,20 +531,24 @@
 
 		//alert($("#Projname").val() + $("#ProjCat").val());
 	//	});
+	var p;
+	p=needs+1;
 	var data = {};
+	data=$("#proj").serializeArray();
+	/*for(var i=1; i<=p; i++){
 
-						data.country = $("#country").val();
-						data.name = $("#projectName").val();
-						data.category = $("#projectCat").val();
-						data.nutrition = $("#projectCat").val();
-						data.water = $("#water").val();
-						data.shelter = $("#shelter").val();
-						data.safety = $("#safety").val();
-						data.basicKnowledge = $("#basicKnowledge").val();
-						data.ict = $("#ICT").val();
-						data.health = $("#health").val();
-						data.environmental = $("#health").val();
-
+						data.country+i = $("#country"+i).val();
+						data.name+i  = $("#projectName"+i).val();
+						data.category+i  = $("#projectCat"+i ).val();
+						data.nutrition+i  = $("#projectCat"+i ).val();
+						data.wash+i  = $("#wash"+i ).val();
+						data.shelter+i  = $("#shelter"+i ).val();
+						data.safety+i  = $("#safety"+i ).val();
+						data.basicKnowledge+i  = $("#basicKnowledge"+p ).val();
+						data.ICT<%=i+1%>+i = $("#ICT<%=i+1%>"+i ).val();
+						data.Health<%=i+1%>+i  = $("#health"+i ).val();
+						data.environmental<%=i+1%>+i  = $("#health"+i ).val();
+}*/
 
 					$.ajax({
 						type: 'POST',
@@ -525,12 +558,12 @@
                         success: function(data) {
                             console.log('success');
                             console.log(JSON.stringify(data));
-														alert('did'+data);
+														//alert('did'+data);
                         }
                     });
 										  });
 											  });
-																							  });
+
 
 
 		</script>

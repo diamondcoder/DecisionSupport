@@ -72,14 +72,27 @@
                 <div class="panel-body">
                   <p class="text-muted">A decision support system for prioritizing the basic needs and culture of a country for Decision Making on projects or solution selection. It can determine the succes probalility and adoption rate. </p>
 
-                    
+
 		<div class="button-list mt-25">
-<<<<<<< HEAD
-                     	<button class="btn btn-success large btn-outline fancy-button btn-1"><a href="searchpage">Search a search suited for your project<a></button>
-=======
-                    	<button class="btn btn-success large btn-outline fancy-button btn-1"><a href="/searchpage">Choose the best Country for your project<a></button>
->>>>>>> 89759a782358464974476d5fa84b936bb1ba0834
+
+                    	<button class="btn btn-success large btn-outline fancy-button btn-1"><a href="/setProject">Choose the best Country for your project<a></button>
+
   </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label class="control-label mb-10">How many Projects</label>
+    <input type="text" id="num" class="form-control" placeholder="2 or more">
+      <span class="help-block">Enter 2 or  3 </span>
+      <button id="proj"> add Project</button>
+  
+      <div id="projecrow">
+        loading.....
+      </div>
+
+
+    </div>
+
+
 
                 </div>
               </div>
@@ -126,6 +139,42 @@
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+       $(function(){
+    $("#proj").click(function( event ) {
+
+    // Stop form from submitting normally
+     event.preventDefault();
+
+    //$.post( "/project", { name: "Projmame", time: "2pm" } );
+    //	console.log( $("#proj").serialize())
+
+    //alert($("#Projname").val() + $("#ProjCat").val());
+  //	});
+  var data = {};
+
+            data.num = $("#num").val();
+
+
+
+          $.ajax({
+            type: 'POST',
+            data: JSON.stringify(data),
+                contentType: 'application/json',
+                        url: '/setproject',
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+                          //  alert('did'+data);
+                            window.location.href = '/searchpage';
+                        }
+                    });
+                      });
+                        });
+
+
+
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

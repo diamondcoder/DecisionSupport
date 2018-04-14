@@ -88,7 +88,7 @@ router.post('/project', function(req,res){
 
   var obj = {};
   	console.log('body: ' + JSON.stringify(req.body));
-  	res.send("done");
+  res.send(req.body);
 });
 
 
