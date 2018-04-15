@@ -20,7 +20,7 @@ var spiCountry = require('./models/spiCountry');
 
 var app = express();
 
-
+app.locals.myVar;
 
 mongoose.connect(secret.database, function(err) {
   if (err) {
@@ -81,7 +81,11 @@ app.get('/insights/spicountries/:code', function(req, res){
     });
 
 });
-
+app.use( '/setproject',function(req, res, next) {
+  console.log('body: ' + JSON.stringify(req.body.num));
+  app.locals.myVar=req.body.num;
+  res.send("done");
+});
 
 app.use(function(req, res, next) {
   Category.find({}, function(err, categories) {

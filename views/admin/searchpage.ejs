@@ -87,7 +87,7 @@
 							<div class="panel panel-default card-view">
 								<div class="panel-heading">
 									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Search</h6>
+										<h6 class="panel-title txt-dark">Search </h6>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -96,15 +96,47 @@
 										<div class="row">
 											<div class="col-sm-12 col-xs-12">
 												<div class="form-wrap">
-													<form action="#">
+													<form action="/" id="proj">
 														<div class="form-body">
 															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Do you have a project in mind</h6>
 															<hr class="light-grey-hr"/>
+															<!-- /Row -->
 															<div class="row">
 																<div class="col-md-6">
 																	<div class="form-group">
-																		<label class="control-label mb-10">Project name</label>
-																		<input type="text" id="firstName" class="form-control" placeholder="Aforestation">
+																		<label class="control-label mb-10">Do you have a Country in mind</label>
+																		<select class="form-control" id="country" name="country">
+																			<option>--Optional--</option>
+																			<option>India</option>
+																			<option>Sri Lanka</option>
+																			<option>USA</option>
+																		</select>
+																		<span class="help-block">Our system can select list of countries that needs your project in order of urgency</span>
+
+
+																	</div>
+																</div>
+
+																<!--/span-->
+																<div class="col-md-6">
+
+																</div>
+																<!--/span-->
+															</div>
+															<script type="text/javascript">
+																		var needs= <%= myVar %>;
+
+
+																		</script>
+
+
+
+															<!-- /Row -->		<% for (var i=0; i<myVar; i++) { %>
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="form-group">
+																		<label class="control-label mb-10"> Project <%= i+1 %>  </label>
+																		<input type="text" id="projectName<%=i+1%>" name="projectName<%=i+1%>" class="form-control" placeholder="Name of Project">
 																		<span class="help-block"> A name that describes your Project </span>
 																	</div>
 																</div>
@@ -112,23 +144,22 @@
 																<div class="col-md-6">
 																	<div class="form-group">
 																		<label class="control-label mb-10">Category</label>
-																		<select class="form-control" data-placeholder="Choose a Category" tabindex="1">
-																				<option value="ICT">Information and Communication Technology (ICT)</option>
-<option value="Transport">Transport</option>
-	<option value="SPL">Social Protection and Labour</option>
-	<option value="MEFM">Macro Economics and Fiscal Management</option>
-	<option value="SURR">Social, Urban , rural and Resilience</option>
-	<option value="FM">Finance Market</option>
-		<option value="water">Water</option>
+																		<select class="form-control" id="projectCat<%=i+1%>" name="projectCat<%=i+1%>" data-placeholder="Choose a Category" tabindex="1">
+																				<option value="Transport">Transport and Information and Communication Technology (ICT<%=i+1%>)</option>
+	<option value="SocialProtection">Social Protection and Labour</option>
+	<option value="MacroEconomics">Macro Economics and Fiscal Management</option>
+	<option value="SocialUrban">Social, Urban , rural and Resilience</option>
+	<option value="FinanceMarket">Finance Market</option>
+		<option value="Water">Water</option>
 
-<option value="agric">Agriculture</option>
-<option value="EE">Energy and Extratives</option>
-<option value="EDU">Education</option>
-<option value="HNP">Health Nutrition and population</option>
-<option value="TC">Trade and competitiveness</option>
-<option value="EN">Environment and natural resources</option>
-<option value="PE">Poverty and Equity</option>
-<option value="governance">Governance</option>
+<option value="Agriculture">Agriculture</option>
+<option value="Energy">Energy and Extratives</option>
+<option value="Education">Education</option>
+<option value="HeatlthNutrition">Health Nutrition and population</option>
+<option value="Trade">Trade and competitiveness</option>
+<option value="Environment">Environment and natural resources</option>
+<option value="Poverty">Poverty and Equity</option>
+<option value="Governance">Governance</option>
 
 
 																		</select>
@@ -138,244 +169,300 @@
 																</div>
 																<!--/span-->
 															</div>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Do you have a Country in mind</label>
-																		<select class="form-control">
-																			<option>--Select--</option>
-																			<option>Ghana</option>
-																			<option>India</option>
-																			<option>Kemya</option>
-																			<option>Nigeria</option>
-																		</select>
-																		<span class="help-block">Our system can select list of countries that needs your project in order of urgency</span>
 
 
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
+<div class="row">
 
-																</div>
-																<!--/span-->
-															</div>
-															<!-- /Row -->
-
-
-														<div class="button-list mt-25">
-															<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#needsModal" data-whatever="@mdo">Select Project Goals</button>
-
-
-																<input type="checkbox" checked class="js-switch js-switch-1" data-color="#2ecd99"/>
-
-															<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resourceModal" data-whatever="@fat">Select resources your project will need</button>
-<input type="checkbox" checked class="js-switch js-switch-1" data-color="#2ecd99"/>
+         	<div class="col-md-2">
+												Nutrition and Basic Medical Care
 														</div>
-														<div class="modal fade" id="needsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
-															<div class="modal-dialog" role="document">
-																<div class="modal-content">
-																	<div class="modal-header">
-																		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																		<h5 class="modal-title" id="exampleModalLabel1">Select needs your project seeks to address</h5>
+														<div class="col-sm-2">
+																	<div class="radio radio-primary">
+																		<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="1" checked>
+																		<label for="nutrition<%=i+1%>"> 1 </label>
 																	</div>
-																	<div class="modal-body">
-																		<form>
-																			<div class="panel panel-default card-view">
-																				<div class="panel-heading">
-																					<div class="pull-left">
-																						<h6 class="panel-title txt-dark">List of needs</h6>
-																					</div>
-
-																				</div>
-																				<div class="panel-wrapper collapse in">
-																					<div class="panel-body">
-
-																																		<div class="form-group mb-0">
-																																			<label class="control-label mb-10">Basic Human Need Multiple Selction</label>
-																																			<select class="select2 select2-multiple" multiple="multiple" data-placeholder="Choose">
-																																				<optgroup label="Nutrition and Basic Medical Care">
-
-																																														<option value="Undernourishment">Undernourishment</option>
-
-																																													<option value="	Depthoffooddeficit">	Depth of food deficit</option>
-
-																																													<option value="Maternalmortalityrate">	Maternal mortality rate</option>
-
-																																														<option value="Childmortalityrate">Child mortality rate</option>
-
-																																													<option value="	Deathsfrominfectiousdiseases">	Deaths from infectious diseases</option>
-
-
-
-																																				</optgroup>
-																																				<optgroup label="Water and Sanitation">
-																																				<option value="Accesstopipedwater">	Access to piped water
-																																					</option>
-																																					<option value="Ruralaccesstoimprovedwatersource">Rural access to improved water source
-																																						</option>	</option>
-																																					<option value="Accesstoimprovedsanitationfacilities">Access to improved sanitation facilities
-																																					</option>
-																																				</optgroup>
-																																				<optgroup label="Shelter">
-
-																																					<option value="Availabilityofaffordablehousing">Availability of affordable housing</option>
-
-																																				<option value="Accesstoelectricity">Access to electricity</option>
-
-																																					<option value="Qualityofelectricitysupply">Quality of electricity supply</option>
-
-																																					<option value="Householdairpollutionattributabledeaths">Household air pollution attributable deaths</option>
-																																				</optgroup>
-																																				<optgroup label="Personal Safety">
-																																				<option value="Homiciderate">	Homicide rate
-																																					</option>
-																																				<option value="Levelofviolentcrime">	Level of violent crime
-																																					</option>
-																																					<option value="Perceivedcriminality">Perceived criminality
-																																					</option>
-																																				<option value="Politicalterror">	Political terror
-																																					</option>
-																																				<option value="Trafficdeaths">	Traffic deaths
-																																					</option>
-																																				</optgroup>
-
-																																			</select>
-																																		</div>
-																																		<br />
-																																			<br />
-																																				<br />
-																																					<br />
-
-
-												<div class="form-group mb-0">
-													<label class="control-label mb-10">Foundations of Wellbeing Multiple selection</label>
-													<select class="select2 select2-multiple" multiple="multiple" data-placeholder="Choose">
-														<optgroup label="Access to Basic Knowledge">
-
-													<option value="Adultliteracyrate">	Adult literacy rate</option>
-
-													<option value="Primaryschoolenrollment">	Primary school enrollment</option></option>
-
-														<option value="Secondaryschoolenrollment">Secondary school enrollment (% of children)</option>
-
-													<option value="Genderparityinsecondaryenrollment">	Gender parity in secondary enrollment</option>
-
-														</optgroup>
-														<optgroup label="Access to Information and Communications">
-															<option value="Mobiletelephonesubscriptions">Mobile telephone subscriptions</option>
-															<option value="Internetusers">Internet users</option>
-															<option value="PressFreedomIndex">Press Freedom Index</option>
-															<option value="Washington">Washington</option>
-
-
-
-														</optgroup>
-														<optgroup label="Health and Wellness">
-															<option value="Lifeexpectancyatsixty">Life expectancy at 60</option>
-
-														<option value="Prematuredeathsfromnoncommunicablediseases">Premature deaths from non-communicable diseases</option>
-
-															<option value="Suiciderate">Suicide rate</option>
-														</optgroup>
-														<optgroup label="Environmental Quality">
-
-
-															<option value="Outdoorairpollutionattributabledeaths">Outdoor air pollution attributable deaths</option>
-
-															<option value="Wastewatertreatment">Wastewater treatment</option>
-
-															<option value="Biodiversityandhabitat">Biodiversity and habitat</option>
-
-															<option value="Greenhousegasemissions">Greenhouse gas emissions</option>
-														</optgroup>
-
-													</select>
-												</div>
-
-
-
-																					</div>
-																				</div>
-																			</div>
-																		</form>
-																	</div>
-																	<div class="modal-footer">
-																		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																		<button type="button" class="btn btn-primary">Add</button>
-																	</div>
+													</div>
+													<div class="col-sm-2">
+																<div class="radio radio-primary">
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="3">
+																	<label for="nutrition<%=i+1%>"> 3 </label>
 																</div>
-															</div>
-														</div>
+													</div>
 
-														<div class="modal fade" id="resourceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
-															<div class="modal-dialog" role="document">
-																<div class="modal-content">
-																	<div class="modal-header">
-																		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																		<h5 class="modal-title" id="exampleModalLabel1">Resources/ Infrastructure needs for Project</h5>
-																	</div>
-																	<div class="modal-body">
-																		<form>
-																			<div class="panel panel-default card-view">
-																				<div class="panel-heading">
-																					<div class="pull-left">
-																						<h6 class="panel-title txt-dark">List of Infrastructure</h6>
-																					</div>
+													<div class="col-sm-2">
+																<div class="radio radio-primary">
+																	<input type="radio" name="Nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="5">
+																	<label for="nutrition<%=i+1%>">5 </label>
+																</div>
+													</div>
+													<div class="col-sm-2">
+																<div class="radio radio-primary">
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="7">
+																	<label for="nutrition<%=i+1%>"> 7 </label>
+																</div>
+													</div>
+													<div class="col-sm-2">
+																<div class="radio radio-primary">
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="9">
+																	<label for="nutrition<%=i+1%>"> 9 </label>
+																</div>
+													</div>
 
-																				</div>
-																				<div class="panel-wrapper collapse in">
-																					<div class="panel-body">
-
-																						<div class="row mt-40">
-																							<div class="panel-wrapper collapse in">
-
-												<div class="col-sm-12">
-													<select multiple id="optgroup" name="optgroup[]">
-														<optgroup label="Infrastructure">
-
-
-															<option value="ContainerPortTraffic">	Container port traffic (TEU: 20 foot equivalent units)
-															<option value="	ElectricPowerConsumption">	Electric power consumption (kWh per capita)
-																<option value="FixedBroadbandSubscriptions">Fixed broadband subscriptions (per 100 people)
-																<option value="FixedTelephoneSubscriptions">Fixed telephone subscriptions (per 100 people)
-																<option value="ImprovedWaterSource">	<option value="1">Improved water source (% of population with access)
-																<option value="ImprovedWaterSourceRural">Improved water source, rural (% of rural population with access)
-																<option value="ImprovedWaterSourceUrban">Improved water source, urban (% of urban population with access)
-																<option value="InvestmentEnergywithprivateParticipation">Investment in energy with private participation (current US$)
-															<option value="	InvestmentTelecomswithPrivateParticipation">	Investment in telecoms with private participation (current US$)
-															<option value="InvestmentinTransportwithPrivateParticipation">	Investment in transport with private participation (current US$)
-																<option value="InvestmentWaterSanitationwithPrivateParticipation">Investment in water and sanitation with private participation (current US$)
-																<option value="MobileCellularSubscriptions">Mobile cellular subscriptions (per 100 people)
-																<option value="RailLines">Rail lines (total route-km)
-																<option value="RenewableInternalFreshwaterResourcesPerCapita">Renewable internal freshwater resources per capita (cubic meters)
-																<option value="RenewableInternalFreshwaterResources">Renewable internal freshwater resources, total (billion cubic meters)
-																<option value="SecureInternetservers">Secure Internet servers (per 1 million people)
-														</optgroup>
-
-													</select>
+	</div>
+									<div class="row">
+												<div class="col-md-2">		Water and Sanitation
 												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="1" checked>
+																<label for="wash<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="3">
+															<label for="wash<%=i+1%>"> 3 </label>
+														</div>
+											</div>
 
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="wash<%=i+1%>" id="wash<%=i+1%>" value="5">
+															<label for="wash<%=i+1%>">5 </label>
+														</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="wash<%=i+1%>" id="wash" value="7">
+															<label for="wash<%=i+1%>"> 7 </label>
+														</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="wash<%=i+1%>" id="wash" value="9">
+															<label for="wash<%=i+1%>"> 9 </label>
+														</div>
+											</div>
 									</div>
-
-
-
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</form>
-																	</div>
-																	<div class="modal-footer">
-																		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																		<button type="button" class="btn btn-primary">Add</button>
-																	</div>
-																</div>
+									<div class="row">
+												<div class="col-md-2">shelter
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="shelter<%=i+1%>" id="shelter" value="1" checked>
+																<label for="shelter<%=i+1%>"> 1 </label>
 															</div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="3">
+															<label for="shelter<%=i+1%>"> 3 </label>
+											      </div>
+											</div>
+
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="5">
+															<label for="shelter<%=i+1%>">5 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="7">
+															<label for="shelter<%=i+1%>"> 7 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="shelter<%=i+1%>" id="shelter" value="9">
+															<label for="shelter<%=i+1%>"> 9 </label>
+											      </div>
+											</div>
+									</div>
+									<div class="row">
+												<div class="col-md-2">		Personal Safety
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="safety<%=i+1%>" id="safety" value="1" checked>
+																<label for="safety<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="3">
+															<label for="safety<%=i+1%>"> 3 </label>
+											      </div>
+											</div>
+
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="5">
+															<label for="safety<%=i+1%>">5 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="7">
+															<label for="safety<%=i+1%>"> 7 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="safety<%=i+1%>" id="safety" value="9">
+															<label for="safety<%=i+1%>"> 9 </label>
+											      </div>
+											</div>
+									</div>
+									<div class="row">
+												<div class="col-md-2">		Access to Basic Knowledge
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="1" checked>
+																<label for="basicKnowledge<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="3">
+															<label for="basicKnowledge<%=i+1%>"> 3 </label>
+											      </div>
+											</div>
+
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="5">
+															<label for="basicKnowledge<%=i+1%>">5 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="7">
+															<label for="basicKnowledge<%=i+1%>"> 7 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="basicKnowledge<%=i+1%>" id="basicKnowledge" value="9">
+															<label for="basicKnowledge<%=i+1%>"> 9 </label>
+											      </div>
+											</div>
+									</div>
+									<div class="row">
+												<div class="col-md-2">		Access to Information and Communications
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="1" checked>
+																<label for="ICT<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="3">
+															<label for="ICT<%=i+1%>"> 3 </label>
+											      </div>
+											</div>
+
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="5">
+															<label for="ICT<%=i+1%>">5 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="ICT<%=i+1%>" id="radio3" value="7">
+															<label for="ICT<%=i+1%>"> 7 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="ICT<%=i+1%>" id="ICT<%=i+1%>" value="9">
+															<label for="ICT<%=i+1%>"> 9 </label>
+											      </div>
+											</div>
+									</div>
+									<div class="row">
+												<div class="col-md-2">		Health and Wellness
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="1" checked>
+																<label for="Health<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="3">
+															<label for="Health<%=i+1%>"> 3 </label>
 														</div>
+											</div>
+
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="5">
+															<label for="Health<%=i+1%>">5 </label>
+														</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="7">
+															<label for="Health<%=i+1%>"> 7 </label>
+														</div>
+											</div>
+											<div class="col-sm-2">
+														<div class="radio radio-primary">
+															<input type="radio" name="Health<%=i+1%>" id="Health<%=i+1%>" value="9">
+															<label for="Health<%=i+1%>"> 9 </label>
+														</div>
+											</div>
+									</div>
+									<div class="row">
+												<div class="col-md-2">		Environmental Quality
+												</div>
+												<div class="col-sm-2">
+															<div class="radio radio-primary">
+																<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="1" checked>
+																<label for="environmental<%=i+1%>"> 1 </label>
+															</div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="3">
+															<label for="environmental<%=i+1%>"> 3 </label>
+											      </div>
+											</div>
+
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="5">
+															<label for="environmental<%=i+1%>">5 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="7">
+															<label for="environmental<%=i+1%>"> 7 </label>
+											      </div>
+											</div>
+											<div class="col-sm-2">
+											    	<div class="radio radio-primary">
+															<input type="radio" name="environmental<%=i+1%>" id="environmental<%=i+1%>" value="9">
+															<label for="environmental<%=i+1%>"> 9 </label>
+											      </div>
+											</div>
+									</div>
+									<% } %>
+
+
+
+
+
 														<div class="form-actions mt-10">
-															<button type="submit" class="btn btn-success  mr-10">SEND</button>
+																<button type="submit" id="send" class="btn btn-success  mr-10">SEND</button>
+
 															<button type="button" class="btn btn-default">Cancel</button>
 														</div>
 													</form>
@@ -413,6 +500,73 @@
 
 		<!-- jQuery -->
 		<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
+				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript">
+		   $(function(){
+				 $( document ).on( "click", "#addProjnum", function(event) {
+					  event.preventDefault();
+					// num=$("#numProj").val();
+					 var i;
+
+					// for (i=0; i<num; i++){
+ $("#addProjnum").append(needs);
+ 				 //}
+
+})
+			/*	 $("#addProjnum").live("click", function(e){
+					  e.preventDefault();
+					  num=$("#numProj").val();
+						alert(num);*/
+					// for(var i=0; i<=num; i++){
+
+					// }
+		//		});
+		$("#proj").submit(function( event ) {
+
+		// Stop form from submitting normally
+		 event.preventDefault();
+
+		//$.post( "/project", { name: "Projmame", time: "2pm" } );
+	  //	console.log( $("#proj").serialize())
+
+		//alert($("#Projname").val() + $("#ProjCat").val());
+	//	});
+	var p;
+	p=needs+1;
+	var data = {};
+	data=$("#proj").serializeArray();
+	/*for(var i=1; i<=p; i++){
+
+						data.country+i = $("#country"+i).val();
+						data.name+i  = $("#projectName"+i).val();
+						data.category+i  = $("#projectCat"+i ).val();
+						data.nutrition+i  = $("#projectCat"+i ).val();
+						data.wash+i  = $("#wash"+i ).val();
+						data.shelter+i  = $("#shelter"+i ).val();
+						data.safety+i  = $("#safety"+i ).val();
+						data.basicKnowledge+i  = $("#basicKnowledge"+p ).val();
+						data.ICT<%=i+1%>+i = $("#ICT<%=i+1%>"+i ).val();
+						data.Health<%=i+1%>+i  = $("#health"+i ).val();
+						data.environmental<%=i+1%>+i  = $("#health"+i ).val();
+}*/
+
+					$.ajax({
+						type: 'POST',
+						data: JSON.stringify(data),
+				        contentType: 'application/json',
+                        url: '/project',
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+														//alert('did'+data);
+                        }
+                    });
+										  });
+											  });
+
+
+
+		</script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="../vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -462,6 +616,7 @@
 
 		<!-- Init JavaScript -->
 		<script src="dist/js/init.js"></script>
+
 
 	</body>
 

@@ -81,7 +81,16 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
         //score_component(spiCountries)
         res.json(ahpTest());
     });
-})
+});
+
+router.post('/project', function(req,res){
+
+
+  var obj = {};
+  	console.log('body: ' + JSON.stringify(req.body));
+  res.send(req.body);
+});
+
 
 router.post('/spiCountries/create', function (req, res) {
     var spiCountry = new SpiCountry();
