@@ -205,12 +205,12 @@ function index(need) {
  function ahpTest(){
      ahpContext.addItems(['Rural Water Project', 'Food Project', 'Shelter Project']);
 
-     ahpContext.addCriteria(['Food', 'Water', 'Shelter', 'Health']);
+     ahpContext.addCriteria(['Food', 'Water', 'Shelter', 'Health', 'need4','need5','need6','need7','']);
 
      ahpContext.rankCriteriaItem('Food', [
-         ['Rural Water Project', 'Food Project', 1/3],
-         ['Rural Water Project', 'Shelter Project', 3],
-         ['Food Project', 'Shelter Project', 5]
+         ['P1', 'P2', 3],
+         ['P1', 'P3', 5],
+         ['P2', 'P3', 3]
      ]);
      ahpContext.rankCriteriaItem('Water', [
          ['Rural Water Project', 'Food Project', 3],
