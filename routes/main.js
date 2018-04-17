@@ -77,18 +77,20 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
     SpiCountry.find({CountryCode: code}, function (err, spiCountries) {
         if (err) return next();
         needList = spiCountries;
-        ahpTest();
+
+        //ahpTest();
         //score_component(spiCountries)
-        res.json(ahpTest());
+        res.json(rank());
     });
 });
 
 router.post('/project', function(req,res){
-
-
+    ahpTest(req.body);
+//fromUI(req.body)
   var obj = {};
-  	console.log('body: ' + JSON.stringify(req.body));
-  res.send(req.body);
+  	//console.log('body: ' + JSON.stringify(req.body));
+    //console.log(getValue(1, 3))
+  res.send(ahpTest(req.body));
 });
 
 
@@ -108,33 +110,35 @@ function rank() {
         needList[0]["BasicHumanNeeds"]["WaterandSanitation"]["Score"],
         needList[0]["BasicHumanNeeds"]["Shelter"]["Score"],
         needList[0]["BasicHumanNeeds"]["PersonalSafety"]["Score"]];
-    //console.log(scoreRanker(needsArray));
+    console.log(scoreRanker(needsArray));
 
 //Ranking the score for Foundations of Wellbeing
     var foundationsArray = [needList[0]["FoundationsofWellbeing"]["AccesstoBasicKnowledge"]["Score"],
         needList[0]["FoundationsofWellbeing"]["AccesstoInformationandCommunications"]["Score"],
         needList[0]["FoundationsofWellbeing"]["HealthandWellness"]["Score"],
         needList[0]["FoundationsofWellbeing"]["EnvironmentalQuality"]["Score"]];
-    //console.log(scoreRanker(foundationsArray));
+    console.log(scoreRanker(foundationsArray));
 
 //Ranking the score for Opportunity
     var opportunityArray = [needList[0]["Opportunity"]["PersonalRights"]["Score"],
         needList[0]["Opportunity"]["PersonalFreedomandChoice"]["Score"],
         needList[0]["Opportunity"]["ToleranceandInclusion"]["Score"],
         needList[0]["Opportunity"]["AccesstoAdvancedEducation"]["Score"]];
-    //console.log(scoreRanker(opportunityArray));
+    console.log(scoreRanker(opportunityArray));
     var rankedNeeds = needsArray + "," + foundationsArray + "," + opportunityArray;
-    var rankedArray = rankedNeeds.split(",");
+    //console.log(scoreRanker(rankedNeeds))
+   /* var rankedArray = rankedNeeds.split(",");
 
-    var jsonString = "{";
+    var jsonString = "[";
     for (var i = 0; i < rankedArray.length; i++) {
         jsonString = jsonString + buildJson([rankedArray[i]]);
         if(i != rankedArray.length-1){
             jsonString = jsonString+",";
         }
-    }
+    }*/
 
-    return jsonString + "}";
+    //return jsonString + "]";
+    return rankedNeeds;
 
 }
 
@@ -211,46 +215,45 @@ function index(need) {
     if (need == "INDULGENCE") return '[0]["Culture"]';
 
 }
- function ahpTest(){
-     ahpContext.addItems(['Rural Water Project', 'Food Project', 'Shelter Project']);
+function getValue(value1, value2){
+    var value = (value1 - value2) < 0 ? value1 : value2;
+    return value;
+}
+ function ahpTest(content){
+    var project1 = JSON.stringify(content[1]["value"])
+     var project2 = JSON.stringify(content[11]["value"]);
 
-     ahpContext.addCriteria(['Food', 'Water', 'Shelter', 'Health', 'need4','need5','need6','need7','']);
+     ahpContext.addItems([project1, project2]);
 
-     ahpContext.rankCriteriaItem('Food', [
-         ['P1', 'P2', 3],
-         ['P1', 'P3', 5],
-         ['P2', 'P3', 3]
-     ]);
-     ahpContext.rankCriteriaItem('Water', [
-         ['Rural Water Project', 'Food Project', 3],
-         ['Rural Water Project', 'Shelter Project', 5],
-         ['Food Project', 'Shelter Project', 3]
-     ]);
-     ahpContext.rankCriteriaItem('Shelter', [
-         ['Rural Water Project', 'Food Project', 1],
-         ['Rural Water Project', 'Shelter Project', 1/5],
-         ['Food Project', 'Shelter Project', 1/5]
-     ]);
-     ahpContext.rankCriteriaItem('Health', [
-         ['Rural Water Project', 'Food Project', 1],
-         ['Rural Water Project', 'Shelter Project', 3],
-         ['Food Project', 'Shelter Project', 3]
-     ]);
+     ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'Basic Knowledge','ICT','Health','Environmental']);
+
+     ahpContext.rankCriteriaItem('Nutrition', [project1, project2, getValue(JSON.stringify(content[3]["value"]),JSON.stringify(content[13]["value"]))]);
+     ahpContext.rankCriteriaItem('Water', [project1, project2, getValue(JSON.stringify(content[4]["value"]),JSON.stringify(content[14]["value"]))]);
+     ahpContext.rankCriteriaItem('Shelter', [project1, project2, getValue(JSON.stringify(content[5]["value"]),JSON.stringify(content[15]["value"]))]);
+     ahpContext.rankCriteriaItem('Safety', [project1, project2, getValue(JSON.stringify(content[6]["value"]),JSON.stringify(content[16]["value"]))]);
+     ahpContext.rankCriteriaItem('Basic Knowledge', [project1, project2, getValue(JSON.stringify(content[7]["value"]),JSON.stringify(content[17]["value"]))]);
+     ahpContext.rankCriteriaItem('ICT', [project1, project2, getValue(JSON.stringify(content[8]["value"]),JSON.stringify(content[18]["value"]))]);
+     ahpContext.rankCriteriaItem('Health', [project1, project2, getValue(JSON.stringify(content[9]["value"]),JSON.stringify(content[19]["value"]))]);
+     ahpContext.rankCriteriaItem('Environmental', [project1, project2, getValue(JSON.stringify(content[10]["value"]),JSON.stringify(content[20]["value"]))]);
 
      ahpContext.rankCriteria(
          [
-             ['Food', 'Water', 1],
-             ['Food', 'Shelter', 5],
-             ['Food', 'Health', 3],
-             ['Water', 'Shelter', 5],
-             ['Water', 'Health', 3],
-             ['Shelter', 'Health', 1/3]
+             ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 5], ['Nutrition', 'Basic Knowledge', 7], ['Nutrition', 'ICT', 9],
+             ['Nutrition', 'Health', 11], ['Nutrition', 'Environmental',13],
+             ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'Basic Knowledge', 7], ['Water', 'ICT', 9], ['Water', 'Health', 11], ['Water', 'Environmental', 13],
+             ['Shelter', 'Safety', 3], ['Shelter', 'Basic Knowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9],  ['Shelter', 'Environmental', 11],
+             ['Safety', 'Basic Knowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
+             ['Basic Knowledge', 'ICT', 3], ['Basic Knowledge', 'Health', 5], ['Basic Knowledge', 'Environmental', 7],
+             ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
+             ['Health', 'Environmental', 3]
          ]
      );
 
      var output = ahpContext.run();
+
+    // console.log(output);
      return output;
-     //console.log(output);
+
  }
 
 module.exports = router;
