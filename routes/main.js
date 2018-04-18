@@ -2,9 +2,14 @@ var router = require('express').Router();
 var User = require('../models/user');
 var Country = require('../models/country');
 var SpiCountry = require('../models/spiCountry');
+var flash = require('express-flash');
 const AHP = require('ahp');
 var ahpContext = new AHP();
 var needList;
+var express = require('express');
+var data = express();
+data.locals.Ranking;
+
 
 router.get('/chart', function (req, res) {
     res.render('main/charts');
@@ -251,7 +256,10 @@ function getValue(value1, value2){
 
      var output = ahpContext.run();
 
-     console.log(output);
+
+     Ranking=JSON.stringify(output.rankedScoreMap);
+        console.log(Ranking);
+
      return output;
 
  }

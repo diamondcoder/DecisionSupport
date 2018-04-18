@@ -38,7 +38,17 @@
 <% include navadmin.ejs %>
 <% include leftsidemenu.ejs %>
 <% include rightsidemenu.ejs %>
+<script type="text/javascript">
+    //  var ranks="<%= Ranking %>";
+    //  console.log(<%= Ranking %>);
 
+
+      </script>
+      <script type="text/javascript">
+              //  var needs= <%= myVar %>;
+
+
+                </script>
 
         <!-- Main Content -->
 		<div class="page-wrapper">
@@ -117,6 +127,7 @@
                         <div>
                           <span class="pull-left inline-block capitalize-font txt-dark">
                             Food
+                            <%= Ranking %>
                           </span>
                           <span class="label label-warning pull-right">50%</span>
                           <div class="clearfix"></div>
@@ -265,14 +276,7 @@
                         <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
                           <span class="counter-anim">80</span>
                         </div>
-                        <% for(var i=0; i< spiCountries.length; i++){ %>
-                          <p><%= spiCountries[i].Country %></p>
-                          <% if (spiCountries[i].Country=="Ghana") {%>
-                          <p><%= spiCountries[i].SocialProgressIndex %></p>
 
-
-                      <%    }
-                        } %>
                         <p></p>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
@@ -419,6 +423,11 @@
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+       $(function(){
+         alert(ranks);
+       });
+       </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -466,10 +475,6 @@
 	<!-- Init JavaScript -->
 	<script src="dist/js/init.js"></script>
 	<script src="dist/js/dashboard-data.js"></script>
-  	<script src="dist/js/app.js"></script>
+
 
 </body>
-
-
-<!-- Mirrored from hencework.com/theme/flintstone/full-width-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:01:22 GMT -->
-</html>

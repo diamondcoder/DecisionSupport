@@ -22,6 +22,7 @@ var app = express();
 
 app.locals.myVar;
 
+
 mongoose.connect(secret.database, function(err) {
   if (err) {
     console.log(err);

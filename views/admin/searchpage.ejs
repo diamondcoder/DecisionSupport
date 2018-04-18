@@ -192,8 +192,8 @@
 
 													<div class="col-sm-2">
 																<div class="radio radio-primary">
-																	<input type="radio" name="Nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="5">
-																	<label for="nutrition<%=i+1%>">5 </label>
+																	<input type="radio" name="nutrition<%=i+1%>" id="nutrition<%=i+1%>" value="5">
+																	<label for="nutrition<%=i+1%>"> 5 </label>
 																</div>
 													</div>
 													<div class="col-sm-2">
@@ -559,8 +559,9 @@
                         url: '/project',
                         success: function(data) {
                             console.log('success');
-                            console.log(JSON.stringify(data));
-														//alert('did'+data);
+                          //  console.log(JSON.stringify(data));
+													//	alert(JSON.stringify(data.WeightedVector));
+													  window.location.href = '/insights';
                         }
                     });
 										  });
