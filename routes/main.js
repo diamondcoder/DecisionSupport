@@ -251,7 +251,7 @@ function getValue(value1, value2){
 
      var output = ahpContext.run();
 
-    // console.log(output);
+     console.log(output);
      return output;
 
  }
