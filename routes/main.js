@@ -243,8 +243,8 @@ function getValue(value1, value2){
 
      ahpContext.rankCriteria(
          [
-             ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 5], ['Nutrition', 'Basic Knowledge', 7], ['Nutrition', 'ICT', 9],
-             ['Nutrition', 'Health', 11], ['Nutrition', 'Environmental',13],
+             ['Nutrition', 'Water', 3], ['Nutrition', 'Shelter', 5], ['Nutrition', 'Safety', 7], ['Nutrition', 'Basic Knowledge', 9], ['Nutrition', 'ICT', 11],
+             ['Nutrition', 'Health', 13], ['Nutrition', 'Environmental',15],
              ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'Basic Knowledge', 7], ['Water', 'ICT', 9], ['Water', 'Health', 11], ['Water', 'Environmental', 13],
              ['Shelter', 'Safety', 3], ['Shelter', 'Basic Knowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9],  ['Shelter', 'Environmental', 11],
              ['Safety', 'Basic Knowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
@@ -255,10 +255,9 @@ function getValue(value1, value2){
      );
 
      var output = ahpContext.run();
+    Ranking = JSON.stringify(output.rankedScoreMap)
 
-
-     Ranking=output.rankedScoreMap;
-     //console.log(output);
+     console.log(Ranking);
 
      return output;
 
