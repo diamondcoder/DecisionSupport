@@ -225,8 +225,9 @@ function getValue(value1, value2){
     return value;
 }
  function ahpTest(content){
-    var project1 = content[1]["value"]
-     var project2 = content[11]["value"];
+    // str = str.replace(/\s/g, '');
+    var project1 = content[1]["value"].replace(/\s/g,'');
+     var project2 = content[11]["value"].replace(/\s/g, '');;
 
      ahpContext.addItems([project1, project2]);
 
@@ -255,10 +256,14 @@ function getValue(value1, value2){
      );
 
      var output = ahpContext.run();
-    Ranking = JSON.stringify(output.rankedScoreMap)
+     Ranking = output.rankedScoreMap
 
-     console.log(Ranking);
-
+   //for(var i=0;i<Ranking.length;i++){
+     Ranking = content[1]["value"] +" "+ Ranking[project1]+" : "+content[11]["value"]+" "+Ranking[project1]
+       console.log("In loop "+Ranking)
+   //}
+    // console.log(Ranking);
+    //console.log(output)
      return output;
 
  }
