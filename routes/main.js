@@ -225,8 +225,8 @@ function getValue(value1, value2){
     return value;
 }
  function ahpTest(content){
-    var project1 = JSON.stringify(content[1]["value"])
-     var project2 = JSON.stringify(content[11]["value"]);
+    var project1 = content[1]["value"]
+     var project2 = content[11]["value"];
 
      ahpContext.addItems([project1, project2]);
 
@@ -257,8 +257,8 @@ function getValue(value1, value2){
      var output = ahpContext.run();
 
 
-     Ranking=JSON.stringify(output.rankedScoreMap);
-        console.log(Ranking);
+     Ranking=output.rankedScoreMap;
+     //console.log(output);
 
      return output;
 
