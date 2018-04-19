@@ -13,6 +13,7 @@ router.get('/dsshome', function(req, res, next){
 
 });
 router.get('/searchpage', function(req, res, next){
+	//if(!myvar) res.render('admin/dsshome');
 	res.render('admin/searchpage');
 
 

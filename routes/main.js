@@ -17,7 +17,7 @@ router.get('/chart', function (req, res) {
 
 
 router.get('/', function (req, res) {
-    res.render('main/home');
+    res.render('main/dsshome');
 });
 
 router.get('/about', function (req, res) {
@@ -90,6 +90,7 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
 });
 
 router.post('/project', function(req,res){
+//  if (!Ranking) return res.redirect('/');
     ahpTest(req.body);
 //fromUI(req.body)
   var obj = {};
