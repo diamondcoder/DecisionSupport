@@ -9,6 +9,7 @@ var needList;
 var express = require('express');
 var data = express();
 data.locals.Ranking;
+data.locals.prioritylist;
 
 
 router.get('/chart', function (req, res) {
@@ -82,6 +83,7 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
     SpiCountry.find({CountryCode: code}, function (err, spiCountries) {
         if (err) return next();
         needList = spiCountries;
+        prioritylist= spiCountries;
 
         //ahpTest();
         //score_component(spiCountries)
@@ -89,14 +91,14 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
     });
 });
 
-router.post('/project', function(req,res){
-//  if (!Ranking) return res.redirect('/');
+router.post('/project', function (req, res) {
     ahpTest(req.body);
 //fromUI(req.body)
-  var obj = {};
-  	//console.log('body: ' + JSON.stringify(req.body));
+    var obj = {};
+    //console.log('body: ' + JSON.stringify(req.body));
     //console.log(getValue(1, 3))
-  res.send(ahpTest(req.body));
+    
+    res.send(ahpTest(req.body));
 });
 
 
@@ -133,18 +135,18 @@ function rank() {
     console.log(scoreRanker(opportunityArray));
     var rankedNeeds = needsArray + "," + foundationsArray + "," + opportunityArray;
     //console.log(scoreRanker(rankedNeeds))
-   /* var rankedArray = rankedNeeds.split(",");
+     var rankedArray = rankedNeeds.split(",");
 
-    var jsonString = "[";
-    for (var i = 0; i < rankedArray.length; i++) {
-        jsonString = jsonString + buildJson([rankedArray[i]]);
-        if(i != rankedArray.length-1){
-            jsonString = jsonString+",";
-        }
-    }*/
+     var jsonString = "[";
+     for (var i = 0; i < rankedArray.length; i++) {
+         jsonString = jsonString + buildJson([rankedArray[i]]);
+         if(i != rankedArray.length-1){
+             jsonString = jsonString+",";
+         }
+     }
 
-    //return jsonString + "]";
-    return rankedNeeds;
+    return jsonString + "]";
+    //return rankedNeeds;
 
 }
 
@@ -221,118 +223,69 @@ function index(need) {
     if (need == "INDULGENCE") return '[0]["Culture"]';
 
 }
-function getValue(value1, value2){
-    value1 = value1.replace(/"/g,"");
-    value2 = value2.replace(/"/g,"");
+
+function getValue(value1, value2) {
+    value1 = value1.replace(/"/g, "");
+    value2 = value2.replace(/"/g, "");
     var value = value1 - value2 < 0 ? value1 : value2;
     return value;
 }
- function ahpTest(content){
 
-     /*ahpContext.addItems(['VendorA', 'VendorB']);
+function ahpTest(content) {
 
-     ahpContext.addCriteria(['price', 'functionality', 'UX', 'Usability', 'Speed','response','testable','cool']);
 
-     ahpContext.rankCriteriaItem('price',[['VendorA', 'VendorB', 3],['VendorB', 'VendorA', 1/3]]);
+    var project1 = content[1]["value"].replace(/\s/g, '');
+    var project2 = content[11]["value"].replace(/\s/g, '');
+    var number = getValue(JSON.stringify(content[3]["value"]), JSON.stringify(content[13]["value"]));
+    //number = number.replace(/"/g,"")
+    console.log(number)
 
-     ahpContext.rankCriteriaItem('functionality', [['VendorA', 'VendorB', 5],['VendorB', 'VendorA', 1/5]]);
-     ahpContext.rankCriteriaItem('UX', [['VendorA', 'VendorB', 1],['VendorB', 'VendorA', 1]]);
-     ahpContext.rankCriteriaItem('Usability', [['VendorA', 'VendorB', 3],['VendorB', 'VendorA', 1/3]]);
-     ahpContext.rankCriteriaItem('Speed', [['VendorA', 'VendorB', 1/5],['VendorB', 'VendorA', 5]]);
-     ahpContext.rankCriteriaItem('response', [['VendorA', 'VendorB', 1],['VendorB', 'VendorA', 1]]);
-     ahpContext.rankCriteriaItem('testable', [['VendorA', 'VendorB', 1/3],['VendorB', 'VendorA', 3]]);
-     ahpContext.rankCriteriaItem('cool', [['VendorA', 'VendorB', 1/5],['VendorB', 'VendorA', 5]]);
+    ahpContext.addItems([project1, project2]);
 
-     ahpContext.rankCriteria(
-         [
-             ['price', 'functionality', 1],
-             ['price', 'UX', 3],
-             ['price', 'Usability', 5],
-             ['price', 'Speed', 7],
-             ['price', 'response', 9],
-             ['price', 'testable', 11],
-             ['price', 'cool', 13],
-             ['functionality', 'UX', 3],
-             ['functionality', 'Usability', 5],
-             ['functionality', 'Speed', 7],
-             ['functionality', 'response', 9],
-             ['functionality', 'testable', 11],
-             ['functionality', 'cool', 13],
-             ['UX', 'Usability', 3],
-             ['UX', 'Speed', 5],
-             ['UX', 'response', 7],
-             ['UX', 'testable', 9],
-             ['UX', 'cool', 11],
-             ['Usability','Speed',3],
-             ['Usability', 'response', 5],
-             ['Usability', 'testable', 7],
-             ['Usability', 'cool', 9],
-             ['Speed', 'response', 3],
-             ['Speed', 'testable', 5],
-             ['Speed', 'cool', 7],
-             ['response', 'testable',3],
-             ['response', 'cool',5],
-             ['testable', 'cool', 3]
-         ]
-     );
+    ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'BasicKnowledge', 'ICT', 'Health', 'Environmental']);
 
-     var output = ahpContext.run();
-     console.log(output)
-     Ranking = output;
-     return output;*/
-    // str = str.replace(/\s/g, '');
-    var project1 = content[1]["value"].replace(/\s/g,'');
-     var project2 = content[11]["value"].replace(/\s/g, '');
-var  number = getValue(JSON.stringify(content[3]["value"]),JSON.stringify(content[13]["value"]));
- //number = number.replace(/"/g,"")
-     console.log(number)
+    ahpContext.rankCriteriaItem('Nutrition', [[project1, project2, getValue(JSON.stringify(content[3]["value"]), JSON.stringify(content[13]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[3]["value"]), JSON.stringify(content[13]["value"])))]]);
+    ahpContext.rankCriteriaItem('Water', [[project1, project2, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"])))]]);
+    ahpContext.rankCriteriaItem('Shelter', [[project1, project2, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"])))]]);
+    ahpContext.rankCriteriaItem('Safety', [[project1, project2, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"])))]]);
+    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project2, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"])))]]);
+    ahpContext.rankCriteriaItem('ICT', [[project1, project2, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"])))]]);
+    ahpContext.rankCriteriaItem('Health', [[project1, project2, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"])))]]);
+    ahpContext.rankCriteriaItem('Environmental', [[project1, project2, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"]))],
+        [project2, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"])))]]);
 
-     ahpContext.addItems([project1, project2]);
+    ahpContext.rankCriteria(
+        [
+            ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
+            ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental', 9],
+            ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
+            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9], ['Shelter', 'Environmental', 11],
+            ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
+            ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
+            ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
+            ['Health', 'Environmental', 3]
+        ]
+    );
 
-     ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'BasicKnowledge','ICT','Health','Environmental']);
+    var output = ahpContext.run();
+    Ranking = output.rankedScoreMap
 
-     ahpContext.rankCriteriaItem('Nutrition', [[project1, project2, getValue(JSON.stringify(content[3]["value"]),JSON.stringify(content[13]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[3]["value"]),JSON.stringify(content[13]["value"])))]]);
-     ahpContext.rankCriteriaItem('Water', [[project1, project2, getValue(JSON.stringify(content[4]["value"]),JSON.stringify(content[14]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[4]["value"]),JSON.stringify(content[14]["value"])))]]);
-     ahpContext.rankCriteriaItem('Shelter', [[project1, project2, getValue(JSON.stringify(content[5]["value"]),JSON.stringify(content[15]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[5]["value"]),JSON.stringify(content[15]["value"])))]]);
-     ahpContext.rankCriteriaItem('Safety', [[project1, project2, getValue(JSON.stringify(content[6]["value"]),JSON.stringify(content[16]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[6]["value"]),JSON.stringify(content[16]["value"])))]]);
-     ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project2, getValue(JSON.stringify(content[7]["value"]),JSON.stringify(content[17]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[7]["value"]),JSON.stringify(content[17]["value"])))]]);
-     ahpContext.rankCriteriaItem('ICT', [[project1, project2, getValue(JSON.stringify(content[8]["value"]),JSON.stringify(content[18]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[8]["value"]),JSON.stringify(content[18]["value"])))]]);
-     ahpContext.rankCriteriaItem('Health', [[project1, project2, getValue(JSON.stringify(content[9]["value"]),JSON.stringify(content[19]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[9]["value"]),JSON.stringify(content[19]["value"])))]]);
-     ahpContext.rankCriteriaItem('Environmental', [[project1, project2, getValue(JSON.stringify(content[10]["value"]),JSON.stringify(content[20]["value"]))],
-         [project2, project1, (1/getValue(JSON.stringify(content[10]["value"]),JSON.stringify(content[20]["value"])))]]);
-
-     ahpContext.rankCriteria(
-         [
-             ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
-             ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental',9],
-             ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
-             ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9],  ['Shelter', 'Environmental', 11],
-             ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
-             ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
-             ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
-             ['Health', 'Environmental', 3]
-         ]
-     );
-
-     var output = ahpContext.run();
-     Ranking = output.rankedScoreMap
-
-   //for(var i=0;i<Ranking.length;i++){
-     Ranking = content[1]["value"] +" "+ Ranking[project1]+" : "+content[11]["value"]+" "+Ranking[project2]
-       console.log("In loop "+Ranking)
-   //}
+    //for(var i=0;i<Ranking.length;i++){
+    Ranking = content[1]["value"] + " " + Ranking[project1] + " : " + content[11]["value"] + " " + Ranking[project2]
+    console.log("In loop " + Ranking)
+    //}
     // console.log(Ranking);
     console.log(output)
-     return output;
+    return output;
 
 
- }
+}
 
 module.exports = router;

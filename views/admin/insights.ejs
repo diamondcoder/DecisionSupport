@@ -77,7 +77,7 @@
                                       <div class="panel-body sm-data-box-1">
                         <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Project rank</span>
                         <div class="cus-sat-stat weight-500 txt-success text-center mt-5">
-                          <span class="counter-anim"><%= Ranking %></span><span></span>
+                          <span class="counter"><%= Ranking %></span><span></span>
                         </div>
                         <div class="progress-anim mt-20">
                           <div class="progress">
@@ -103,14 +103,15 @@
                       </div>-->
                       <div class="clearfix"></div>
                     </div>
-                    <div class="panel-wrapper collapse in">ffgf
+                    <div class="panel-wrapper collapse in">Priority List
                       <div class="panel-body">
                         <div>
-                          <span class="pull-left inline-block capitalize-font txt-dark">
+                          <span id="result" class="pull-left inline-block capitalize-font txt-dark">
 
-                            <%= Ranking %>
+
 
                           </span>
+                          <%= Ranking %>
                           <span class="label label-warning pull-right">50%</span>
                           <div class="clearfix"></div>
                           <hr class="light-grey-hr row mt-10 mb-10"/>
@@ -405,11 +406,17 @@
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript">
-       $(function(){
-         alert(ranks);
-       });
-       </script>
+
+
+
+   <script type="text/javascript">
+     $(function(){
+        $.get("http://localhost:3000/spicountries/GHA/prioritylist", function( data ) {
+  $( "#result" ).html( data );
+  //alert( "Need list added" );
+});
+ });
+      </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
