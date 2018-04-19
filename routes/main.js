@@ -309,9 +309,9 @@ var  number = getValue(JSON.stringify(content[3]["value"]),JSON.stringify(conten
 
      ahpContext.rankCriteria(
          [
-             ['Nutrition', 'Water', 3], ['Nutrition', 'Shelter', 5], ['Nutrition', 'Safety', 7], ['Nutrition', 'BasicKnowledge', 9], ['Nutrition', 'ICT', 11],
-             ['Nutrition', 'Health', 13], ['Nutrition', 'Environmental',15],
-             ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'BasicKnowledge', 7], ['Water', 'ICT', 9], ['Water', 'Health', 11], ['Water', 'Environmental', 13],
+             ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
+             ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental',9],
+             ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
              ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9],  ['Shelter', 'Environmental', 11],
              ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
              ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
