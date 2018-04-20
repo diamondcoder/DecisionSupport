@@ -9,6 +9,7 @@ var needList;
 var express = require('express');
 var data = express();
 data.locals.Ranking;
+data.locals.prioritylist;
 
 
 router.get('/chart', function (req, res) {
@@ -17,7 +18,7 @@ router.get('/chart', function (req, res) {
 
 
 router.get('/', function (req, res) {
-    res.render('main/home');
+    res.render('admin/dsshome');
 });
 
 router.get('/about', function (req, res) {
@@ -82,6 +83,7 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
     SpiCountry.find({CountryCode: code}, function (err, spiCountries) {
         if (err) return next();
         needList = spiCountries;
+        prioritylist= spiCountries;
 
         //ahpTest();
         //score_component(spiCountries)
@@ -95,6 +97,7 @@ router.post('/project', function (req, res) {
     var obj = {};
     //console.log('body: ' + JSON.stringify(req.body));
     //console.log(getValue(1, 3))
+
     res.send(ahpTest(req.body));
 });
 

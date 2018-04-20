@@ -44,11 +44,7 @@
 
 
       </script>
-      <script type="text/javascript">
-              //  var needs= <%= myVar %>;
 
-
-                </script>
 
         <!-- Main Content -->
 		<div class="page-wrapper">
@@ -75,42 +71,27 @@
               <!-- Row -->
               <div class="row">
 
-                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                   <div class="panel panel-default card-view">
                     <div class="panel-wrapper collapse in">
                                       <div class="panel-body sm-data-box-1">
-                        <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Neeeds satisfaction Possibility</span>
+                        <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Project rank</span>
                         <div class="cus-sat-stat weight-500 txt-success text-center mt-5">
-                          <span class="counter-anim">23.13</span><span>%</span>
+                          <span class="counter"><%= Ranking %></span><span></span>
                         </div>
                         <div class="progress-anim mt-20">
                           <div class="progress">
-                            <div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="23.13" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
-                        <ul class="flex-stat mt-5">
-                          <li>
-                            <span class="block">Previous</span>
-                            <span class="block txt-dark weight-500 font-15">79.82</span>
-                          </li>
-                          <li>
-                            <span class="block">% Change</span>
-                            <span class="block txt-dark weight-500 font-15">+14.29</span>
-                          </li>
-                          <li>
-                            <span class="block">Trend</span>
-                            <span class="block">
-                              <i class="zmdi zmdi-trending-up txt-success font-20"></i>
-                            </span>
-                          </li>
-                        </ul>
+
                       </div>
                                   </div>
                               </div>
                   <div class="panel panel-default card-view">
                     <div class="panel-heading">
                       <div class="pull-left">
-                        <h6 class="panel-title txt-dark">List of needs</h6>
+                        <h6 class="panel-title txt-dark">List of Proirity Needs</h6>
                       </div>
                       <!--<div class="pull-right">
                         <a href="#" class="pull-left inline-block mr-15">
@@ -122,14 +103,15 @@
                       </div>-->
                       <div class="clearfix"></div>
                     </div>
-                    <div class="panel-wrapper collapse in">
+                    <div class="panel-wrapper collapse in">Priority List
                       <div class="panel-body">
                         <div>
-                          <span class="pull-left inline-block capitalize-font txt-dark">
+                          <span id="result" class="pull-left inline-block capitalize-font txt-dark">
 
-                            <%= Ranking %>
-                          
+
+
                           </span>
+                          <%= Ranking %>
                           <span class="label label-warning pull-right">50%</span>
                           <div class="clearfix"></div>
                           <hr class="light-grey-hr row mt-10 mb-10"/>
@@ -155,7 +137,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                              <div class="panel panel-default card-view panel-refresh">
                     <div class="refresh-container">
                       <div class="la-anim-1"></div>
@@ -219,14 +201,14 @@
                   </div>
                 </div>
 
-                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                                 <div class="panel panel-default card-view panel-refresh">
                       <div class="refresh-container">
                         <div class="la-anim-1"></div>
                       </div>
                       <div class="panel-heading">
                         <div class="pull-left">
-                          <h6 class="panel-title txt-dark">Country location</h6>
+                          <h6 class="panel-title txt-dark">Country</h6>
                         </div>
                         <div class="pull-right">
                           <a href="#" class="pull-left inline-block refresh mr-15">
@@ -424,11 +406,17 @@
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript">
-       $(function(){
-         alert(ranks);
-       });
-       </script>
+
+
+
+   <script type="text/javascript">
+     $(function(){
+        $.get("http://localhost:3000/spicountries/GHA/prioritylist", function( data ) {
+  $( "#result" ).html( data );
+  //alert( "Need list added" );
+});
+ });
+      </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
