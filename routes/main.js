@@ -18,7 +18,7 @@ router.get('/chart', function (req, res) {
 
 
 router.get('/', function (req, res) {
-    res.render('main/dsshome');
+    res.render('admin/dsshome');
 });
 
 router.get('/about', function (req, res) {
@@ -97,7 +97,7 @@ router.post('/project', function (req, res) {
     var obj = {};
     //console.log('body: ' + JSON.stringify(req.body));
     //console.log(getValue(1, 3))
-    
+
     res.send(ahpTest(req.body));
 });
 
