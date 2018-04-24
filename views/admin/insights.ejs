@@ -91,9 +91,9 @@
                                     var str = "123, 124, 234,252";
                                     var arr = ProjecRanking.split(",").map(function (val) {
                                      var numarr = val.split(":");
-                                     var num = parseFloat(numarr[1]).toFixed(4)
+                                     var num = parseFloat(numarr[1]).toFixed(4)*100
                                         var node = document.createElement("LI");
-                                        var textnode = document.createTextNode(numarr[0]+": "+num);
+                                        var textnode = document.createTextNode(numarr[0]+": "+num+"%");
 
                                         node.appendChild(textnode);
                                         document.getElementById("ranking").appendChild(node);

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4bf0e19d-ffd9-4730-bdd5-1a45c83fb83c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/routes/main.js" afterPath="$PROJECT_DIR$/routes/main.js" />
       <change beforePath="$PROJECT_DIR$/views/admin/insights.ejs" afterPath="$PROJECT_DIR$/views/admin/insights.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="insights.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/admin/insights.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="93" column="78" lean-forward="false" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+            <state relative-caret-position="229">
+              <caret line="95" column="100" lean-forward="false" selection-start-line="95" selection-start-column="100" selection-end-line="95" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -221,7 +220,7 @@
       <workItem from="1522738716452" duration="22017000" />
       <workItem from="1522890161475" duration="30311000" />
       <workItem from="1523523706616" duration="81126000" />
-      <workItem from="1524567629244" duration="7154000" />
+      <workItem from="1524567629244" duration="7416000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Spi Country List">
       <created>1522776538191</created>
@@ -377,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524571235156</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Sanitized json for priority list and AHP score">
+      <created>1524575781888</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1524575781889</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143583000" />
+    <option name="totallyTimeSpent" value="143845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1178" extended-state="6" />
@@ -447,7 +453,8 @@
     <MESSAGE value="Corrected priority list" />
     <MESSAGE value="Fixed priority json list" />
     <MESSAGE value="Showing priority list in UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing priority list in UI" />
+    <MESSAGE value="Sanitized json for priority list and AHP score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sanitized json for priority list and AHP score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/insights.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="93" column="78" lean-forward="false" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+        <state relative-caret-position="229">
+          <caret line="95" column="100" lean-forward="false" selection-start-line="95" selection-start-column="100" selection-end-line="95" selection-end-column="100" />
           <folding />
         </state>
       </provider>
