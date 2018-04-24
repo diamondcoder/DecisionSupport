@@ -87,14 +87,13 @@
                                 </div>
                                 <script type="text/javascript">
                                     var ProjecRanking = '<%= Ranking %>';
+                                  //  alert(ProjecRanking)
                                     var str = "123, 124, 234,252";
-                                    var arr = ProjecRanking.split(":").map(function (val) {
-                                        console.log(val)
-                                        //  var fieldNameElement = document.getElementById('ranking');
-                                        //  fieldNameElement.innerHTML.appendChild = val;
-
+                                    var arr = ProjecRanking.split(",").map(function (val) {
+                                     var numarr = val.split(":");
+                                     var num = parseFloat(numarr[1]).toFixed(4)
                                         var node = document.createElement("LI");
-                                        var textnode = document.createTextNode(parseFloat(val));
+                                        var textnode = document.createTextNode(numarr[0]+": "+num);
 
                                         node.appendChild(textnode);
                                         document.getElementById("ranking").appendChild(node);
@@ -467,21 +466,21 @@
                 var parsedData = JSON.parse(data)
 
                 $("#result").html(
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.NutritionandBasicMedicalCare.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.NutritionandBasicMedicalCare.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[0].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[0].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.WaterandSanitation.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.WaterandSanitation.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[1].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[1].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.Shelter.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.Shelter.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[2].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[2].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.PersonalSafety.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.PersonalSafety.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[3].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[3].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.HealthandWellness.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.HealthandWellness.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[4].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[4].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.EnvironmentalQuality.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.EnvironmentalQuality.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[5].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[5].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.AccesstoInformationandCommunications.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.AccesstoInformationandCommunications.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[6].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[6].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
-                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.AccesstoBasicKnowledge.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.AccesstoBasicKnowledge.score+"</span>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData[7].name+"</span><span class=\"label label-warning pull-right\">"+parsedData[7].score+"</span>\n" +
                     "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n"
 
                 );

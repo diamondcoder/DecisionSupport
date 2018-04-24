@@ -142,12 +142,12 @@ function rank() {
 
      var jsonString = "{";
      for (var i = 0; i < rankedArray.length; i++) {
-         jsonString = jsonString + buildJson([rankedArray[i]]);
+         jsonString = jsonString + buildJson([rankedArray[i]],i);
          if(i != rankedArray.length-1){
              jsonString = jsonString+",";
          }
      }
-
+console.log(jsonString)
     return jsonString + "}";
     //return rankedNeeds;
 
@@ -176,12 +176,12 @@ function score_component() {
     return assocciativeArray;
 }
 
-function buildJson(score) {
+function buildJson(score,rank) {
     var jstring = "";
     for (var i = 0; i < score_component().length; i++) {
         var inString = score_component()[i].split("&");
         if (inString[0] == score + "") {
-            jstring = " \""+inString[1].replace(/\s/g, '')+"\": {\"score\": " + score + ", \"name\": \"" + inString[1] + "\"}";
+            jstring = " \""+rank+"\": {\"score\": " + score + ", \"name\": \"" + inString[1] + "\"}";
 
             break;
         }
@@ -284,7 +284,7 @@ function ahpTestTwoProj(content) {
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = content[1]["value"] + " " + Ranking[project1] + " : " + content[11]["value"] + " " + Ranking[project2]
+    Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + content[12]["value"] + ":" + Ranking[project2]
     console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
@@ -375,8 +375,8 @@ function ahpTestThreeProj(content) {
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = content[1]["value"] + " " + Ranking[project1] + " : " + content[11]["value"] + " " + Ranking[project2] + " : " + content[21]["value"] + " " + Ranking[project3]
-    console.log("In loop " + Ranking)
+    Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + content[12]["value"] + ":" + Ranking[project2] + "," + content[22]["value"] + ":" + Ranking[project3]
+    //console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
     console.log(output)
@@ -523,8 +523,8 @@ function ahpTestFourProj(content) {
     var output = ahpContext.run();
     Ranking = output.rankedScoreMap
 
-   Ranking = content[1]["value"] + " " + Ranking[project1] + " : " + content[11]["value"] + " " + Ranking[project2] + " : " + content[21]["value"] + " " + Ranking[project3] + " : " +
-        content[31]["value"] + " " + Ranking[project4]
+   Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + parseInt(content[12]["value"],4) + ":" + Ranking[project2] + "," + content[22]["value"] + ":" + Ranking[project3] + "," +
+        content[32]["value"] + ":" + Ranking[project4]
 
     console.log(output)
     return output;
