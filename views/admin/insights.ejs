@@ -432,21 +432,23 @@
 
 
    <script type="text/javascript">
-   var arr={};
+   //var arr;
      $(function(){
 
-      /*  $.getJSON("http://localhost:3000/spicountries/GHA/prioritylist",
+       $.getJSON("http://localhost:3000/spicountries/GHA/prioritylist",
         {format: "json"}).done( function( data ) {
-          arr=''+data+'';
+        //  var arr=JSON.parse(data);
+        //var first= data.WaterandSanitation.Score:
 
-        //$( "#result" ).html( data.length );
+      //  $( "#result" ).html(WaterandSanitation.Score:);
+      $( "#result" ).html(data);
         console.log(arr);
 
         //alert( "Need list added" );
          });
-      */
 
-       $.ajax({
+
+    /*   $.ajax({
     type: 'GET',
     url: 'http://localhost:3000/spicountries/GHA/prioritylist',
     data: { get_param: 'value' },
@@ -458,7 +460,8 @@
             }));
         });
     }
-}); });
+});*/
+ });
       </script>
 
     <!-- Bootstrap Core JavaScript -->
