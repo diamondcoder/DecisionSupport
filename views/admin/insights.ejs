@@ -3,514 +3,547 @@
 
 <!-- Mirrored from hencework.com/theme/flintstone/full-width-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:01:20 GMT -->
 <head>
-    <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>Meeds Decision Support system</title>
-	<meta name="description" content="DSS" />
-	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-	<meta name="author" content="hencework"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Meeds Decision Support system</title>
+    <meta name="description" content="DSS"/>
+    <meta name="keywords"
+          content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application"/>
+    <meta name="author" content="hencework"/>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<!-- Morris Charts CSS -->
+    <!-- Morris Charts CSS -->
     <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
 
-	<!-- Data table CSS -->
-	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Data table CSS -->
+    <link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet"
+          type="text/css"/>
 
-	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
-  <!-- vector map CSS -->
-	<link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
+    <link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet"
+          type="text/css">
+    <!-- vector map CSS -->
+    <link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
 
-	<!-- Custom CSS -->
-	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<!-- Preloader -->
-	<div class="preloader-it">
-		<div class="la-anim-1"></div>
-	</div>
-	<!-- /Preloader -->
-    <div class="wrapper theme-1-active pimary-color-green">
-<% include navadmin.ejs %>
-<% include leftsidemenu.ejs %>
-<% include rightsidemenu.ejs %>
-<script type="text/javascript">
-    //  var ranks="<%= Ranking %>";
-    //  console.log(<%= Ranking %>);
+<!-- Preloader -->
+<div class="preloader-it">
+    <div class="la-anim-1"></div>
+</div>
+<!-- /Preloader -->
+<div class="wrapper theme-1-active pimary-color-green">
+    <% include navadmin.ejs %>
+    <% include leftsidemenu.ejs %>
+    <% include rightsidemenu.ejs %>
+    <script type="text/javascript">
+        //  var ranks="<%= Ranking %>";
+        //  console.log(<%= Ranking %>);
 
 
-      </script>
+    </script>
 
 
-        <!-- Main Content -->
-		<div class="page-wrapper">
-            <div class="container-fluid pt-25">
-              <!-- Title -->
-              <div class="row heading-bg">
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="container-fluid pt-25">
+            <!-- Title -->
+            <div class="row heading-bg">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                  <h5 class="txt-dark">Country Insight</h5>
+                    <h5 class="txt-dark">Country Insight</h5>
                 </div>
 
                 <!-- Breadcrumb -->
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                  <ol class="breadcrumb">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="#"><span>Main</span></a></li>
-                    <li class="active"><span>Country data</span></li>
-                  </ol>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="#"><span>Main</span></a></li>
+                        <li class="active"><span>Country data</span></li>
+                    </ol>
                 </div>
                 <!-- /Breadcrumb -->
 
-              </div>
-              <!-- /Title -->
+            </div>
+            <!-- /Title -->
 
-              <!-- Row -->
-              <div class="row">
+            <!-- Row -->
+            <div class="row">
 
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-wrapper collapse in">
-                                      <div class="panel-body sm-data-box-1">
-                        <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Project rank</span>
-                        <div class="cus-sat-stat weight-500 txt-success text-center mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="panel panel-default card-view">
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body sm-data-box-1">
+                                <span class="uppercase-font weight-500 font-14 block text-center txt-dark">Project rank</span>
+                                <div class="cus-sat-stat weight-500 txt-success text-center mt-5">
                           <span style="text-align:left;" id="ranking"><ul class="listgroup">
                             <li> </li>
                           </ul>
                           </span><span></span>
+                                </div>
+                                <script type="text/javascript">
+                                    var ProjecRanking = '<%= Ranking %>';
+                                    var str = "123, 124, 234,252";
+                                    var arr = ProjecRanking.split(":").map(function (val) {
+                                        console.log(val)
+                                        //  var fieldNameElement = document.getElementById('ranking');
+                                        //  fieldNameElement.innerHTML.appendChild = val;
+
+                                        var node = document.createElement("LI");
+                                        var textnode = document.createTextNode(val);
+                                        node.appendChild(textnode);
+                                        document.getElementById("ranking").appendChild(node);
+
+                                    });
+
+
+                                </script>
+                                <div class="progress-anim mt-20">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success wow animated progress-animated"
+                                             role="progressbar" aria-valuenow="2" aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <script type="text/javascript">
-                        var ProjecRanking = '<%= Ranking %>';
-                        var str = "123, 124, 234,252";
-                        var arr = ProjecRanking.split(":").map(function (val) {
-                            console.log(val)
-                          //  var fieldNameElement = document.getElementById('ranking');
-                          //  fieldNameElement.innerHTML.appendChild = val;
-
-                            var node = document.createElement("LI");
-                            var textnode = document.createTextNode(val);
-                            node.appendChild(textnode);
-                            document.getElementById("ranking").appendChild(node);
-
-                           });
-
-
-                        </script>
-                        <div class="progress-anim mt-20">
-                          <div class="progress">
-                            <div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-
-                      </div>
-                                  </div>
-                              </div>
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">List of Proirity Needs</h6>
-                      </div>
-                      <!--<div class="pull-right">
-                        <a href="#" class="pull-left inline-block mr-15">
-                          <i class="zmdi zmdi-download"></i>
-                        </a>
-                        <a href="#" class="pull-left inline-block close-panel" data-effect="fadeOut">
-                          <i class="zmdi zmdi-close"></i>
-                        </a>
-                      </div>-->
-                      <div class="clearfix"></div>
                     </div>
-                    <div class="panel-wrapper collapse in">Priority List
-                      <div class="panel-body">
-                        <div>
-                          <span id="result" class="pull-left inline-block capitalize-font txt-dark">
+                    <div class="panel panel-default card-view">
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">List of Proirity Needs</h6>
+                            </div>
+                            <!--<div class="pull-right">
+                              <a href="#" class="pull-left inline-block mr-15">
+                                <i class="zmdi zmdi-download"></i>
+                              </a>
+                              <a href="#" class="pull-left inline-block close-panel" data-effect="fadeOut">
+                                <i class="zmdi zmdi-close"></i>
+                              </a>
+                            </div>-->
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">Priority List
+                            <div class="panel-body">
+                                <div id="result">
+                          <span class="pull-left inline-block capitalize-font txt-dark">
 
 
 
                           </span>
 
 
-                          <span class="label label-warning pull-right">50%</span>
-                          <div class="clearfix"></div>
-                          <hr class="light-grey-hr row mt-10 mb-10"/>
-                          <span class="pull-left inline-block capitalize-font txt-dark">
+                                    <span class="label label-warning pull-right">50%</span>
+                                    <div class="clearfix"></div>
+                                    <hr class="light-grey-hr row mt-10 mb-10"/>
+                                    <span class="pull-left inline-block capitalize-font txt-dark">
                           water
                           </span>
-                          <span class="label label-danger pull-right">10%</span>
-                          <div class="clearfix"></div>
-                          <hr class="light-grey-hr row mt-10 mb-10"/>
-                          <span class="pull-left inline-block capitalize-font txt-dark">
+                                    <span class="label label-danger pull-right">10%</span>
+                                    <div class="clearfix"></div>
+                                    <hr class="light-grey-hr row mt-10 mb-10"/>
+                                    <span class="pull-left inline-block capitalize-font txt-dark">
                             Sanitation
                           </span>
-                          <span class="label label-success pull-right">30%</span>
-                          <div class="clearfix"></div>
-                          <hr class="light-grey-hr row mt-10 mb-10"/>
-                          <span class="pull-left inline-block capitalize-font txt-dark">
+                                    <span class="label label-success pull-right">30%</span>
+                                    <div class="clearfix"></div>
+                                    <hr class="light-grey-hr row mt-10 mb-10"/>
+                                    <span class="pull-left inline-block capitalize-font txt-dark">
                             Personal safety
                           </span>
-                          <span class="label label-primary pull-right">10%</span>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                             <div class="panel panel-default card-view panel-refresh">
-                    <div class="refresh-container">
-                      <div class="la-anim-1"></div>
-                    </div>
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">Resource availability</h6>
-                      </div>
-                      <div class="pull-right">
-                        <a href="#" class="pull-left inline-block refresh mr-15">
-                          <i class="zmdi zmdi-replay"></i>
-                        </a>
-                        <div class="pull-left inline-block dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
-                          <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Internet</a></li>
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Energy</a></li>
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Shelter</a></li>
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Internet</a></li>
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Energy</a></li>
-                            <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Shelter</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div>
-                          <canvas id="chart_6" height="191"></canvas>
-                        </div>
-                        <hr class="light-grey-hr row mt-10 mb-15"/>
-                        <div class="label-chatrs">
-                          <div class="">
-                            <span class="clabels clabels-lg inline-block bg-blue mr-10 pull-left"></span>
-                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">44.46% organic</span><span class="block txt-grey">356 visits</span></span>
-                            <div id="sparkline_1" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                        <hr class="light-grey-hr row mt-10 mb-15"/>
-                        <div class="label-chatrs">
-                          <div class="">
-                            <span class="clabels clabels-lg inline-block bg-green mr-10 pull-left"></span>
-                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">5.54% Refrral</span><span class="block txt-grey">36 visits</span></span>
-                            <div id="sparkline_2" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                        <hr class="light-grey-hr row mt-10 mb-15"/>
-                        <div class="label-chatrs">
-                          <div class="">
-                            <span class="clabels clabels-lg inline-block bg-yellow mr-10 pull-left"></span>
-                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">50% Other</span><span class="block txt-grey">245 visits</span></span>
-                            <div id="sparkline_3" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                                <div class="panel panel-default card-view panel-refresh">
-                      <div class="refresh-container">
-                        <div class="la-anim-1"></div>
-                      </div>
-                      <div class="panel-heading">
-                        <div class="pull-left">
-                          <h6 class="panel-title txt-dark">Country</h6>
-                        </div>
-                        <div class="pull-right">
-                          <a href="#" class="pull-left inline-block refresh mr-15">
-                            <i class="zmdi zmdi-replay"></i>
-                          </a>
-                          <a href="#" class="pull-left inline-block full-screen mr-15">
-                            <i class="zmdi zmdi-fullscreen"></i>
-                          </a>
-                          <div class="pull-left inline-block dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
-                            <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
-                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>
-                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>option 2</a></li>
-                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="clearfix"></div>
-                      </div>
-                      <div class="panel-wrapper collapse in">
-                                        <div class="panel-body">
-                          <div id="world_map_marker_1" style="height: 385px"></div>
-                        </div>
-                      </div>
+                                    <span class="label label-primary pull-right">10%</span>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
-              </div>
-              <!-- /Row -->
-              <!-- Row -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="panel panel-default card-view panel-refresh">
+                        <div class="refresh-container">
+                            <div class="la-anim-1"></div>
+                        </div>
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">Resource availability</h6>
+                            </div>
+                            <div class="pull-right">
+                                <a href="#" class="pull-left inline-block refresh mr-15">
+                                    <i class="zmdi zmdi-replay"></i>
+                                </a>
+                                <div class="pull-left inline-block dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+                                       role="button"><i class="zmdi zmdi-more-vert"></i></a>
+                                    <ul class="dropdown-menu bullet dropdown-menu-right" role="menu">
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-reply" aria-hidden="true"></i>Internet</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-share" aria-hidden="true"></i>Energy</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-trash" aria-hidden="true"></i>Shelter</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-reply" aria-hidden="true"></i>Internet</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-share" aria-hidden="true"></i>Energy</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-trash" aria-hidden="true"></i>Shelter</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <div>
+                                    <canvas id="chart_6" height="191"></canvas>
+                                </div>
+                                <hr class="light-grey-hr row mt-10 mb-15"/>
+                                <div class="label-chatrs">
+                                    <div class="">
+                                        <span class="clabels clabels-lg inline-block bg-blue mr-10 pull-left"></span>
+                                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+                                                    class="block font-15 weight-500 mb-5">44.46% organic</span><span
+                                                    class="block txt-grey">356 visits</span></span>
+                                        <div id="sparkline_1" class="pull-right"
+                                             style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <hr class="light-grey-hr row mt-10 mb-15"/>
+                                <div class="label-chatrs">
+                                    <div class="">
+                                        <span class="clabels clabels-lg inline-block bg-green mr-10 pull-left"></span>
+                                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+                                                    class="block font-15 weight-500 mb-5">5.54% Refrral</span><span
+                                                    class="block txt-grey">36 visits</span></span>
+                                        <div id="sparkline_2" class="pull-right"
+                                             style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <hr class="light-grey-hr row mt-10 mb-15"/>
+                                <div class="label-chatrs">
+                                    <div class="">
+                                        <span class="clabels clabels-lg inline-block bg-yellow mr-10 pull-left"></span>
+                                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+                                                    class="block font-15 weight-500 mb-5">50% Other</span><span
+                                                    class="block txt-grey">245 visits</span></span>
+                                        <div id="sparkline_3" class="pull-right"
+                                             style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-default card-view panel-refresh">
+                        <div class="refresh-container">
+                            <div class="la-anim-1"></div>
+                        </div>
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">Country</h6>
+                            </div>
+                            <div class="pull-right">
+                                <a href="#" class="pull-left inline-block refresh mr-15">
+                                    <i class="zmdi zmdi-replay"></i>
+                                </a>
+                                <a href="#" class="pull-left inline-block full-screen mr-15">
+                                    <i class="zmdi zmdi-fullscreen"></i>
+                                </a>
+                                <div class="pull-left inline-block dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+                                       role="button"><i class="zmdi zmdi-more-vert"></i></a>
+                                    <ul class="dropdown-menu bullet dropdown-menu-right" role="menu">
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-share" aria-hidden="true"></i>option 2</a></li>
+                                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i
+                                                        class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <div id="world_map_marker_1" style="height: 385px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Row -->
+            <!-- Row -->
+            <div class="row">
+                <div class="row heading-bg">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h5 class="txt-dark">Cultural Infromation</h5>
+                    </div>
+                </div>
                 <div class="row">
-              <div class="row heading-bg">
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                  <h5 class="txt-dark">Cultural Infromation</h5>
-                </div>
-                  </div>
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">POWER DISTANCE</h6>
-                      </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">POWER DISTANCE</h6>
+                                </div>
 
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">80</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">80</span>
+                                    </div>
+
+                                    <p></p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
-
-                        <p></p>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
-
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">INDIVIDUALISM</h6>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">15</span>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">INDIVIDUALISM</h6>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">15</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">MASCULINITY</h6>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">40</span>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">MASCULINITY</h6>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">40</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- /Row -->
-              <!-- Row -->
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">UNCERTAINTY AVOIDANCE</h6>
-                      </div>
+                <!-- /Row -->
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">UNCERTAINTY AVOIDANCE</h6>
+                                </div>
 
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">65</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">65</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">LONG TERM ORIENTATION</h6>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">4</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">LONG TERM ORIENTATION</h6>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">4</span>
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
-
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="panel panel-default card-view">
-                    <div class="panel-heading">
-                      <div class="pull-left">
-                        <h6 class="panel-title txt-dark">INDULGENCE</h6>
-                      </div>
-                      <div class="clearfix"></div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-default card-view">
+                            <div class="panel-heading">
+                                <div class="pull-left">
+                                    <h6 class="panel-title txt-dark">INDULGENCE</h6>
+                                </div>
+                                <div class="clearfix"></div>
 
-                    </div>
-                    <div class="panel-wrapper collapse in">
-                      <div class="panel-body">
-                        <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
-                          <span class="counter-anim">72</span>
+                            </div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+                                    <div class="weight-500 txt-success text-center mt-5" style="font-size:40px;">
+                                        <span class="counter-anim">72</span>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                        fringilla augue.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.
-                        </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- /Row -->
+                <!-- /Row -->
 
 
+            </div>
 
+            <!-- Footer -->
+            <footer class="footer container-fluid pl-30 pr-30">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>2017 &copy; Flintstone. Pampered by Hencework</p>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Footer -->
 
-
-			</div>
-
-			<!-- Footer -->
-			<footer class="footer container-fluid pl-30 pr-30">
-				<div class="row">
-					<div class="col-sm-12">
-						<p>2017 &copy; Flintstone. Pampered by Hencework</p>
-					</div>
-				</div>
-			</footer>
-			<!-- /Footer -->
-
-		</div>
+        </div>
         <!-- /Main Content -->
 
     </div>
     <!-- /#wrapper -->
 
-	<!-- JavaScript -->
+    <!-- JavaScript -->
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
+    <script type="text/javascript">
+        //var arr;
+        $(function () {
 
-   <script type="text/javascript">
-   //var arr;
-     $(function(){
+            $.getJSON("http://localhost:3000/spicountries/GHA/prioritylist",
+                {format: "json"}).done(function (data) {
+                var parsedData = JSON.parse(data)
 
-       $.getJSON("http://localhost:3000/spicountries/GHA/prioritylist",
-        {format: "json"}).done( function( data ) {
-        //  var arr=JSON.parse(data);
-        //var first= data.WaterandSanitation.Score:
+                $("#result").html(
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.NutritionandBasicMedicalCare.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.NutritionandBasicMedicalCare.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.WaterandSanitation.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.WaterandSanitation.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.Shelter.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.Shelter.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.PersonalSafety.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.PersonalSafety.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.HealthandWellness.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.HealthandWellness.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.EnvironmentalQuality.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.EnvironmentalQuality.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.AccesstoInformationandCommunications.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.AccesstoInformationandCommunications.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n" +
+                "<span class=\"pull-left inline-block capitalize-font txt-dark\">"+ parsedData.AccesstoBasicKnowledge.name+"</span><span class=\"label label-warning pull-right\">"+parsedData.AccesstoBasicKnowledge.score+"</span>\n" +
+                    "<div class=\"clearfix\"></div><hr class=\"light-grey-hr row mt-10 mb-10\"/>\n"
 
-      //  $( "#result" ).html(WaterandSanitation.Score:);
-      $( "#result" ).html(data);
-      var parsedData = JSON.parse(data)
-        console.log(parsedData.WaterandSanitation);
+                );
 
-       // alert( "Need list added "+ JSON.stringify(parsedData.WaterandSanitation.score+ " - "+parsedData.WaterandSanitation.name) );
-         });
+            });
 
 
-    /*   $.ajax({
-    type: 'GET',
-    url: 'http://localhost:3000/spicountries/GHA/prioritylist',
-    data: { get_param: 'value' },
-    dataType: 'json',
-    success: function (data) {
-        $.each(data, function(index, element) {
-            $("#result").append($('<div>', {
-                text: element.name
-            }));
         });
-    }
-});*/
- });
-      </script>
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Vector Maps JavaScript -->
-      <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-      <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-  	<script src="dist/js/vectormap-data.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="dist/js/vectormap-data.js"></script>
 
-	<!-- Data table JavaScript -->
-	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <!-- Data table JavaScript -->
+    <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
 
-	<!-- Slimscroll JavaScript -->
-	<script src="dist/js/jquery.slimscroll.js"></script>
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
 
-	<!-- simpleWeather JavaScript -->
-	<script src="vendors/bower_components/moment/min/moment.min.js"></script>
-	<script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
-	<script src="dist/js/simpleweather-data.js"></script>
+    <!-- simpleWeather JavaScript -->
+    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+    <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <script src="dist/js/simpleweather-data.js"></script>
 
-	<!-- Progressbar Animation JavaScript -->
-	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+    <!-- Progressbar Animation JavaScript -->
+    <script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
 
-	<!-- Fancy Dropdown JS -->
-	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+    <!-- Fancy Dropdown JS -->
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
 
-	<!-- Sparkline JavaScript -->
-	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Sparkline JavaScript -->
+    <script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
 
-	<!-- Owl JavaScript -->
-	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!-- Owl JavaScript -->
+    <script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 
-	<!-- ChartJS JavaScript -->
-	<script src="vendors/chart.js/Chart.min.js"></script>
+    <!-- ChartJS JavaScript -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
 
-	<!-- Morris Charts JavaScript -->
+    <!-- Morris Charts JavaScript -->
     <script src="vendors/bower_components/raphael/raphael.min.js"></script>
     <script src="vendors/bower_components/morris.js/morris.min.js"></script>
     <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 
-	<!-- Switchery JavaScript -->
-	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+    <!-- Switchery JavaScript -->
+    <script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
 
-	<!-- Init JavaScript -->
-	<script src="dist/js/init.js"></script>
-	<script src="dist/js/dashboard-data.js"></script>
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+    <script src="dist/js/dashboard-data.js"></script>
 
 
 </body>
