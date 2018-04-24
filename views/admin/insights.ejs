@@ -427,19 +427,38 @@
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
 
    <script type="text/javascript">
-   var arr=[];
+   var arr={};
      $(function(){
-        $.get("http://localhost:3000/spicountries/GHA/prioritylist", function( data ) {
-          arr=data;
-  $( "#result" ).html( arr );
 
-  //alert( "Need list added" );
-});
- });
+      /*  $.getJSON("http://localhost:3000/spicountries/GHA/prioritylist",
+        {format: "json"}).done( function( data ) {
+          arr=''+data+'';
+
+        //$( "#result" ).html( data.length );
+        console.log(arr);
+
+        //alert( "Need list added" );
+         });
+      */
+
+       $.ajax({
+    type: 'GET',
+    url: 'http://localhost:3000/spicountries/GHA/prioritylist',
+    data: { get_param: 'value' },
+    dataType: 'json',
+    success: function (data) {
+        $.each(data, function(index, element) {
+            $("#result").append($('<div>', {
+                text: element.name
+            }));
+        });
+    }
+}); });
       </script>
 
     <!-- Bootstrap Core JavaScript -->
