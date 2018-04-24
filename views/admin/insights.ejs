@@ -442,9 +442,10 @@
 
       //  $( "#result" ).html(WaterandSanitation.Score:);
       $( "#result" ).html(data);
-        console.log(arr);
+      var parsedData = JSON.parse(data)
+        console.log(parsedData.WaterandSanitation);
 
-        //alert( "Need list added" );
+       // alert( "Need list added "+ JSON.stringify(parsedData.WaterandSanitation.score+ " - "+parsedData.WaterandSanitation.name) );
          });
 
 

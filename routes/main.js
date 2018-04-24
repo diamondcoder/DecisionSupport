@@ -140,7 +140,7 @@ function rank() {
     //console.log(scoreRanker(rankedNeeds))
      var rankedArray = rankedNeeds.split(",");
 
-     var jsonString = "";
+     var jsonString = "{";
      for (var i = 0; i < rankedArray.length; i++) {
          jsonString = jsonString + buildJson([rankedArray[i]]);
          if(i != rankedArray.length-1){
@@ -148,7 +148,7 @@ function rank() {
          }
      }
 
-    return jsonString + "";
+    return jsonString + "}";
     //return rankedNeeds;
 
 }
@@ -181,12 +181,12 @@ function buildJson(score) {
     for (var i = 0; i < score_component().length; i++) {
         var inString = score_component()[i].split("&");
         if (inString[0] == score + "") {
-            jstring = "{ "+inString[1].replace(/\s/g, '')+": {score: " + score + ", name: " + inString[1] + "}";
+            jstring = " \""+inString[1].replace(/\s/g, '')+"\": {\"score\": " + score + ", \"name\": \"" + inString[1] + "\"}";
 
             break;
         }
     }
-    return jstring;
+    return jstring + "";
 }
 
 function scoreRanker(array) {
