@@ -1,0 +1,32 @@
+{
+ "Country" :
+    {"name" : "Ghana" ,
+    "code" : " GHA " ,
+    "year" : "2016"
+  },
+"powerConsumption":{
+        "name":"Electric power consumption (kWh per capita)",
+        "score":"355"
+         },
+"Broadband":{
+       "name":"Fixed broadband subscriptions (per 100 people)" ,
+       "score":"0,31"
+         },
+"Mobilesubscription":{
+           "name":"Mobile cellular subscriptions",
+           "code":"38,305,078"
+         },
+"secureserver":{
+  "name":"Secure Internet servers (per 1 million people)",
+  "code":"6"
+},
+"ppEnergy":{
+  "name":"Investment in energy with private participation (current US$)",
+  "code":"752,000,000"
+},
+"ppEnergy":{
+  "name":"Investment in energy with private participation (current US$)",
+  "code":"752,000,000"
+}
+
+}
