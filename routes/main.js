@@ -340,7 +340,7 @@ function ahpTestTwoProj(content) {
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = ontent["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2]
+    Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + content["Projects"]["Project1"] + ":" + Ranking[project2]
    // console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
@@ -484,7 +484,7 @@ function ahpTestThreeProj(content) {
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = ontent["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3]
+    Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + content["Projects"]["Project1"] + ":" + Ranking[project2] + "," + content["Projects"]["Project2"] + ":" + Ranking[project3]
     //console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
@@ -679,8 +679,8 @@ console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"])
     Ranking = output.rankedScoreMap
     console.log(output)
 
-   Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3] + "," +
-       ontent["Projects"]["Project3"] + ":" + Ranking[project4]
+   Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + content["Projects"]["Project1"] + ":" + Ranking[project2] + "," + content["Projects"]["Project2"] + ":" + Ranking[project3] + "," +
+       content["Projects"]["Project3"] + ":" + Ranking[project4]
 
 
     return output;
