@@ -598,7 +598,6 @@ $("#Environmental32").on('input',function(e){
     var num = 1/ parseFloat($(this).val())
     $("#Environmental23"+"").val(num);
 });
-/*
 
 
 /*
