@@ -18,6 +18,12 @@ router.get('/searchpage', function(req, res, next){
 
 
 });
+router.get('/ahp', function(req, res, next){
+    //if(!myvar) res.render('admin/dsshome');
+    res.render('admin/ahppage');
+
+
+});
 router.get('/insights', function(req, res, next){
 	res.render('admin/insights');
 

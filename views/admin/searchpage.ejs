@@ -3,673 +3,738 @@
 
 <!-- Mirrored from hencework.com/theme/flintstone/full-width-light/form-advanced.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Mar 2018 22:02:26 GMT -->
 <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>Meeds Decision Support system</title>
-		<meta name="description" content="Flintstone is a Dashboard & Admin Site Responsive Template by hencework." />
-		<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
-		<meta name="author" content="hencework"/>
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-		<!-- Bootstrap Colorpicker CSS -->
-		<link href="vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- select2 CSS -->
-		<link href="vendors/bower_components/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- switchery CSS -->
-		<link href="vendors/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- bootstrap-select CSS -->
-		<link href="vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- bootstrap-tagsinput CSS -->
-		<link href="vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" type="text/css"/>
-
-		<!-- bootstrap-touchspin CSS -->
-		<link href="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- multi-select CSS -->
-		<link href="vendors/bower_components/multiselect/css/multi-select.css" rel="stylesheet" type="text/css"/>
-
-		<!-- Bootstrap Switches CSS -->
-		<link href="vendors/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
-
-		<!-- Bootstrap Datetimepicker CSS -->
-		<link href="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
-
-
-
-		<!-- Custom CSS -->
-		<link href="dist/css/style.css" rel="stylesheet" type="text/css">
-	</head>
-
-	<body>
-		<!--Preloader-->
-		<div class="preloader-it">
-			<div class="la-anim-1"></div>
-		</div>
-		<!--/Preloader-->
-
-		<div class="wrapper theme-1-active pimary-color-green">
-			<% include navadmin.ejs %>
-			<% include leftsidemenu.ejs %>
-			<% include rightsidemenu.ejs %>
-			<!-- Main Content -->
-			<div class="page-wrapper">
-				<div class="container-fluid">
-
-					<!-- Title -->
-					<div class="row heading-bg">
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-							<h5 class="txt-dark">Project to Country</h5>
-						</div>
-
-						<!-- Breadcrumb -->
-						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-							<ol class="breadcrumb">
-								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="#"><span>Main</span></a></li>
-								<li class="active"><span>Project/Country Search</span></li>
-							</ol>
-						</div>
-						<!-- /Breadcrumb -->
-
-					</div>
-					<!-- /Title -->
-
-					<!-- Row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default card-view">
-								<div class="panel-heading">
-									<div class="pull-left">
-										<h6 class="panel-title txt-dark">Search </h6>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-sm-12 col-xs-12">
-												<div class="form-wrap">
-													<form action="/" id="proj">
-														<div class="form-body">
-															<h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Give more Details about your projects for the country</h6>
-															<hr class="light-grey-hr"/>
-															<!-- /Row -->
-															<div class="row">
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label class="control-label mb-10">Which country are you targeting</label>
-																		<select class="form-control" id="country" name="country">
-																			<option>--Choose a country--</option>
-																			<option>Ghana</option>
-																			<option>Nigeria</option>
-																			<option>Kenya</option>
-																		</select>
-
-
-
-																	</div>
-																</div>
-
-																<!--/span-->
-																<div class="col-md-6">
-
-																</div>
-																<!--/span-->
-															</div>
-															<script type="text/javascript">
-
-																		var needs= <%= myVar %>;
-
-
-																		</script>
-
-
-															<input type="hidden" name="project" id="project" value="<%=myVar%>">
-															<!-- /Row -->		<% for (var i=0; i<myVar; i++) { %>
-															<div class="row">
-																<div class="alert alert-info alert-dismissable">
-										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Enter Details of the Project.
-									</div>
-																<div class="col-md-6">
-
-																	<div class="form-group">
-																		<label class="control-label mb-10 btn btn-default"> Name of Project <%= i+1 %>  </label>
-																		<input type="text" id="projectName<%=i+1%>" name="projectName<%=i+1%>" class="form-control" placeholder="Name of Project">
-																		<span class="help-block"> A name that describes your Project </span>
-																	</div>
-																</div>
-																<!--/span-->
-																<div class="col-md-6">
-																	<div class="form-group">
-
-																		<label class="control-label mb-10 btn btn-default">What is the Category of the Project</label>
-
-																		<select class="form-control" id="projectCat<%=i+1%>" name="projectCat<%=i+1%>" data-placeholder="Choose a Category" tabindex="1">
-
-																				<option value="Transport">Transport and Information and Communication Technology (ICT<%=i+1%>)</option>
-	<option value="SocialProtection">Social Protection and Labour</option>
-	<option value="MacroEconomics">Macro Economics and Fiscal Management</option>
-	<option value="SocialUrban">Social, Urban , rural and Resilience</option>
-	<option value="FinanceMarket">Finance Market</option>
-		<option value="Water">Water</option>
-
-<option value="Agriculture">Agriculture</option>
-<option value="Energy">Energy and Extratives</option>
-<option value="Education">Education</option>
-<option value="HeatlthNutrition">Health Nutrition and population</option>
-<option value="Trade">Trade and competitiveness</option>
-<option value="Environment">Environment and natural resources</option>
-<option value="Poverty">Poverty and Equity</option>
-<option value="Governance">Governance</option>
-
-
-																		</select>
-
-
-																	</div>
-																</div>
-																<!--/span-->
-															</div>
-
-
-
-<div class="row">
-	<div class="alert alert-warning alert-dismissable">What will be the impact of your project From 0 to 9, Zero(0) means no impact and 9 means maximum impact</div>
-
-       	<div class="col-md-3">
-						...
-												</div>
-
-
-														<div class="col-sm-1">
-																	Nutrition Basic Health Care
-													</div>
-
-													<div class="col-sm-1">
-															wash
-													</div>
-
-													<div class="col-sm-1">
-															shelter
-													</div>
-													<div class="col-sm-1">
-														Personal Safety
-													</div>
-													<div class="col-sm-1">
-														Basic Knowledge
-													</div>
-													<div class="col-sm-1">
-														ICT
-													</div>
-													<div class="col-sm-1">
-														Health and Wellness
-													</div>
-													<div class="col-sm-1">
-														Environment Quality
-													</div>
-
-	</div>
-
-	<div class="row">
-					<div class="col-md-3">
-													Nutrition and Medical Care(NBMC)
-															</div>
-
-
-															<div class="col-sm-1">
-
-																	<input class="form-control" name="AA" type="text" placeholder="" value="1" disabled>
-
-
-														</div>
-
-														<div class="col-sm-1">
-																		<input class="form-control" name="AB" id="AB<%= i+1 %>" type="text" placeholder="" value="">
-														</div>
-
-														<div class="col-sm-1">
-																		<input class="form-control" id="AC<%= i+1 %>" name="AC" type="text" placeholder="" value="">
-														</div>
-														<div class="col-sm-1">
-																	<input class="form-control" id="AD<%= i+1 %>" name="AD" type="text" placeholder="" value="">
-														</div>
-														<div class="col-sm-1">
-																	<input class="form-control" id="AE<%= i+1 %>" name="AE" type="text" placeholder="" value="">
-														</div>
-														<div class="col-sm-1">
-																	<input class="form-control" id="AF<%= i+1 %>" name="AF" type="text" placeholder="" value="">
-														</div>
-														<div class="col-sm-1">
-																	<input class="form-control" id="AG<%= i+1 %>" name="AG" type="text" placeholder="" value="">
-														</div>
-														<div class="col-sm-1">
-																	<input class="form-control" id="AH<%= i+1 %>" name="AH" type="text" placeholder="" value="">
-														</div>
-
-		</div>
-									<div class="row">
-												<div class="col-md-3">		Water and Sanitation(WASH)
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" name="BA" id="BA<%= i+1 %>" type="text" placeholder="" value="9">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="BB<%= i+1 %>" name="BB" type="text" placeholder="" value="1" disabled>
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="BC<%= i+1 %>" name="BC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="BD<%= i+1 %>" name="BD" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="BE<%= i+1 %>" name="BE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="BF<%= i+1 %>" name="BF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="BG<%= i+1 %>" name="BG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="BH<%= i+1 %>" name="BH" type="text" placeholder="" value="1">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">shelter
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" id="CA<%= i+1 %>" name="CA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="CB<%= i+1 %>" name="CB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="CC<%= i+1 %>" name="CC" type="text" placeholder="" value="1" disabled>
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="CD<%= i+1 %>" name="CD" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="CE<%= i+1 %>" name="CE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="CF<%= i+1 %>" name="CF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="CG<%= i+1 %>" name="CG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="CH<%= i+1 %>" name="CH" type="text" placeholder="" value="">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">		Personal Safety/employment
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" id="DA<%= i+1 %>" name="DA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="DB<%= i+1 %>" name="DB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="DC<%= i+1 %>" name="DC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="DD<%= i+1 %>" name="DD" type="text" placeholder="" value="1" disabled>
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="DE<%= i+1 %>" name="DE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="DF<%= i+1 %>" name="DF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="DG<%= i+1 %>" name="DG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="DH<%= i+1 %>" name="DH" type="text" placeholder="" value="">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">		Access to Basic Knowledge
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" id="EA<%= i+1 %>" name="EA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="EB<%= i+1 %>" name="EB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="EC<%= i+1 %>" name="EC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="ED<%= i+1 %>" name="ED" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="EE<%= i+1 %>" name="EE" type="text" placeholder="" value="1" disabled>
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="EF<%= i+1 %>" name="EF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="EG<%= i+1 %>" name="EG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="EH<%= i+1 %>" name="EH" type="text" placeholder="" value="">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">		Access to Information and Communication
-												</div>
-												<div class="col-sm-1">
-
-														<input class="form-control" id="FA<%= i+1 %>" name="FA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="FB<%= i+1 %>" name="FB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="FC<%= i+1 %>" name="FC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="FD<%= i+1 %>" name="FD" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="FE<%= i+1 %>" name="FE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="FF<%= i+1 %>" name="FF" type="text" placeholder="" value="1" disabled>
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="FG<%= i+1 %>" name="FG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="FH<%= i+1 %>" name="FH" type="text" placeholder="" value="">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">			Health and Wellness
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" id="GA<%= i+1 %>" name="GA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="GB<%= i+1 %>" name="GB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="GC<%= i+1 %>" name="GC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="GD<%= i+1 %>" name="GD" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="GE<%= i+1 %>" name="GE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="GF<%= i+1 %>" name="GF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="GG<%= i+1 %>" name="GG" type="text" placeholder="" value="1" disabled>
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="GH<%= i+1 %>" name="GH" type="text" placeholder="" value="">
-											</div>
-									</div>
-									<div class="row">
-												<div class="col-md-3">		Environmental Quality
-												</div>
-
-												<div class="col-sm-1">
-
-														<input class="form-control" id="HA<%= i+1 %>" name="HA" type="text" placeholder="" value="">
-
-
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="HB<%= i+1 %>" name="HB" type="text" placeholder="" value="">
-											</div>
-
-											<div class="col-sm-1">
-															<input class="form-control" id="HC<%= i+1 %>" name="HC" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="HD<%= i+1 %>" name="HD" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="HE<%= i+1 %>" name="HE" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="HF<%= i+1 %>" name="HF" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="HG<%= i+1 %>" name="HG" type="text" placeholder="" value="">
-											</div>
-											<div class="col-sm-1">
-														<input class="form-control" id="HH<%= i+1 %>" name="HH" type="text" placeholder="" value="1" disabled>
-											</div>
-									</div>
-
-									<% } %>
-
-
-
-
-
-														<div class="form-actions mt-10">
-
-																<button type="submit" id="send" class="btn btn-success  mr-10">SEND</button>
-
-															<button type="button" class="btn btn-default">Cancel</button>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-
-				</div>
-
-				<!-- Footer -->
-				<footer class="footer container-fluid pl-30 pr-30">
-					<div class="row">
-						<div class="col-sm-12">
-							<p>2017 &copy; </p>
-						</div>
-					</div>
-				</footer>
-				<!-- /Footer -->
-
-			</div>
-			<!-- /Main Content -->
-
-		</div>
-		<!-- /#wrapper -->
-
-		<!-- JavaScripts -->
-
-		<!-- jQuery -->
-		<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
-				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script type="text/javascript">
-		   $(function(){
-				 $( document ).on( "click", "#addProjnum", function(event) {
-					  event.preventDefault();
-					// num=$("#numProj").val();
-					 var i;
-
-					// for (i=0; i<num; i++){
- $("#addProjnum").append(needs);
- 				 //}
-
-})
-			/*	 $("#addProjnum").live("click", function(e){
-					  e.preventDefault();
-					  num=$("#numProj").val();
-						alert(num);*/
-					// for(var i=0; i<=num; i++){
-
-					// }
-		//		});
-		$("#proj").submit(function( event ) {
-
-		// Stop form from submitting normally
-		 event.preventDefault();
-
-		//$.post( "/project", { name: "Projmame", time: "2pm" } );
-	  //	console.log( $("#proj").serialize())
-
-		//alert($("#Projname").val() + $("#ProjCat").val());
-	//	});
-	var p;
-	p=needs+1;
-	var data = {};
-	data=$("#proj").serializeArray();
-	/*for(var i=1; i<=p; i++){
-
-						data.country+i = $("#country"+i).val();
-						data.name+i  = $("#projectName"+i).val();
-						data.category+i  = $("#projectCat"+i ).val();
-						data.nutrition+i  = $("#projectCat"+i ).val();
-						data.wash+i  = $("#wash"+i ).val();
-						data.shelter+i  = $("#shelter"+i ).val();
-						data.safety+i  = $("#safety"+i ).val();
-						data.basicKnowledge+i  = $("#basicKnowledge"+p ).val();
-						data.ICT<%=i+1%>+i = $("#ICT<%=i+1%>"+i ).val();
-						data.Health<%=i+1%>+i  = $("#health"+i ).val();
-						data.environmental<%=i+1%>+i  = $("#health"+i ).val();
-}*/
-
-					$.ajax({
-						type: 'POST',
-						data: JSON.stringify(data),
-				        contentType: 'application/json',
-                        url: '/project',
-                        success: function(data) {
-                            console.log('success');
-                           console.log(JSON.stringify(data));
-													//	alert(JSON.stringify(data.WeightedVector));
-													  window.location.href = '/insights';
-                        }
-                    });
-										  });
-
-
-/*
-											$("#AB1").on('input',function(e){
-											    $("#BA1").val($(this).val());
-												 console.log($(this).val());
-											})//.blur(function() { $("#BA1").val("1/"+$(this).val());  });
-											$("#BA1").on('input',function(e){
-											    $("#AB1").val("1/"+$(this).val());
-												 console.log($(this).val());
-											});*/
-											  });
-
-
-
-		</script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="../vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-		<!-- Moment JavaScript -->
-		<script type="text/javascript" src="../vendors/bower_components/moment/min/moment-with-locales.min.js"></script>
-
-		<!-- Bootstrap Colorpicker JavaScript -->
-		<script src="../vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
-
-		<!-- Switchery JavaScript -->
-		<script src="../vendors/bower_components/switchery/dist/switchery.min.js"></script>
-
-		<!-- Select2 JavaScript -->
-		<script src="../vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
-
-		<!-- Bootstrap Select JavaScript -->
-		<script src="../vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-
-		<!-- Bootstrap Tagsinput JavaScript -->
-		<script src="../vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
-
-		<!-- Bootstrap Touchspin JavaScript -->
-		<script src="../vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-
-		<!-- Multiselect JavaScript -->
-		<script src="../vendors/bower_components/multiselect/js/jquery.multi-select.js"></script>
-
-
-		<!-- Bootstrap Switch JavaScript -->
-		<script src="../vendors/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
-
-		<!-- Bootstrap Datetimepicker JavaScript -->
-		<script type="text/javascript" src="../vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-
-		<!-- Form Advance Init JavaScript -->
-		<script src="dist/js/form-advance-data.js"></script>
-
-		<!-- Slimscroll JavaScript -->
-		<script src="dist/js/jquery.slimscroll.js"></script>
-
-		<!-- Fancy Dropdown JS -->
-		<script src="dist/js/dropdown-bootstrap-extended.js"></script>
-
-		<!-- Owl JavaScript -->
-		<script src="../vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-
-		<!-- Init JavaScript -->
-		<script src="dist/js/init.js"></script>
-		<script src="js/inputController.js"></script>
-
-
-	</body>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Meeds Decision Support system</title>
+    <meta name="description" content="Flintstone is a Dashboard & Admin Site Responsive Template by hencework."/>
+    <meta name="keywords"
+          content="admin, admin dashboard, admin template, cms, crm, Flintstone Admin, Flintstoneadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application"/>
+    <meta name="author" content="hencework"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Colorpicker CSS -->
+    <link href="vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css"
+          rel="stylesheet" type="text/css"/>
+
+    <!-- select2 CSS -->
+    <link href="vendors/bower_components/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- switchery CSS -->
+    <link href="vendors/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- bootstrap-select CSS -->
+    <link href="vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"
+          type="text/css"/>
+
+    <!-- bootstrap-tagsinput CSS -->
+    <link href="vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet"
+          type="text/css"/>
+
+    <!-- bootstrap-touchspin CSS -->
+    <link href="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet"
+          type="text/css"/>
+
+    <!-- multi-select CSS -->
+    <link href="vendors/bower_components/multiselect/css/multi-select.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Bootstrap Switches CSS -->
+    <link href="vendors/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet"
+          type="text/css"/>
+
+    <!-- Bootstrap Datetimepicker CSS -->
+    <link href="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet" type="text/css"/>
+
+
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--Preloader-->
+<div class="preloader-it">
+    <div class="la-anim-1"></div>
+</div>
+<!--/Preloader-->
+
+<div class="wrapper theme-1-active pimary-color-green">
+    <% include navadmin.ejs %>
+    <% include leftsidemenu.ejs %>
+    <% include rightsidemenu.ejs %>
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+
+            <!-- Title -->
+            <div class="row heading-bg">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h5 class="txt-dark">Project to Country</h5>
+                </div>
+
+                <!-- Breadcrumb -->
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="#"><span>Main</span></a></li>
+                        <li class="active"><span>Project/Country Search</span></li>
+                    </ol>
+                </div>
+                <!-- /Breadcrumb -->
+
+            </div>
+            <!-- /Title -->
+
+            <!-- Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default card-view">
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h6 class="panel-title txt-dark">Search </h6>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-12 col-xs-12">
+                                        <div class="form-wrap">
+                                            <form action="/" id="proj">
+                                                <div class="form-body">
+                                                    <h6 class="txt-dark capitalize-font"><i
+                                                                class="zmdi zmdi-account mr-10"></i>Give more Details
+                                                        about your projects for the country</h6>
+                                                    <hr class="light-grey-hr"/>
+                                                    <!-- /Row -->
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label mb-10">Which country are you
+                                                                    targeting</label>
+                                                                <select class="form-control" id="country"
+                                                                        name="country">
+                                                                    <option>--Choose a country--</option>
+                                                                    <option>Ghana</option>
+                                                                    <option>Nigeria</option>
+                                                                    <option>Kenya</option>
+                                                                </select>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <script type="text/javascript">
+
+                                                        var needs = <%= myVar %>;
+
+
+                                                    </script>
+
+
+                                                    <input type="hidden" name="project" id="project"
+                                                           value="<%= myVar %>">
+                                                    <!-- /Row -->
+                                                    <% for (var i = 0; i < myVar; i++) { %>
+                                                    <div class="row">
+                                                        <div class="alert alert-info alert-dismissable">
+                                                            <button type="button" class="close" data-dismiss="alert"
+                                                                    aria-hidden="true">&times;
+                                                            </button>
+                                                            Enter Details of the Project.
+                                                        </div>
+                                                        <div class="col-md-6">
+
+                                                            <div class="form-group">
+                                                                <label class="control-label mb-10 btn btn-default"> Name
+                                                                    of Project <%= i + 1 %>  </label>
+                                                                <input type="text" id="projectName<%= i+1 %>"
+                                                                       name="projectName<%= i+1 %>" class="form-control"
+                                                                       placeholder="Name of Project">
+                                                                <span class="help-block"> A name that describes your Project </span>
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+
+                                                                <label class="control-label mb-10 btn btn-default">What
+                                                                    is the Category of the Project</label>
+
+                                                                <select class="form-control" id="projectCat<%= i+1 %>"
+                                                                        name="projectCat<%= i+1 %>"
+                                                                        data-placeholder="Choose a Category"
+                                                                        tabindex="1">
+
+                                                                    <option value="Transport">Transport and Information
+                                                                        and Communication Technology (ICT<%= i+1 %>)
+                                                                    </option>
+                                                                    <option value="SocialProtection">Social Protection
+                                                                        and Labour
+                                                                    </option>
+                                                                    <option value="MacroEconomics">Macro Economics and
+                                                                        Fiscal Management
+                                                                    </option>
+                                                                    <option value="SocialUrban">Social, Urban , rural
+                                                                        and Resilience
+                                                                    </option>
+                                                                    <option value="FinanceMarket">Finance Market
+                                                                    </option>
+                                                                    <option value="Water">Water</option>
+
+                                                                    <option value="Agriculture">Agriculture</option>
+                                                                    <option value="Energy">Energy and Extratives
+                                                                    </option>
+                                                                    <option value="Education">Education</option>
+                                                                    <option value="HeatlthNutrition">Health Nutrition
+                                                                        and population
+                                                                    </option>
+                                                                    <option value="Trade">Trade and competitiveness
+                                                                    </option>
+                                                                    <option value="Environment">Environment and natural
+                                                                        resources
+                                                                    </option>
+                                                                    <option value="Poverty">Poverty and Equity</option>
+                                                                    <option value="Governance">Governance</option>
+
+
+                                                                </select>
+
+
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+
+
+                                                    <div class="row">
+                                                        <div class="alert alert-warning alert-dismissable">What will be
+                                                            the impact of your project From 0 to 9, Zero(0) means no
+                                                            impact and 9 means maximum impact
+                                                        </div>
+
+                                                        <div class="col-md-3">
+                                                            ...
+                                                        </div>
+
+
+                                                        <div class="col-sm-1">
+                                                            Nutrition Basic Health Care
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            wash
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            shelter
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            Personal Safety
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            Basic Knowledge
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            ICT
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            Health and Wellness
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            Environment Quality
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            Nutrition and Medical Care(NBMC)
+                                                        </div>
+
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" name="AA" type="text"
+                                                                   placeholder="" value="1" readonly>
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" name="AB" id="AB<%= i + 1 %>"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AC<%= i + 1 %>" name="AC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AD<%= i + 1 %>" name="AD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AE<%= i + 1 %>" name="AE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AF<%= i + 1 %>" name="AF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AG<%= i + 1 %>" name="AG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="AH<%= i + 1 %>" name="AH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Water and Sanitation(WASH)
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" name="BA" id="BA<%= i + 1 %>"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BB<%= i + 1 %>" name="BB"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BC<%= i + 1 %>" name="BC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BD<%= i + 1 %>" name="BD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BE<%= i + 1 %>" name="BE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BF<%= i + 1 %>" name="BF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BG<%= i + 1 %>" name="BG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="BH<%= i + 1 %>" name="BH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">shelter
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="CA<%= i + 1 %>" name="CA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CB<%= i + 1 %>" name="CB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CC<%= i + 1 %>" name="CC"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CD<%= i + 1 %>" name="CD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CE<%= i + 1 %>" name="CE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CF<%= i + 1 %>" name="CF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CG<%= i + 1 %>" name="CG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="CH<%= i + 1 %>" name="CH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Personal Safety/employment
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="DA<%= i + 1 %>" name="DA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DB<%= i + 1 %>" name="DB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DC<%= i + 1 %>" name="DC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DD<%= i + 1 %>" name="DD"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DE<%= i + 1 %>" name="DE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DF<%= i + 1 %>" name="DF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DG<%= i + 1 %>" name="DG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="DH<%= i + 1 %>" name="DH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Access to Basic Knowledge
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="EA<%= i + 1 %>" name="EA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EB<%= i + 1 %>" name="EB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EC<%= i + 1 %>" name="EC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="ED<%= i + 1 %>" name="ED"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EE<%= i + 1 %>" name="EE"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EF<%= i + 1 %>" name="EF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EG<%= i + 1 %>" name="EG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="EH<%= i + 1 %>" name="EH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Access to Information and Communication
+                                                        </div>
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="FA<%= i + 1 %>" name="FA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FB<%= i + 1 %>" name="FB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FC<%= i + 1 %>" name="FC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FD<%= i + 1 %>" name="FD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FE<%= i + 1 %>" name="FE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FF<%= i + 1 %>" name="FF"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FG<%= i + 1 %>" name="FG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="FH<%= i + 1 %>" name="FH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Health and Wellness
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="GA<%= i + 1 %>" name="GA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GB<%= i + 1 %>" name="GB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GC<%= i + 1 %>" name="GC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GD<%= i + 1 %>" name="GD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GE<%= i + 1 %>" name="GE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GF<%= i + 1 %>" name="GF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GG<%= i + 1 %>" name="GG"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="GH<%= i + 1 %>" name="GH"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3"> Environmental Quality
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+
+                                                            <input class="form-control" id="HA<%= i + 1 %>" name="HA"
+                                                                   type="text" placeholder="" value="">
+
+
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HB<%= i + 1 %>" name="HB"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HC<%= i + 1 %>" name="HC"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HD<%= i + 1 %>" name="HD"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HE<%= i + 1 %>" name="HE"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HF<%= i + 1 %>" name="HF"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HG<%= i + 1 %>" name="HG"
+                                                                   type="text" placeholder="" value="">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <input class="form-control" id="HH<%= i + 1 %>" name="HH"
+                                                                   type="text" placeholder="" value="1" readonly>
+                                                        </div>
+                                                    </div>
+
+                                                    <% } %>
+
+                                                    <div class="form-actions mt-10">
+
+                                                        <button type="submit" id="send" class="btn btn-success  mr-10">
+                                                            SEND
+                                                        </button>
+
+                                                        <button type="button" class="btn btn-default">Cancel</button>
+                                                    </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer container-fluid pl-30 pr-30">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>2017 &copy; </p>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+    <!-- /Main Content -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- JavaScripts -->
+
+<!-- jQuery -->
+<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(document).on("click", "#addProjnum", function (event) {
+            event.preventDefault();
+            // num=$("#numProj").val();
+            var i;
+
+            // for (i=0; i<num; i++){
+            $("#addProjnum").append(needs);
+            //}
+
+        })
+
+        $("#proj").submit(function (event) {
+
+            // Stop form from submitting normally
+            event.preventDefault();
+
+
+            var p;
+            p = needs + 1;
+            var data = {};
+            data = $("#proj").serializeArray();
+
+
+            $.ajax({
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                url: '/project',
+                success: function (data) {
+                    console.log('success');
+                    console.log(JSON.stringify(data));
+                    //	alert(JSON.stringify(data.WeightedVector));
+                    window.location.href = '/insights';
+                }
+            });
+        });
+
+
+    });
+
+
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Moment JavaScript -->
+<script type="text/javascript" src="../vendors/bower_components/moment/min/moment-with-locales.min.js"></script>
+
+<!-- Bootstrap Colorpicker JavaScript -->
+<script src="../vendors/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+
+<!-- Switchery JavaScript -->
+<script src="../vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+<!-- Select2 JavaScript -->
+<script src="../vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+
+<!-- Bootstrap Select JavaScript -->
+<script src="../vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<!-- Bootstrap Tagsinput JavaScript -->
+<script src="../vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+
+<!-- Bootstrap Touchspin JavaScript -->
+<script src="../vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+<!-- Multiselect JavaScript -->
+<script src="../vendors/bower_components/multiselect/js/jquery.multi-select.js"></script>
+
+
+<!-- Bootstrap Switch JavaScript -->
+<script src="../vendors/bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+<!-- Bootstrap Datetimepicker JavaScript -->
+<script type="text/javascript"
+        src="../vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Form Advance Init JavaScript -->
+<script src="dist/js/form-advance-data.js"></script>
+
+<!-- Slimscroll JavaScript -->
+<script src="dist/js/jquery.slimscroll.js"></script>
+
+<!-- Fancy Dropdown JS -->
+<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+<!-- Owl JavaScript -->
+<script src="../vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<!-- Init JavaScript -->
+<script src="dist/js/init.js"></script>
+<script src="js/inputController.js"></script>
+
+
+</body>
 
 </html>
