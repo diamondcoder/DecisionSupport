@@ -1,1053 +1,606 @@
 
-  $("#AB1").on('input',function(e){
-      $("#BA1"+"").val("1/"+$(this).val());
-      console.log ($("#BA1"+"").val());
-     console.log("1/"+$(this).val());
-  });
-  //LINE B
-  $("#BA1").on('input',function(e){
-      $("#AB1"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AB1").on('input',function(e){
-      $("#BA1"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE C
-
-  $("#CA1").on('input',function(e){
-      $("#AC1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AC1").on('input',function(e){
-      $("#CA1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CB1").on('input',function(e){
-      $("#BC1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BC1").on('input',function(e){
-      $("#CB1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE D
-  $("#DA1").on('input',function(e){
-      $("#AD1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DB1").on('input',function(e){
-      $("#BD1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DC1").on('input',function(e){
-      $("#CD1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////
-  $("#AD1").on('input',function(e){
-      $("#DA1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BD1").on('input',function(e){
-      $("#DB1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CD1").on('input',function(e){
-      $("#DC1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE E
-
-  $("#EA1").on('input',function(e){
-  $("#AE1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  $("#EB1").on('input',function(e){
-      $("#BE1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#EC1").on('input',function(e){
-      $("#CE1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#ED1").on('input',function(e){
-      $("#DE1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////////////////
-
-  $("#AE1").on('input',function(e){
-  $("#EA1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+/*
+Populating inverse values for Nutrition
+row 1
+ */
+  $("#Nutrition01").on('input',function(e){
+      var num = 1/ parseFloat($(this).val())
+      $("#Nutrition10"+"").val(num);
+      console.log ($("#Nutrition10"+"").val());
 
-  $("#BE1").on('input',function(e){
-      $("#EB1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CE1").on('input',function(e){
-      $("#EC1").val("1/"+$(this).val());
-     console.log($(this).val());
   });
-  $("#DE1").on('input',function(e){
-      $("#ED1").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
+$("#Nutrition02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition20"+"").val(num);
+    console.log ($("#Nutrition20"+"").val());
 
-//LINE F
-
-$("#FA1").on('input',function(e){
-    $("#AF1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FB1").on('input',function(e){
-    $("#BF1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#FC1").on('input',function(e){
-    $("#CF1").val(parseInt("1")/parseInt($(this).val()));
-   console.log($(this).val());
-});
-$("#FD1").on('input',function(e){
-    $("#DF1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FE1").on('input',function(e){
-    $("#EF1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+$("#Nutrition03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition30"+"").val(num);
+    console.log ($("#Nutrition30"+"").val());
 
-//////////////////////////////////////
-
-$("#AF1").on('input',function(e){
-    $("#FA1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BF1").on('input',function(e){
-    $("#FB1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CF1").on('input',function(e){
-    $("#FC1").val(parseInt("1")/parseInt($(this).val()));
-   console.log($(this).val());
-});
-$("#DF1").on('input',function(e){
-    $("#FD1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#EF1").on('input',function(e){
-    $("#FE1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+//Column 1
+$("#Nutrition10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition01"+"").val(num);
+    console.log ($("#Nutrition01"+"").val());
 
-//LINE G
-$("#GA1").on('input',function(e){
-    $("#AG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GB1").on('input',function(e){
-    $("#BG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GC1").on('input',function(e){
-    $("#CG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GD1").on('input',function(e){
-    $("#DG1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#GE1").on('input',function(e){
-    $("#EG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GF1").on('input',function(e){
-    $("#FG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-/////////////////////////////////////////////
+$("#Nutrition20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition02"+"").val(num);
+    console.log ($("#Nutrition10"+"").val());
 
-$("#AG1").on('input',function(e){
-    $("#GA1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BG1").on('input',function(e){
-    $("#GB1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CG1").on('input',function(e){
-    $("#GC1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#DG1").on('input',function(e){
-    $("#GD1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#EG1").on('input',function(e){
-    $("#GE1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FG1").on('input',function(e){
-    $("#GF1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+$("#Nutrition30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition03"+"").val(num);
+    console.log ($("#Nutrition30"+"").val());
 
-// LINE H
-$("#HA1").on('input',function(e){
-    $("#AH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HB1").on('input',function(e){
-    $("#BH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HC1").on('input',function(e){
-    $("#CH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HD1").on('input',function(e){
-    $("#DH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HE1").on('input',function(e){
-    $("#EH1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#HF1").on('input',function(e){
-    $("#FH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HG1").on('input',function(e){
-    $("#GH1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+//row 2
+$("#Nutrition12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition21"+"").val(num);
+    console.log ($("#Nutrition21"+"").val());
 
-/////////////////////////////////////
-
-$("#AH1").on('input',function(e){
-    $("#HA1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BH1").on('input',function(e){
-    $("#HB1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CH1").on('input',function(e){
-    $("#HC1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#DH1").on('input',function(e){
-    $("#HD1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#EH1").on('input',function(e){
-    $("#HE1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FH1").on('input',function(e){
-    $("#HF1").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#GH1").on('input',function(e){
-    $("#HG1").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-
-
-//Project 2
-
-
-  $("#AB2").on('input',function(e){
-      $("#BA2"+"").val("1/"+$(this).val());
-      console.log ($("#BA2"+"").val());
-     console.log("1/"+$(this).val());
-  });
-  //LINE B
-  $("#BA2").on('input',function(e){
-      $("#AB2"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AB2").on('input',function(e){
-      $("#BA2"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE C
-
-  $("#CA2").on('input',function(e){
-      $("#AC2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AC2").on('input',function(e){
-      $("#CA2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CB2").on('input',function(e){
-      $("#BC2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BC2").on('input',function(e){
-      $("#CB2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE D
-  $("#DA2").on('input',function(e){
-      $("#AD2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DB2").on('input',function(e){
-      $("#BD2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DC2").on('input',function(e){
-      $("#CD2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////
-  $("#AD2").on('input',function(e){
-      $("#DA2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BD2").on('input',function(e){
-      $("#DB2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CD2").on('input',function(e){
-      $("#DC2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE E
-
-  $("#EA2").on('input',function(e){
-  $("#AE2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  $("#EB2").on('input',function(e){
-      $("#BE2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#EC2").on('input',function(e){
-      $("#CE2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#ED2").on('input',function(e){
-      $("#DE2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////////////////
-
-  $("#AE2").on('input',function(e){
-  $("#EA2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+$("#Nutrition13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition31"+"").val(num);
+    console.log ($("#Nutrition31"+"").val());
 
-  $("#BE2").on('input',function(e){
-      $("#EB2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CE2").on('input',function(e){
-      $("#EC2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DE2").on('input',function(e){
-      $("#ED2").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-
-//LINE F
-
-$("#FA2").on('input',function(e){
-    $("#AF2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#FB2").on('input',function(e){
-    $("#BF2").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#Nutrition21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition12"+"").val(num);
+    console.log ($("#Nutrition12"+"").val());
+
 });
-$("#FC2").on('input',function(e){
-    $("#CF2").val(parseInt("2")/parseInt($(this).val()));
-   console.log($(this).val());
+$("#Nutrition31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition13"+"").val(num);
+    console.log ($("#Nutrition13"+"").val());
+
 });
-$("#FD2").on('input',function(e){
-    $("#DF2").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#Nutrition23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition32"+"").val(num);
+    console.log ($("#Nutrition32"+"").val());
+
 });
-$("#FE2").on('input',function(e){
-    $("#EF2").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#Nutrition32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Nutrition23"+"").val(num);
+    console.log ($("#Nutrition23"+"").val());
+
 });
 
-//////////////////////////////////////
+/*
+Populating inverse values for Water and Sanitation
+row 1
+ */
+$("#WaterSanitation01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation10"+"").val(num);
+    console.log ($("#WaterSanitation10"+"").val());
 
-$("#AF2").on('input',function(e){
-    $("#FA2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BF2").on('input',function(e){
-    $("#FB2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#CF2").on('input',function(e){
-    $("#FC2").val(parseInt("2")/parseInt($(this).val()));
-   console.log($(this).val());
-});
-$("#DF2").on('input',function(e){
-    $("#FD2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#EF2").on('input',function(e){
-    $("#FE2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+$("#WaterSanitation02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation20"+"").val(num);
+    console.log ($("#WaterSanitation20"+"").val());
 
-//LINE G
-$("#GA2").on('input',function(e){
-    $("#AG2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GB2").on('input',function(e){
-    $("#BG2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#GC2").on('input',function(e){
-    $("#CG2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GD2").on('input',function(e){
-    $("#DG2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GE2").on('input',function(e){
-    $("#EG2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GF2").on('input',function(e){
-    $("#FG2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-/////////////////////////////////////////////
+$("#WaterSanitation03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation30"+"").val(num);
+    console.log ($("#WaterSanitation30"+"").val());
 
-$("#AG2").on('input',function(e){
-    $("#GA2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BG2").on('input',function(e){
-    $("#GB2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CG2").on('input',function(e){
-    $("#GC2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#DG2").on('input',function(e){
-    $("#GD2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#EG2").on('input',function(e){
-    $("#GE2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FG2").on('input',function(e){
-    $("#GF2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
+//Column 1
+$("#WaterSanitation10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation01"+"").val(num);
+    console.log ($("#WaterSanitation01"+"").val());
 
-// LINE H
-$("#HA2").on('input',function(e){
-    $("#AH2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HB2").on('input',function(e){
-    $("#BH2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HC2").on('input',function(e){
-    $("#CH2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#HD2").on('input',function(e){
-    $("#DH2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HE2").on('input',function(e){
-    $("#EH2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HF2").on('input',function(e){
-    $("#FH2").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#HG2").on('input',function(e){
-    $("#GH2").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#WaterSanitation20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation02"+"").val(num);
+    console.log ($("#WaterSanitation10"+"").val());
+
 });
+$("#WaterSanitation30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation03"+"").val(num);
+    console.log ($("#WaterSanitation30"+"").val());
 
-/////////////////////////////////////
+});
+//row 2
+$("#WaterSanitation12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation21"+"").val(num);
+    console.log ($("#WaterSanitation21"+"").val());
 
-$("#AH2").on('input',function(e){
-    $("#HA2").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BH2").on('input',function(e){
-    $("#HB2").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#WaterSanitation13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation31"+"").val(num);
+    console.log ($("#WaterSanitation31"+"").val());
+
 });
-$("#CH2").on('input',function(e){
-    $("#HC2").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#WaterSanitation21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation12"+"").val(num);
+    console.log ($("#WaterSanitation12"+"").val());
+
 });
-$("#DH2").on('input',function(e){
-    $("#HD2").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#WaterSanitation31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation13"+"").val(num);
+    console.log ($("#WaterSanitation13"+"").val());
+
 });
-$("#EH2").on('input',function(e){
-    $("#HE2").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#WaterSanitation23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation32"+"").val(num);
+    console.log ($("#WaterSanitation32"+"").val());
+
 });
-$("#FH2").on('input',function(e){
-    $("#HF2").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#WaterSanitation32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#WaterSanitation23"+"").val(num);
+    console.log ($("#WaterSanitation23"+"").val());
+
 });
-$("#GH2").on('input',function(e){
-    $("#HG2").val("1/"+$(this).val());
-   console.log($(this).val());
+/*
+Populating inverse values for Shelter
+row 1
+ */
+$("#Shelter01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter10"+"").val(num);
+    console.log ($("#Shelter10"+"").val());
+
 });
+$("#Shelter02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter20"+"").val(num);
+    console.log ($("#Shelter20"+"").val());
 
-//Project 3
+});
+$("#Shelter03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter30"+"").val(num);
+    console.log ($("#Shelter30"+"").val());
 
+});
+//Column 1
+$("#Shelter10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter01"+"").val(num);
+    console.log ($("#Shelter01"+"").val());
 
-  $("#AB3").on('input',function(e){
-      $("#BA3"+"").val("1/"+$(this).val());
-      console.log ($("#BA3"+"").val());
-     console.log("1/"+$(this).val());
-  });
-  //LINE B
-  $("#BA3").on('input',function(e){
-      $("#AB3"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AB3").on('input',function(e){
-      $("#BA3"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+$("#Shelter20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter02"+"").val(num);
+    console.log ($("#Shelter10"+"").val());
 
-  //LINE C
+});
+$("#Shelter30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter03"+"").val(num);
+    console.log ($("#Shelter30"+"").val());
 
-  $("#CA3").on('input',function(e){
-      $("#AC3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AC3").on('input',function(e){
-      $("#CA3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CB3").on('input',function(e){
-      $("#BC3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BC3").on('input',function(e){
-      $("#CB3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+//row 2
+$("#Shelter12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter21"+"").val(num);
+    console.log ($("#Shelter21"+"").val());
 
-  //LINE D
-  $("#DA3").on('input',function(e){
-      $("#AD3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DB3").on('input',function(e){
-      $("#BD3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DC3").on('input',function(e){
-      $("#CD3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////
-  $("#AD3").on('input',function(e){
-      $("#DA3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BD3").on('input',function(e){
-      $("#DB3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CD3").on('input',function(e){
-      $("#DC3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+$("#Shelter13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter31"+"").val(num);
+    console.log ($("#Shelter31"+"").val());
 
-  //LINE E
+});
+//Column 2
+$("#Shelter21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter12"+"").val(num);
+    console.log ($("#Shelter12"+"").val());
 
-  $("#EA3").on('input',function(e){
-  $("#AE3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+$("#Shelter31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter13"+"").val(num);
+    console.log ($("#Shelter13"+"").val());
 
-  $("#EB3").on('input',function(e){
-      $("#BE3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#EC3").on('input',function(e){
-      $("#CE3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#ED3").on('input',function(e){
-      $("#DE3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////////////////
-
-  $("#AE3").on('input',function(e){
-  $("#EA3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+//row 3
+$("#Shelter23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter32"+"").val(num);
+    console.log ($("#Shelter32"+"").val());
 
-  $("#BE3").on('input',function(e){
-      $("#EB3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CE3").on('input',function(e){
-      $("#EC3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DE3").on('input',function(e){
-      $("#ED3").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
+});
+//colume
+$("#Shelter32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Shelter23"+"").val(num);
+    console.log ($("#Shelter23"+"").val());
 
+});
 
-//LINE F
+/*
+Populating inverse values for Safety
+row 1
+ */
+$("#Safety01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety10"+"").val(num);
+    console.log ($("#Safety10"+"").val());
 
-$("#FA3").on('input',function(e){
-    $("#AF3").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FB3").on('input',function(e){
-    $("#BF3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#FC3").on('input',function(e){
-    $("#CF3").val(parseInt("3")/parseInt($(this).val()));
-   console.log($(this).val());
-});
-$("#FD3").on('input',function(e){
-    $("#DF3").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FE3").on('input',function(e){
-    $("#EF3").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-
-//////////////////////////////////////
+$("#Safety02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety20"+"").val(num);
+    console.log ($("#Safety20"+"").val());
 
-$("#AF3").on('input',function(e){
-    $("#FA3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BF3").on('input',function(e){
-    $("#FB3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Safety03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety30"+"").val(num);
+    console.log ($("#Safety0"+"").val());
+
 });
-$("#CF3").on('input',function(e){
-    $("#FC3").val(parseInt("3")/parseInt($(this).val()));
-   console.log($(this).val());
+//Column 1
+$("#Safety10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety01"+"").val(num);
+    console.log ($("#Safety01"+"").val());
+
 });
-$("#DF3").on('input',function(e){
-    $("#FD3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Safety20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety02"+"").val(num);
+    console.log ($("#Safety0"+"").val());
+
 });
-$("#EF3").on('input',function(e){
-    $("#FE3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Safety30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety03"+"").val(num);
+    console.log ($("#Safety30"+"").val());
+
 });
+//row 2
+$("#Safety12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety21"+"").val(num);
+    console.log ($("#Safety21"+"").val());
 
-//LINE G
-$("#GA3").on('input',function(e){
-    $("#AG3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#GB3").on('input',function(e){
-    $("#BG3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Safety13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety31"+"").val(num);
+    console.log ($("#Safety31"+"").val());
+
 });
-$("#GC3").on('input',function(e){
-    $("#CG3").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#Safety21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety12"+"").val(num);
+    console.log ($("#Safety12"+"").val());
+
 });
-$("#GD3").on('input',function(e){
-    $("#DG3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Safety31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety13"+"").val(num);
+    console.log ($("#Safety13"+"").val());
+
 });
-$("#GE3").on('input',function(e){
-    $("#EG3").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#Safety23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety32"+"").val(num);
+    console.log ($("#Safety32"+"").val());
+
 });
-$("#GF3").on('input',function(e){
-    $("#FG3").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#Safety32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Safety23"+"").val(num);
+    console.log ($("#Safety23"+"").val());
+
 });
-/////////////////////////////////////////////
+/*
+Populating inverse values for Basic Knowledge
+row 1
+ */
+$("#BasicKnowledge01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge10"+"").val(num);
+    console.log ($("#BasicKnowledge0"+"").val());
 
-$("#AG3").on('input',function(e){
-    $("#GA3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BG3").on('input',function(e){
-    $("#GB3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge20"+"").val(num);
+    console.log ($("#BasicKnowledge20"+"").val());
+
 });
-$("#CG3").on('input',function(e){
-    $("#GC3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge30"+"").val(num);
+    console.log ($("#BasicKnowledge30"+"").val());
+
 });
-$("#DG3").on('input',function(e){
-    $("#GD3").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 1
+$("#BasicKnowledge10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge01"+"").val(num);
+    console.log ($("#BasicKnowledge01"+"").val());
+
 });
-$("#EG3").on('input',function(e){
-    $("#GE3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge02"+"").val(num);
+    console.log ($("#BasicKnowledge10"+"").val());
+
 });
-$("#FG3").on('input',function(e){
-    $("#GF3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge03"+"").val(num);
+    console.log ($("#BasicKnowledge30"+"").val());
+
 });
+//row 2
+$("#BasicKnowledge12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge21"+"").val(num);
+    console.log ($("#BasicKnowledge21"+"").val());
 
-// LINE H
-$("#HA3").on('input',function(e){
-    $("#AH3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#HB3").on('input',function(e){
-    $("#BH3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge31"+"").val(num);
+    console.log ($("#BasicKnowledge31"+"").val());
+
 });
-$("#HC3").on('input',function(e){
-    $("#CH3").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#BasicKnowledge21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge12"+"").val(num);
+    console.log ($("#BasicKnowledge12"+"").val());
+
 });
-$("#HD3").on('input',function(e){
-    $("#DH3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#BasicKnowledge31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge13"+"").val(num);
+    console.log ($("#BasicKnowledge13"+"").val());
+
 });
-$("#HE3").on('input',function(e){
-    $("#EH3").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#BasicKnowledge23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge32"+"").val(num);
+    console.log ($("#BasicKnowledge32"+"").val());
+
 });
-$("#HF3").on('input',function(e){
-    $("#FH3").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#BasicKnowledge32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#BasicKnowledge23"+"").val(num);
+    console.log ($("#BasicKnowledge23"+"").val());
+
 });
-$("#HG3").on('input',function(e){
-    $("#GH3").val("1/"+$(this).val());
-   console.log($(this).val());
+/*
+Populating inverse values for ICT
+row 1
+ */
+$("#ICT01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT10"+"").val(num);
 });
-
-/////////////////////////////////////
+$("#ICT02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT20"+"").val(num);
 
-$("#AH3").on('input',function(e){
-    $("#HA3").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BH3").on('input',function(e){
-    $("#HB3").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CH3").on('input',function(e){
-    $("#HC3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#ICT03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT30"+"").val(num);
+
 });
-$("#DH3").on('input',function(e){
-    $("#HD3").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 1
+$("#ICT10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT01"+"").val(num);
 });
-$("#EH3").on('input',function(e){
-    $("#HE3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#ICT20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT02"+"").val(num);
+
 });
-$("#FH3").on('input',function(e){
-    $("#HF3").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#ICT30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT03"+"").val(num);
 });
-$("#GH3").on('input',function(e){
-    $("#HG3").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 2
+$("#ICT12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT21"+"").val(num);
 });
-
-//Project 4
-
-
-  $("#AB4").on('input',function(e){
-      $("#BA4"+"").val("1/"+$(this).val());
-      console.log ($("#BA4"+"").val());
-     console.log("1/"+$(this).val());
-  });
-  //LINE B
-  $("#BA4").on('input',function(e){
-      $("#AB4"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AB4").on('input',function(e){
-      $("#BA4"+"").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE C
-
-  $("#CA4").on('input',function(e){
-      $("#AC4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#AC4").on('input',function(e){
-      $("#CA4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CB4").on('input',function(e){
-      $("#BC4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BC4").on('input',function(e){
-      $("#CB4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE D
-  $("#DA4").on('input',function(e){
-      $("#AD4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DB4").on('input',function(e){
-      $("#BD4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DC4").on('input',function(e){
-      $("#CD4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////
-  $("#AD4").on('input',function(e){
-      $("#DA4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#BD4").on('input',function(e){
-      $("#DB4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CD4").on('input',function(e){
-      $("#DC4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  //LINE E
-
-  $("#EA4").on('input',function(e){
-  $("#AE4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  $("#EB4").on('input',function(e){
-      $("#BE4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#EC4").on('input',function(e){
-      $("#CE4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#ED4").on('input',function(e){
-      $("#DE4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  ////////////////////////////////////////
-
-  $("#AE4").on('input',function(e){
-  $("#EA4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
-  $("#BE4").on('input',function(e){
-      $("#EB4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#CE4").on('input',function(e){
-      $("#EC4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-  $("#DE4").on('input',function(e){
-      $("#ED4").val("1/"+$(this).val());
-     console.log($(this).val());
-  });
-
+$("#ICT13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT31"+"").val(num);
 
-//LINE F
-
-$("#FA4").on('input',function(e){
-    $("#AF4").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#FB4").on('input',function(e){
-    $("#BF4").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#ICT21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT12"+"").val(num);
+
 });
-$("#FC4").on('input',function(e){
-    $("#CF4").val(parseInt("4")/parseInt($(this).val()));
-   console.log($(this).val());
+$("#ICT31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT13"+"").val(num);
 });
-$("#FD4").on('input',function(e){
-    $("#DF4").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#ICT23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT32"+"").val(num);
 });
-$("#FE4").on('input',function(e){
-    $("#EF4").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#ICT32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#ICT23"+"").val(num);
+
 });
+/*
+Populating inverse values for Health
+row 1
+ */
+$("#Health01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health0"+"").val(num);
+    console.log ($("#Health10"+"").val());
 
-//////////////////////////////////////
+});
+$("#Health02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health20"+"").val(num);
+    console.log ($("#Health20"+"").val());
 
-$("#AF4").on('input',function(e){
-    $("#FA4").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BF4").on('input',function(e){
-    $("#FB4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Health03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health30"+"").val(num);
+
 });
-$("#CF4").on('input',function(e){
-    $("#FC4").val(parseInt("4")/parseInt($(this).val()));
-   console.log($(this).val());
+//Column 1
+$("#Health10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health01"+"").val(num);
 });
-$("#DF4").on('input',function(e){
-    $("#FD4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Health20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health02"+"").val(num);
+
 });
-$("#EF4").on('input',function(e){
-    $("#FE4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Health30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health03"+"").val(num);
 });
+//row 2
+$("#Health12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health21"+"").val(num);
 
-//LINE G
-$("#GA4").on('input',function(e){
-    $("#AG4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GB4").on('input',function(e){
-    $("#BG4").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#GC4").on('input',function(e){
-    $("#CG4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Health13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health31"+"").val(num);
+
 });
-$("#GD4").on('input',function(e){
-    $("#DG4").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#Health21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health12"+"").val(num);
 });
-$("#GE4").on('input',function(e){
-    $("#EG4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Health31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health13"+"").val(num);
 });
-$("#GF4").on('input',function(e){
-    $("#FG4").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#Health23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health32"+"").val(num);
 });
-/////////////////////////////////////////////
+//colume
+$("#Health32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Health23"+"").val(num);
 
-$("#AG4").on('input',function(e){
-    $("#GA4").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#BG4").on('input',function(e){
-    $("#GB4").val("1/"+$(this).val());
-   console.log($(this).val());
+/*
+Populating inverse values for Environmental
+row 1
+ */
+$("#Environmental01").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental10"+"").val(num);
+
 });
-$("#CG4").on('input',function(e){
-    $("#GC4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Environmental02").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental20"+"").val(num);
 });
-$("#DG4").on('input',function(e){
-    $("#GD4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Environmental03").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental30"+"").val(num);
+
 });
-$("#EG4").on('input',function(e){
-    $("#GE4").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 1
+$("#Environmental10").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental01"+"").val(num);
+    console.log ($("#Environmental01"+"").val());
+
 });
-$("#FG4").on('input',function(e){
-    $("#GF4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Environmental20").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental02"+"").val(num);
 });
+$("#Environmental30").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental03"+"").val(num);
 
-// LINE H
-$("#HA4").on('input',function(e){
-    $("#AH4").val("1/"+$(this).val());
-   console.log($(this).val());
 });
-$("#HB4").on('input',function(e){
-    $("#BH4").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 2
+$("#Environmental12").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental21"+"").val(num);
 });
-$("#HC4").on('input',function(e){
-    $("#CH4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Shelter13").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#SEnvironmental31"+"").val(num);
 });
-$("#HD4").on('input',function(e){
-    $("#DH4").val("1/"+$(this).val());
-   console.log($(this).val());
+//Column 2
+$("#Environmental21").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental12"+"").val(num);
+
 });
-$("#HE4").on('input',function(e){
-    $("#EH4").val("1/"+$(this).val());
-   console.log($(this).val());
+$("#Environmental31").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental13"+"").val(num);
 });
-$("#HF4").on('input',function(e){
-    $("#FH4").val("1/"+$(this).val());
-   console.log($(this).val());
+//row 3
+$("#Environmental23").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental32"+"").val(num);
 });
-$("#HG4").on('input',function(e){
-    $("#GH4").val("1/"+$(this).val());
-   console.log($(this).val());
+//colume
+$("#Environmental32").on('input',function(e){
+    var num = 1/ parseFloat($(this).val())
+    $("#Environmental23"+"").val(num);
 });
+/*
 
-/////////////////////////////////////
 
-$("#AH4").on('input',function(e){
-    $("#HA4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#BH4").on('input',function(e){
-    $("#HB4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#CH4").on('input',function(e){
-    $("#HC4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#DH4").on('input',function(e){
-    $("#HD4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#EH4").on('input',function(e){
-    $("#HE4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#FH4").on('input',function(e){
-    $("#HF4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
-$("#GH4").on('input',function(e){
-    $("#HG4").val("1/"+$(this).val());
-   console.log($(this).val());
-});
 /*
   $("#AB2").on('input',function(e){
       $("#BA2").val("1/"+$(this).val());

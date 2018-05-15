@@ -68,7 +68,7 @@ router.get('/spicountries/CountryCode/:code', function (req, res) {
 router.get('/spicountries/:code', function (req, res) {
     var code = req.params.code;
     var needs = code.split("&");
-    console.log(needs)
+   // console.log(needs)
     SpiCountry.find({CountryCode: code}, function (err, spiCountries) {
         rank(spiCountries);
         score_component(spiCountries)
@@ -92,14 +92,20 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
 });
 
 router.post('/project', function (req, res) {
+/*
   console.log(res.json);
-    if(req.body[1]["value"]==2){
+    if(req.body[1]["value"]==2)
+    //console.log(" Check oout new form "+ (JSON.stringify(req.body)))
+    //console.log(req.body.projNum)*/
+    
+    if(req.body.projNum==2){
+
         res.send(ahpTestTwoProj(req.body));
     }
-    if(req.body[1]["value"]==3){
+    if(req.body.projNum==3){
         res.send(ahpTestThreeProj(req.body));
     }
-    if(req.body[1]["value"]==4){
+    if(req.body.projNum==4){
         res.send(ahpTestFourProj(req.body));
     }
 
@@ -239,41 +245,89 @@ function getValue(value1, value2) {
     return value;
 }
 
+function getNumber(str){
+     str = str.replace(/"/g,"");
+     return parseInt(str);
+
+}
+
+
+
 function ahpTestTwoProj(content) {
 
-    var project1 = content[2]["value"].replace(/\s/g, '');
-    var project2 = content[12]["value"].replace(/\s/g, '');
-    var number = getValue(JSON.stringify(content[3]["value"]), JSON.stringify(content[13]["value"]));
-    //number = number.replace(/"/g,"")
-    console.log(number)
+    var project1 = content.Projects.Project0.replace(/\s/g, '');
+    var project2 = content.Projects.Project1.replace(/\s/g, '');
+
 
     ahpContext.addItems([project1, project2]);
 
     ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'BasicKnowledge', 'ICT', 'Health', 'Environmental']);
 
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project2, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project2, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project2, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project2, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project2, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project2, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project2, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project2, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"])))]]);
+    ahpContext.rankCriteriaItem('Nutrition', [
+        [project1, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition00"])],
+        [project1, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition01"])],
+
+        [project2, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition10"])],
+        [project2, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition11"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Water', [
+        [project1, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"])],
+        [project1, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation01"])],
+        [project2, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation10"])],
+        [project2, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation11"])]
+
+
+    ]);
+    ahpContext.rankCriteriaItem('Shelter', [
+        [project1, project1, parseFloat(content["Needs"]["Shelter"]["Shelter00"])],
+        [project1, project2, parseFloat(content["Needs"]["Shelter"]["Shelter01"])],
+        [project2, project1, parseFloat(content["Needs"]["Shelter"]["Shelter10"])],
+        [project2, project2, parseFloat(content["Needs"]["Shelter"]["Shelter11"])]
+
+
+    ]);
+    ahpContext.rankCriteriaItem('Safety', [
+        [project1, project1, parseFloat(content["Needs"]["Safety"]["Safety00"])],
+        [project1, project2, parseFloat(content["Needs"]["Safety"]["Safety01"])],
+        [project2, project1, parseFloat(content["Needs"]["Safety"]["Safety10"])],
+        [project2, project2, parseFloat(content["Needs"]["Safety"]["Safety11"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('BasicKnowledge', [
+        [project1, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge00"])],
+        [project1, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge01"])],
+        [project2, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge10"])],
+        [project2, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge11"])]
+    ]);
+    ahpContext.rankCriteriaItem('ICT', [
+        [project1, project1, parseFloat(content["Needs"]["ICT"]["ICT00"])],
+        [project1, project2, parseFloat(content["Needs"]["ICT"]["ICT01"])],
+        [project2, project1, parseFloat(content["Needs"]["ICT"]["ICT10"])],
+        [project2, project2, parseFloat(content["Needs"]["ICT"]["ICT11"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Health', [
+        [project1, project1, parseFloat(content["Needs"]["Health"]["Health00"])],
+        [project1, project2, parseFloat(content["Needs"]["Health"]["Health01"])],
+        [project2, project1, parseFloat(content["Needs"]["Health"]["Health10"])],
+        [project2, project2, parseFloat(content["Needs"]["Health"]["Health11"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Environmental', [
+        [project1, project1, parseFloat(content["Needs"]["Environmental"]["Environmental00"])],
+        [project1, project2, parseFloat(content["Needs"]["Environmental"]["Environmental01"])],
+        [project2, project1, parseFloat(content["Needs"]["Environmental"]["Environmental10"])],
+        [project2, project2, parseFloat(content["Needs"]["Environmental"]["Environmental11"])]
+
+
+    ]);
 
     ahpContext.rankCriteria(
         [
-            ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
-            ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental', 9],
-            ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
-            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9], ['Shelter', 'Environmental', 11],
+            ['Nutrition', 'Water', 3], ['Nutrition', 'Shelter', 5], ['Nutrition', 'Safety', 7], ['Nutrition', 'BasicKnowledge', 9], ['Nutrition', 'ICT', 9],['Nutrition', 'Health', 9], ['Nutrition', 'Environmental', 9],
+            ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'BasicKnowledge', 7], ['Water', 'ICT', 7], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
+            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 5], ['Shelter', 'Health', 5], ['Shelter', 'Environmental', 5],
             ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
             ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
             ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
@@ -281,15 +335,16 @@ function ahpTestTwoProj(content) {
         ]
     );
 
+
     var output = ahpContext.run();
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + content[12]["value"] + ":" + Ranking[project2]
-    console.log("In loop " + Ranking)
+    Ranking = ontent["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2]
+   // console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
-    console.log(output)
+    //console.log(output)
     return output;
 
 
@@ -297,74 +352,127 @@ function ahpTestTwoProj(content) {
 
 function ahpTestThreeProj(content) {
 
-    var project1 = content[2]["value"].replace(/\s/g, '');
-    var project2 = content[12]["value"].replace(/\s/g, '');
-    var project3 = content[22]["value"].replace(/\s/g, '');
+    var project1 = content.Projects.Project0.replace(/\s/g, '');
+    var project2 = content.Projects.Project1.replace(/\s/g, '');
+    var project3 = content.Projects.Project2.replace(/\s/g, '');
 
     ahpContext.addItems([project1, project2, project3]);
 
     ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'BasicKnowledge', 'ICT', 'Health', 'Environmental']);
 
-    //project 1 compares to project 2
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project2, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project2, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project2, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project2, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project2, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project2, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project2, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project2, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"])))]]);
+    ahpContext.rankCriteriaItem('Nutrition', [
+        [project1, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition00"])],
+        [project1, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition01"])],
+        [project1, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition02"])],
 
-    //project 1 compares to project 3
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project3, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[24]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[24]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project3, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[25]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[25]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project3, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[26]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[26]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project3, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[27]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[27]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project3, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[28]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[28]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project3, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[29]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[29]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project3, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[30]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[30]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project3, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[31]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[31]["value"])))]]);
+        [project2, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition10"])],
+        [project2, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition11"])],
+        [project2, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition12"])],
 
-    //project 2 compares to project 3
-    ahpContext.rankCriteriaItem('Nutrition', [[project2, project3, getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[24]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[24]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project2, project3, getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[25]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[25]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project2, project3, getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[26]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[26]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project2, project3, getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[27]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[27]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project2, project3, getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[28]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[28]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project2, project3, getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[29]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[29]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project2, project3, getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[30]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[30]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project2, project3, getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[31]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[31]["value"])))]]);
+        [project3, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition20"])],
+        [project3, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition21"])],
+        [project3, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition22"])]
+    ]);
+    ahpContext.rankCriteriaItem('Water', [
+        [project1, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"])],
+        [project1, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation01"])],
+        [project1, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation02"])],
+
+        [project2, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation10"])],
+        [project2, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation11"])],
+        [project2, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation12"])],
+
+        [project3, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation20"])],
+        [project3, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation21"])],
+        [project3, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation22"])],
+
+    ]);
+    ahpContext.rankCriteriaItem('Shelter', [
+        [project1, project1, parseFloat(content["Needs"]["Shelter"]["Shelter00"])],
+        [project1, project2, parseFloat(content["Needs"]["Shelter"]["Shelter01"])],
+        [project1, project3, parseFloat(content["Needs"]["Shelter"]["Shelter02"])],
+
+        [project2, project1, parseFloat(content["Needs"]["Shelter"]["Shelter10"])],
+        [project2, project2, parseFloat(content["Needs"]["Shelter"]["Shelter11"])],
+        [project2, project3, parseFloat(content["Needs"]["Shelter"]["Shelter12"])],
+
+        [project3, project1, parseFloat(content["Needs"]["Shelter"]["Shelter20"])],
+        [project3, project2, parseFloat(content["Needs"]["Shelter"]["Shelter21"])],
+        [project3, project3, parseFloat(content["Needs"]["Shelter"]["Shelter22"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Safety', [
+        [project1, project1, parseFloat(content["Needs"]["Safety"]["Safety00"])],
+        [project1, project2, parseFloat(content["Needs"]["Safety"]["Safety01"])],
+        [project1, project3, parseFloat(content["Needs"]["Safety"]["Safety02"])],
+
+        [project2, project1, parseFloat(content["Needs"]["Safety"]["Safety10"])],
+        [project2, project2, parseFloat(content["Needs"]["Safety"]["Safety11"])],
+        [project2, project3, parseFloat(content["Needs"]["Safety"]["Safety12"])],
+
+        [project3, project1, parseFloat(content["Needs"]["Safety"]["Safety20"])],
+        [project3, project2, parseFloat(content["Needs"]["Safety"]["Safety21"])],
+        [project3, project3, parseFloat(content["Needs"]["Safety"]["Safety22"])]
+
+
+    ]);
+    ahpContext.rankCriteriaItem('BasicKnowledge', [
+        [project1, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge00"])],
+        [project1, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge01"])],
+        [project1, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge02"])],
+
+        [project2, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge10"])],
+        [project2, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge11"])],
+        [project2, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge12"])],
+
+        [project3, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge20"])],
+        [project3, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge21"])],
+        [project3, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge22"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('ICT', [
+        [project1, project1, parseFloat(content["Needs"]["ICT"]["ICT00"])],
+        [project1, project2, parseFloat(content["Needs"]["ICT"]["ICT01"])],
+        [project1, project3, parseFloat(content["Needs"]["ICT"]["ICT02"])],
+
+        [project2, project1, parseFloat(content["Needs"]["ICT"]["ICT10"])],
+        [project2, project2, parseFloat(content["Needs"]["ICT"]["ICT11"])],
+        [project2, project3, parseFloat(content["Needs"]["ICT"]["ICT12"])],
+
+        [project3, project1, parseFloat(content["Needs"]["ICT"]["ICT20"])],
+        [project3, project2, parseFloat(content["Needs"]["ICT"]["ICT21"])],
+        [project3, project3, parseFloat(content["Needs"]["ICT"]["ICT22"])]
+
+
+    ]);
+    ahpContext.rankCriteriaItem('Health', [
+        [project1, project1, parseFloat(content["Needs"]["Health"]["Health00"])],
+        [project1, project2, parseFloat(content["Needs"]["Health"]["Health01"])],
+        [project1, project3, parseFloat(content["Needs"]["Health"]["Health02"])],
+        [project2, project1, parseFloat(content["Needs"]["Health"]["Health10"])],
+        [project2, project2, parseFloat(content["Needs"]["Health"]["Health11"])],
+        [project2, project3, parseFloat(content["Needs"]["Health"]["Health12"])],
+        [project3, project1, parseFloat(content["Needs"]["Health"]["Health20"])],
+        [project3, project2, parseFloat(content["Needs"]["Health"]["Health21"])],
+        [project3, project3, parseFloat(content["Needs"]["Health"]["Health22"])]
+    ]);
+    ahpContext.rankCriteriaItem('Environmental', [
+        [project1, project1, parseFloat(content["Needs"]["Environmental"]["Environmental00"])],
+        [project1, project2, parseFloat(content["Needs"]["Environmental"]["Environmental01"])],
+        [project1, project3, parseFloat(content["Needs"]["Environmental"]["Environmental02"])],
+        [project2, project1, parseFloat(content["Needs"]["Environmental"]["Environmental10"])],
+        [project2, project2, parseFloat(content["Needs"]["Environmental"]["Environmental11"])],
+        [project2, project3, parseFloat(content["Needs"]["Environmental"]["Environmental12"])],
+        [project3, project1, parseFloat(content["Needs"]["Environmental"]["Environmental20"])],
+        [project3, project2, parseFloat(content["Needs"]["Environmental"]["Environmental21"])],
+        [project3, project3, parseFloat(content["Needs"]["Environmental"]["Environmental22"])]
+    ]);
 
     ahpContext.rankCriteria(
         [
-            ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
-            ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental', 9],
-            ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
-            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9], ['Shelter', 'Environmental', 11],
+            ['Nutrition', 'Water', 3], ['Nutrition', 'Shelter', 5], ['Nutrition', 'Safety', 7], ['Nutrition', 'BasicKnowledge', 9], ['Nutrition', 'ICT', 9],['Nutrition', 'Health', 9], ['Nutrition', 'Environmental', 9],
+            ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'BasicKnowledge', 7], ['Water', 'ICT', 7], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
+            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 5], ['Shelter', 'Health', 5], ['Shelter', 'Environmental', 5],
             ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
             ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
             ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
@@ -376,7 +484,7 @@ function ahpTestThreeProj(content) {
     Ranking = output.rankedScoreMap
 
     //for(var i=0;i<Ranking.length;i++){
-    Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + content[12]["value"] + ":" + Ranking[project2] + "," + content[22]["value"] + ":" + Ranking[project3]
+    Ranking = ontent["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3]
     //console.log("In loop " + Ranking)
     //}
     // console.log(Ranking);
@@ -388,132 +496,178 @@ function ahpTestThreeProj(content) {
 
 function ahpTestFourProj(content) {
 
-
-    var project1 = content[2]["value"].replace(/\s/g, '');
-    var project2 = content[12]["value"].replace(/\s/g, '');
-    var project3 = content[22]["value"].replace(/\s/g, '');
-    var project4 = content[32]["value"].replace(/\s/g, '');
+    var project1 = content.Projects.Project0.replace(/\s/g, '');
+    var project2 = content.Projects.Project1.replace(/\s/g, '');
+    var project3 = content.Projects.Project2.replace(/\s/g, '');
+    var project4 = content.Projects.Project3.replace(/\s/g, '');
 
     ahpContext.addItems([project1, project2, project3, project4]);
 
     ahpContext.addCriteria(['Nutrition', 'Water', 'Shelter', 'Safety', 'BasicKnowledge', 'ICT', 'Health', 'Environmental']);
-
-//Project 1 compares to project 2
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project2, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[14]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project2, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[15]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project2, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[16]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project2, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[17]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project2, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[18]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project2, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[19]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project2, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[20]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project2, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"]))],
-        [project2, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[21]["value"])))]]);
-
-    //project 1 compares to project 3
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project3, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[24]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[24]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project3, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[25]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[25]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project3, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[26]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[26]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project3, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[27]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[27]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project3, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[28]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[28]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project3, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[29]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[29]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project3, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[30]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[30]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project3, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[31]["value"]))],
-        [project3, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[31]["value"])))]]);
-
-    //project 1 compares to project 4
-    ahpContext.rankCriteriaItem('Nutrition', [[project1, project4, getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[34]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[4]["value"]), JSON.stringify(content[34]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project1, project4, getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[35]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[5]["value"]), JSON.stringify(content[35]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project1, project4, getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[36]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[6]["value"]), JSON.stringify(content[36]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project1, project4, getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[37]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[7]["value"]), JSON.stringify(content[37]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project1, project4, getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[38]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[8]["value"]), JSON.stringify(content[38]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project1, project4, getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[39]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[9]["value"]), JSON.stringify(content[39]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project1, project4, getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[40]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[10]["value"]), JSON.stringify(content[40]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project1, project4, getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[41]["value"]))],
-        [project4, project1, (1 / getValue(JSON.stringify(content[11]["value"]), JSON.stringify(content[41]["value"])))]]);
-
-    //project 2 compares to project 3
-    ahpContext.rankCriteriaItem('Nutrition', [[project2, project3, getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[24]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[24]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project2, project3, getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[25]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[25]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project2, project3, getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[26]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[26]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project2, project3, getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[27]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[27]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project2, project3, getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[28]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[28]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project2, project3, getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[29]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[29]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project2, project3, getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[30]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[30]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project2, project3, getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[31]["value"]))],
-        [project3, project2, (1 / getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[31]["value"])))]]);
+console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"]))
+    console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation01"]))
+    console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation02"]))
+    console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation03"]))
 
 
-    //project 2 compares to project 4
-    ahpContext.rankCriteriaItem('Nutrition', [[project2, project4, getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[34]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[14]["value"]), JSON.stringify(content[34]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project2, project4, getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[35]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[15]["value"]), JSON.stringify(content[35]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project2, project4, getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[36]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[16]["value"]), JSON.stringify(content[36]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project2, project4, getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[37]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[17]["value"]), JSON.stringify(content[37]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project2, project4, getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[38]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[18]["value"]), JSON.stringify(content[38]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project2, project4, getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[39]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[19]["value"]), JSON.stringify(content[39]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project2, project4, getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[40]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[20]["value"]), JSON.stringify(content[40]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project2, project4, getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[41]["value"]))],
-        [project4, project2, (1 / getValue(JSON.stringify(content[21]["value"]), JSON.stringify(content[41]["value"])))]]);
+   ahpContext.rankCriteriaItem('Nutrition', [
+       [project1, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition00"])],
+       [project1, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition01"])],
+       [project1, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition02"])],
+       [project1, project4, parseFloat(content["Needs"]["Nutrition"]["Nutrition03"])],
+       [project2, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition10"])],
+       [project2, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition11"])],
+       [project2, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition12"])],
+       [project2, project4, parseFloat(content["Needs"]["Nutrition"]["Nutrition13"])],
+       [project3, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition20"])],
+       [project3, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition21"])],
+       [project3, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition22"])],
+       [project3, project4, parseFloat(content["Needs"]["Nutrition"]["Nutrition23"])],
+       [project4, project1, parseFloat(content["Needs"]["Nutrition"]["Nutrition30"])],
+       [project4, project2, parseFloat(content["Needs"]["Nutrition"]["Nutrition31"])],
+       [project4, project3, parseFloat(content["Needs"]["Nutrition"]["Nutrition32"])],
+       [project4, project4, parseFloat(content["Needs"]["Nutrition"]["Nutrition33"])]
 
+   ]);
+    ahpContext.rankCriteriaItem('Water', [
+        [project1, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"])],
+        [project1, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation01"])],
+        [project1, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation02"])],
+        [project1, project4, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation03"])],
+        [project2, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation10"])],
+        [project2, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation11"])],
+        [project2, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation12"])],
+        [project2, project4, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation13"])],
+        [project3, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation20"])],
+        [project3, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation21"])],
+        [project3, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation22"])],
+        [project3, project4, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation23"])],
+        [project4, project1, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation30"])],
+        [project4, project2, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation31"])],
+        [project4, project3, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation32"])],
+        [project4, project4, parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation33"])]
 
-    //project 3 compares project 4
-    ahpContext.rankCriteriaItem('Nutrition', [[project3, project4, getValue(JSON.stringify(content[24]["value"]), JSON.stringify(content[34]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[24]["value"]), JSON.stringify(content[34]["value"])))]]);
-    ahpContext.rankCriteriaItem('Water', [[project3, project4, getValue(JSON.stringify(content[25]["value"]), JSON.stringify(content[35]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[25]["value"]), JSON.stringify(content[35]["value"])))]]);
-    ahpContext.rankCriteriaItem('Shelter', [[project3, project4, getValue(JSON.stringify(content[26]["value"]), JSON.stringify(content[36]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[26]["value"]), JSON.stringify(content[36]["value"])))]]);
-    ahpContext.rankCriteriaItem('Safety', [[project3, project4, getValue(JSON.stringify(content[27]["value"]), JSON.stringify(content[37]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[27]["value"]), JSON.stringify(content[37]["value"])))]]);
-    ahpContext.rankCriteriaItem('BasicKnowledge', [[project3, project4, getValue(JSON.stringify(content[28]["value"]), JSON.stringify(content[38]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[28]["value"]), JSON.stringify(content[38]["value"])))]]);
-    ahpContext.rankCriteriaItem('ICT', [[project3, project4, getValue(JSON.stringify(content[29]["value"]), JSON.stringify(content[39]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[29]["value"]), JSON.stringify(content[39]["value"])))]]);
-    ahpContext.rankCriteriaItem('Health', [[project3, project4, getValue(JSON.stringify(content[30]["value"]), JSON.stringify(content[40]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[30]["value"]), JSON.stringify(content[40]["value"])))]]);
-    ahpContext.rankCriteriaItem('Environmental', [[project3, project4, getValue(JSON.stringify(content[31]["value"]), JSON.stringify(content[41]["value"]))],
-        [project4, project3, (1 / getValue(JSON.stringify(content[31]["value"]), JSON.stringify(content[41]["value"])))]]);
+    ]);
+    ahpContext.rankCriteriaItem('Shelter', [
+        [project1, project1, parseFloat(content["Needs"]["Shelter"]["Shelter00"])],
+        [project1, project2, parseFloat(content["Needs"]["Shelter"]["Shelter01"])],
+        [project1, project3, parseFloat(content["Needs"]["Shelter"]["Shelter02"])],
+        [project1, project4, parseFloat(content["Needs"]["Shelter"]["Shelter03"])],
+        [project2, project1, parseFloat(content["Needs"]["Shelter"]["Shelter10"])],
+        [project2, project2, parseFloat(content["Needs"]["Shelter"]["Shelter11"])],
+        [project2, project3, parseFloat(content["Needs"]["Shelter"]["Shelter12"])],
+        [project2, project4, parseFloat(content["Needs"]["Shelter"]["Shelter13"])],
+        [project3, project1, parseFloat(content["Needs"]["Shelter"]["Shelter20"])],
+        [project3, project2, parseFloat(content["Needs"]["Shelter"]["Shelter21"])],
+        [project3, project3, parseFloat(content["Needs"]["Shelter"]["Shelter22"])],
+        [project3, project4, parseFloat(content["Needs"]["Shelter"]["Shelter23"])],
+        [project4, project1, parseFloat(content["Needs"]["Shelter"]["Shelter30"])],
+        [project4, project2, parseFloat(content["Needs"]["Shelter"]["Shelter31"])],
+        [project4, project3, parseFloat(content["Needs"]["Shelter"]["Shelter32"])],
+        [project4, project4, parseFloat(content["Needs"]["Shelter"]["Shelter33"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Safety', [
+        [project1, project1, parseFloat(content["Needs"]["Safety"]["Safety00"])],
+        [project1, project2, parseFloat(content["Needs"]["Safety"]["Safety01"])],
+        [project1, project3, parseFloat(content["Needs"]["Safety"]["Safety02"])],
+        [project1, project4, parseFloat(content["Needs"]["Safety"]["Safety03"])],
+        [project2, project1, parseFloat(content["Needs"]["Safety"]["Safety10"])],
+        [project2, project2, parseFloat(content["Needs"]["Safety"]["Safety11"])],
+        [project2, project3, parseFloat(content["Needs"]["Safety"]["Safety12"])],
+        [project2, project4, parseFloat(content["Needs"]["Safety"]["Safety13"])],
+        [project3, project1, parseFloat(content["Needs"]["Safety"]["Safety20"])],
+        [project3, project2, parseFloat(content["Needs"]["Safety"]["Safety21"])],
+        [project3, project3, parseFloat(content["Needs"]["Safety"]["Safety22"])],
+        [project3, project4, parseFloat(content["Needs"]["Safety"]["Safety23"])],
+        [project4, project1, parseFloat(content["Needs"]["Safety"]["Safety30"])],
+        [project4, project2, parseFloat(content["Needs"]["Safety"]["Safety31"])],
+        [project4, project3, parseFloat(content["Needs"]["Safety"]["Safety32"])],
+        [project4, project4, parseFloat(content["Needs"]["Safety"]["Safety33"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('BasicKnowledge', [
+        [project1, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge00"])],
+        [project1, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge01"])],
+        [project1, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge02"])],
+        [project1, project4, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge03"])],
+        [project2, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge10"])],
+        [project2, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge11"])],
+        [project2, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge12"])],
+        [project2, project4, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge13"])],
+        [project3, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge20"])],
+        [project3, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge21"])],
+        [project3, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge22"])],
+        [project3, project4, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge23"])],
+        [project4, project1, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge30"])],
+        [project4, project2, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge31"])],
+        [project4, project3, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge32"])],
+        [project4, project4, parseFloat(content["Needs"]["BasicKnowledge"]["BasicKnowledge33"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('ICT', [
+        [project1, project1, parseFloat(content["Needs"]["ICT"]["ICT00"])],
+        [project1, project2, parseFloat(content["Needs"]["ICT"]["ICT01"])],
+        [project1, project3, parseFloat(content["Needs"]["ICT"]["ICT02"])],
+        [project1, project4, parseFloat(content["Needs"]["ICT"]["ICT03"])],
+        [project2, project1, parseFloat(content["Needs"]["ICT"]["ICT10"])],
+        [project2, project2, parseFloat(content["Needs"]["ICT"]["ICT11"])],
+        [project2, project3, parseFloat(content["Needs"]["ICT"]["ICT12"])],
+        [project2, project4, parseFloat(content["Needs"]["ICT"]["ICT13"])],
+        [project3, project1, parseFloat(content["Needs"]["ICT"]["ICT20"])],
+        [project3, project2, parseFloat(content["Needs"]["ICT"]["ICT21"])],
+        [project3, project3, parseFloat(content["Needs"]["ICT"]["ICT22"])],
+        [project3, project4, parseFloat(content["Needs"]["ICT"]["ICT23"])],
+        [project4, project1, parseFloat(content["Needs"]["ICT"]["ICT30"])],
+        [project4, project2, parseFloat(content["Needs"]["ICT"]["ICT31"])],
+        [project4, project3, parseFloat(content["Needs"]["ICT"]["ICT32"])],
+        [project4, project4, parseFloat(content["Needs"]["ICT"]["ICT33"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Health', [
+        [project1, project1, parseFloat(content["Needs"]["Health"]["Health00"])],
+        [project1, project2, parseFloat(content["Needs"]["Health"]["Health01"])],
+        [project1, project3, parseFloat(content["Needs"]["Health"]["Health02"])],
+        [project1, project4, parseFloat(content["Needs"]["Health"]["Health03"])],
+        [project2, project1, parseFloat(content["Needs"]["Health"]["Health10"])],
+        [project2, project2, parseFloat(content["Needs"]["Health"]["Health11"])],
+        [project2, project3, parseFloat(content["Needs"]["Health"]["Health12"])],
+        [project2, project4, parseFloat(content["Needs"]["Health"]["Health13"])],
+        [project3, project1, parseFloat(content["Needs"]["Health"]["Health20"])],
+        [project3, project2, parseFloat(content["Needs"]["Health"]["Health21"])],
+        [project3, project3, parseFloat(content["Needs"]["Health"]["Health22"])],
+        [project3, project4, parseFloat(content["Needs"]["Health"]["Health23"])],
+        [project4, project1, parseFloat(content["Needs"]["Health"]["Health30"])],
+        [project4, project2, parseFloat(content["Needs"]["Health"]["Health31"])],
+        [project4, project3, parseFloat(content["Needs"]["Health"]["Health32"])],
+        [project4, project4, parseFloat(content["Needs"]["Health"]["Health33"])]
+
+    ]);
+    ahpContext.rankCriteriaItem('Environmental', [
+        [project1, project1, parseFloat(content["Needs"]["Environmental"]["Environmental00"])],
+        [project1, project2, parseFloat(content["Needs"]["Environmental"]["Environmental01"])],
+        [project1, project3, parseFloat(content["Needs"]["Environmental"]["Environmental02"])],
+        [project1, project4, parseFloat(content["Needs"]["Environmental"]["Environmental03"])],
+        [project2, project1, parseFloat(content["Needs"]["Environmental"]["Environmental10"])],
+        [project2, project2, parseFloat(content["Needs"]["Environmental"]["Environmental11"])],
+        [project2, project3, parseFloat(content["Needs"]["Environmental"]["Environmental12"])],
+        [project2, project4, parseFloat(content["Needs"]["Environmental"]["Environmental13"])],
+        [project3, project1, parseFloat(content["Needs"]["Environmental"]["Environmental20"])],
+        [project3, project2, parseFloat(content["Needs"]["Environmental"]["Environmental21"])],
+        [project3, project3, parseFloat(content["Needs"]["Environmental"]["Environmental22"])],
+        [project3, project4, parseFloat(content["Needs"]["Environmental"]["Environmental23"])],
+        [project4, project1, parseFloat(content["Needs"]["Environmental"]["Environmental30"])],
+        [project4, project2, parseFloat(content["Needs"]["Environmental"]["Environmental31"])],
+        [project4, project3, parseFloat(content["Needs"]["Environmental"]["Environmental32"])],
+        [project4, project4, parseFloat(content["Needs"]["Environmental"]["Environmental33"])]
+
+    ]);
 
     ahpContext.rankCriteria(
         [
-            ['Nutrition', 'Water', 1], ['Nutrition', 'Shelter', 3], ['Nutrition', 'Safety', 3], ['Nutrition', 'BasicKnowledge', 5], ['Nutrition', 'ICT', 5],
-            ['Nutrition', 'Health', 7], ['Nutrition', 'Environmental', 9],
-            ['Water', 'Shelter', 3], ['Water', 'Safety', 3], ['Water', 'BasicKnowledge', 5], ['Water', 'ICT', 5], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
-            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 7], ['Shelter', 'Health', 9], ['Shelter', 'Environmental', 11],
+            ['Nutrition', 'Water', 3], ['Nutrition', 'Shelter', 5], ['Nutrition', 'Safety', 7], ['Nutrition', 'BasicKnowledge', 9], ['Nutrition', 'ICT', 9],['Nutrition', 'Health', 9], ['Nutrition', 'Environmental', 9],
+            ['Water', 'Shelter', 3], ['Water', 'Safety', 5], ['Water', 'BasicKnowledge', 7], ['Water', 'ICT', 7], ['Water', 'Health', 7], ['Water', 'Environmental', 7],
+            ['Shelter', 'Safety', 3], ['Shelter', 'BasicKnowledge', 5], ['Shelter', 'ICT', 5], ['Shelter', 'Health', 5], ['Shelter', 'Environmental', 5],
             ['Safety', 'BasicKnowledge', 3], ['Safety', 'ICT', 5], ['Safety', 'Health', 7], ['Safety', 'Environmental', 9],
             ['BasicKnowledge', 'ICT', 3], ['BasicKnowledge', 'Health', 5], ['BasicKnowledge', 'Environmental', 7],
             ['ICT', 'Health', 3], ['ICT', 'Environmental', 5],
@@ -523,11 +677,12 @@ function ahpTestFourProj(content) {
 
     var output = ahpContext.run();
     Ranking = output.rankedScoreMap
-
-   Ranking = content[2]["value"] + ":" + Ranking[project1] + "," + parseInt(content[12]["value"],4) + ":" + Ranking[project2] + "," + content[22]["value"] + ":" + Ranking[project3] + "," +
-        content[32]["value"] + ":" + Ranking[project4]
-
     console.log(output)
+
+   Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3] + "," +
+       ontent["Projects"]["Project3"] + ":" + Ranking[project4]
+
+
     return output;
 
 
