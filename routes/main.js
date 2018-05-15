@@ -674,7 +674,7 @@ console.log(parseFloat(content["Needs"]["WaterSanitation"]["WaterSanitation00"])
     Ranking = output.rankedScoreMap
     console.log(output)
 
-   Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + ontent["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3] + "," +
+   Ranking = content["Projects"]["Project0"] + ":" + Ranking[project1] + "," + content["Projects"]["Project1"] + ":" + Ranking[project2] + "," + ontent["Projects"]["Project2"] + ":" + Ranking[project3] + "," +
        ontent["Projects"]["Project3"] + ":" + Ranking[project4]
 
 

@@ -475,7 +475,7 @@ row 1
  */
 $("#Health01").on('input',function(e){
     var num = 1/ parseFloat($(this).val())
-    $("#Health0"+"").val(num);
+    $("#Health10"+"").val(num);
     console.log ($("#Health10"+"").val());
 
 });
