@@ -158,14 +158,17 @@
                                                             <span class="help-block"> </span>
                                                             <input type="text" id="projectName<%= i %>"
                                                                    name="projectName<%= i %>" class="form-control"
-                                                                   placeholder="Name of Project <%= i%>">
+                                                                   placeholder="Name of Project <%= i %>">
 
                                                         </div>
                                                     </div>
 
                                                     <% } %>
-                                                    <div class="col-md-4">
-                                                        <button id="showMatrix">Fill in Preference Table</button>
+                                                    <div class="alert alert-info alert-dismissable">
+                                                        <button type="button" class="close" data-dismiss="alert"
+                                                                aria-hidden="true">&times;
+                                                        </button>
+                                                        Populate Matrices.
                                                     </div>
                                                     <div class="container-fixed">
                                                         <div class="row">
@@ -179,7 +182,7 @@
                                                                         if(i == 0){ %>
                                                                         <th scope="col">Nutrition</th>
                                                                         <% }else{ %>
-                                                                        <th scope="col" id="Nutrition" +i></th>
+                                                                        <th scope="col" id="ntr<%=i%>"></th>
                                                                         <% } %>
                                                                         <% } %>
                                                                     </tr>
@@ -187,29 +190,30 @@
 
                                                                     <% for (var i = 0; i < myVar; i++) { %>
                                                                     <tr>
-                                                                        <th scope="row">right <%= i %></th>
+                                                                        <th scope="row" id="nutrition<%=i%>">
+                                                                             <%= i %></th>
                                                                         <% for(var j = 0; j < myVar; j++) { %>
 
                                                                         <td>
-                                                                            <%if(j==i){%>
+                                                                            <% if(j == i){ %>
                                                                             <input class="form-control"
                                                                                    id="Nutrition<%= i %><%= j %>"
                                                                                    name="Nutrition<%= i %><%= j %>"
                                                                                    type="text" placeholder=""
                                                                                    value="1" readonly>
-                                                                            <%}else{%>
+                                                                            <% }else{ %>
 
-                                                                                <input class="form-control"
-                                                                                       id="Nutrition<%= i %><%= j %>"
-                                                                                       name="Nutrition<%= i %><%= j %>"
-                                                                                       type="text" placeholder=""
-                                                                                       value="">
+                                                                            <input class="form-control"
+                                                                                   id="Nutrition<%= i %><%= j %>"
+                                                                                   name="Nutrition<%= i %><%= j %>"
+                                                                                   type="text" placeholder=""
+                                                                                   value="">
 
-<%}%>
+                                                                            <% } %>
                                                                         </td>
-                                                                        <%}%>
+                                                                        <% } %>
                                                                     </tr>
-                                                                    <%}%>
+                                                                    <% } %>
 
                                                                 </table>
                                                             </div>
@@ -223,7 +227,7 @@
                                                                         if(i == 0){ %>
                                                                         <th scope="col">Water and Sanitaton</th>
                                                                         <% }else{ %>
-                                                                        <th scope="col"><%= i %></th>
+                                                                        <th scope="col" id="water<%=i%>"></th>
                                                                         <% } %>
                                                                         <% } %>
                                                                     </tr>
@@ -231,18 +235,19 @@
 
                                                                     <% for (var i = 0; i < myVar; i++) { %>
                                                                     <tr>
-                                                                        <th scope="row">right <%= i %></th>
+                                                                        <th scope="row" id="waterSanitation<%= i %>">
+                                                                             <%= i %></th>
                                                                         <% for(var j = 0; j < myVar; j++) { %>
 
                                                                         <td>
 
-                                                                            <%if(j==i){%>
+                                                                            <% if(j == i){ %>
                                                                             <input class="form-control"
                                                                                    id="WaterSanitation<%= i %><%= j %>"
                                                                                    name="WaterSanitation<%= i %><%= j %>"
                                                                                    type="text" placeholder=""
                                                                                    value="1" readonly>
-                                                                            <%}else{%>
+                                                                            <% }else{ %>
 
                                                                             <input class="form-control"
                                                                                    id="WaterSanitation<%= i %><%= j %>"
@@ -250,7 +255,7 @@
                                                                                    type="text" placeholder=""
                                                                                    value="">
 
-                                                                            <%}%>
+                                                                            <% } %>
 
                                                                         </td>
                                                                         <% } %>
@@ -261,8 +266,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="row"
-                                                        <div class="col-sm-6">
-                                                            <table class="table">
+                                                            <div class="col-sm-6">
+                                                                 <table class="table">
                                                                 <thead class="thead-dark">
                                                                 <tr>
                                                                     <%
@@ -271,7 +276,7 @@
                                                                     if(i == 0){ %>
                                                                     <th scope="col">Shelter</th>
                                                                     <% }else{ %>
-                                                                    <th scope="col">
+                                                                    <th scope="col" id="shel<%=i%>">
                                                                     </th>
                                                                     <% } %>
                                                                     <% } %>
@@ -280,18 +285,18 @@
 
                                                                 <% for (var i = 0; i < myVar; i++) { %>
                                                                 <tr>
-                                                                    <th scope="row">right <%= i %></th>
+                                                                    <th scope="row" id="shelter<%=i%>"></th>
                                                                     <% for(var j = 0; j < myVar; j++) { %>
 
                                                                     <td>
 
-                                                                        <%if(j==i){%>
+                                                                        <% if(j == i){ %>
                                                                         <input class="form-control"
                                                                                id="Shelter<%= i %><%= j %>"
                                                                                name="Shelter<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="1" readonly>
-                                                                        <%}else{%>
+                                                                        <% }else{ %>
 
                                                                         <input class="form-control"
                                                                                id="Shelter<%= i %><%= j %>"
@@ -299,16 +304,16 @@
                                                                                type="text" placeholder=""
                                                                                value="">
 
-                                                                        <%}%>
+                                                                        <% } %>
                                                                     </td>
                                                                     <% } %>
                                                                 </tr>
                                                                 <% } %>
 
                                                             </table>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <table class="table">
+                                                             </div>
+                                                            <div class="col-sm-6">
+                                                                <table class="table">
                                                                 <thead class="thead-dark">
                                                                 <tr>
                                                                     <%
@@ -317,7 +322,7 @@
                                                                     if(i == 0){ %>
                                                                     <th scope="col">Safety</th>
                                                                     <% }else{ %>
-                                                                    <th scope="col"><%= i %></th>
+                                                                    <th scope="col" id="safe<%=i%>"></th>
                                                                     <% } %>
                                                                     <% } %>
                                                                 </tr>
@@ -325,18 +330,18 @@
 
                                                                 <% for (var i = 0; i < myVar; i++) { %>
                                                                 <tr>
-                                                                    <th scope="row">right <%= i %></th>
+                                                                    <th scope="row" id="safety<%=i%>">right <%= i %></th>
                                                                     <% for(var j = 0; j < myVar; j++) { %>
 
                                                                     <td>
 
-                                                                        <%if(j==i){%>
+                                                                        <% if(j == i){ %>
                                                                         <input class="form-control"
                                                                                id="Safety<%= i %><%= j %>"
                                                                                name="Safety<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="1" readonly>
-                                                                        <%}else{%>
+                                                                        <% }else{ %>
 
                                                                         <input class="form-control"
                                                                                id="Safety<%= i %><%= j %>"
@@ -344,27 +349,119 @@
                                                                                type="text" placeholder=""
                                                                                value="">
 
-                                                                        <%}%>
+                                                                        <% } %>
                                                                     </td>
                                                                     <% } %>
                                                                 </tr>
                                                                 <% } %>
 
                                                             </table>
+                                                            </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <table class="table">
+                                                                    <thead class="thead-dark">
+                                                                    <tr>
+                                                                        <%
+                                                                        myvar = parseInt(myVar) + 1;
+                                                                        for(var i = 0; i < myvar; i++){
+                                                                        if(i == 0){ %>
+                                                                        <th scope="col">Basic Knowledge</th>
+                                                                        <% }else{ %>
+                                                                        <th scope="col"id="base<%=i%>"><%= i %></th>
+                                                                        <% } %>
+                                                                        <% } %>
+                                                                    </tr>
+                                                                    </thead>
 
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <table class="table">
+                                                                    <% for (var i = 0; i < myVar; i++) { %>
+                                                                    <tr>
+                                                                        <th scope="row" id="basic<%=i%>">right <%= i %></th>
+                                                                        <% for(var j = 0; j < myVar; j++) { %>
+
+                                                                        <td>
+
+                                                                            <% if(j == i){ %>
+                                                                            <input class="form-control"
+                                                                                   id="BasicKnowledge<%= i %><%= j %>"
+                                                                                   name="BasicKnowledge<%= i %><%= j %>"
+                                                                                   type="text" placeholder=""
+                                                                                   value="1" readonly>
+                                                                            <% }else{ %>
+
+                                                                            <input class="form-control"
+                                                                                   id="BasicKnowledge<%= i %><%= j %>"
+                                                                                   name="BasicKnowledge<%= i %><%= j %>"
+                                                                                   type="text" placeholder=""
+                                                                                   value="">
+
+                                                                            <% } %>
+                                                                        </td>
+                                                                        <% } %>
+                                                                    </tr>
+                                                                    <% } %>
+
+                                                                </table>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <table class="table">
+                                                                    <thead class="thead-dark">
+                                                                    <tr>
+                                                                        <%
+                                                                        myvar = parseInt(myVar) + 1;
+                                                                        for(var i = 0; i < myvar; i++){
+                                                                        if(i == 0){ %>
+                                                                        <th scope="col">ICT</th>
+                                                                        <% }else{ %>
+                                                                        <th scope="col" id="ic<%=i%>"></th>
+                                                                        <% } %>
+                                                                        <% } %>
+                                                                    </tr>
+                                                                    </thead>
+
+                                                                    <% for (var i = 0; i < myVar; i++) { %>
+                                                                    <tr>
+                                                                        <th scope="row" id="ict<%=i%>">right <%= i %></th>
+                                                                        <% for(var j = 0; j < myVar; j++) { %>
+
+                                                                        <td>
+
+                                                                            <% if(j == i){ %>
+                                                                            <input class="form-control"
+                                                                                   id="ICT<%= i %><%= j %>"
+                                                                                   name="ICT<%= i %><%= j %>"
+                                                                                   type="text" placeholder=""
+                                                                                   value="1" readonly>
+                                                                            <% }else{ %>
+
+                                                                            <input class="form-control"
+                                                                                   id="ICT<%= i %><%= j %>"
+                                                                                   name="ICT<%= i %><%= j %>"
+                                                                                   type="text" placeholder=""
+                                                                                   value="">
+
+                                                                            <% } %>
+                                                                        </td>
+                                                                        <% } %>
+                                                                    </tr>
+                                                                    <% } %>
+
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row"
+                                                            <div class="col-sm-6">
+                                                                <table class="table">
                                                                 <thead class="thead-dark">
                                                                 <tr>
                                                                     <%
                                                                     myvar = parseInt(myVar) + 1;
                                                                     for(var i = 0; i < myvar; i++){
                                                                     if(i == 0){ %>
-                                                                    <th scope="col">Basic Knowledge</th>
+                                                                    <th scope="col">Health</th>
                                                                     <% }else{ %>
-                                                                    <th scope="col"><%= i %></th>
+                                                                    <th scope="col" id="hlt<%=i%>"></th>
                                                                     <% } %>
                                                                     <% } %>
                                                                 </tr>
@@ -372,44 +469,44 @@
 
                                                                 <% for (var i = 0; i < myVar; i++) { %>
                                                                 <tr>
-                                                                    <th scope="row">right <%= i %></th>
+                                                                    <th scope="row" id="health<%=i%>">right <%= i %></th>
                                                                     <% for(var j = 0; j < myVar; j++) { %>
 
                                                                     <td>
 
-                                                                        <%if(j==i){%>
+                                                                        <% if(j == i){ %>
                                                                         <input class="form-control"
-                                                                               id="BasicKnowledge<%= i %><%= j %>"
-                                                                               name="BasicKnowledge<%= i %><%= j %>"
+                                                                               id="Health<%= i %><%= j %>"
+                                                                               name="Health<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="1" readonly>
-                                                                        <%}else{%>
+                                                                        <% }else{ %>
 
                                                                         <input class="form-control"
-                                                                               id="BasicKnowledge<%= i %><%= j %>"
-                                                                               name="BasicKnowledge<%= i %><%= j %>"
+                                                                               id="Health<%= i %><%= j %>"
+                                                                               name="Health<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="">
 
-                                                                        <%}%>
+                                                                        <% } %>
                                                                     </td>
                                                                     <% } %>
                                                                 </tr>
                                                                 <% } %>
 
                                                             </table>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <table class="table">
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <table class="table">
                                                                 <thead class="thead-dark">
                                                                 <tr>
                                                                     <%
                                                                     myvar = parseInt(myVar) + 1;
                                                                     for(var i = 0; i < myvar; i++){
                                                                     if(i == 0){ %>
-                                                                    <th scope="col">ICT</th>
+                                                                    <th scope="col">Environmental</th>
                                                                     <% }else{ %>
-                                                                    <th scope="col"><%= i %></th>
+                                                                    <th scope="col" id="env<%=i%>"></th>
                                                                     <% } %>
                                                                     <% } %>
                                                                 </tr>
@@ -417,138 +514,47 @@
 
                                                                 <% for (var i = 0; i < myVar; i++) { %>
                                                                 <tr>
-                                                                    <th scope="row">right <%= i %></th>
+                                                                    <th scope="row" id="environmental<%=i%>">right <%= i %></th>
                                                                     <% for(var j = 0; j < myVar; j++) { %>
 
                                                                     <td>
 
-                                                                        <%if(j==i){%>
+                                                                        <% if(j == i){ %>
                                                                         <input class="form-control"
-                                                                               id="ICT<%= i %><%= j %>"
-                                                                               name="ICT<%= i %><%= j %>"
+                                                                               id="Environmental<%= i %><%= j %>"
+                                                                               name="Environmental<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="1" readonly>
-                                                                        <%}else{%>
+                                                                        <% }else{ %>
 
                                                                         <input class="form-control"
-                                                                               id="ICT<%= i %><%= j %>"
-                                                                               name="ICT<%= i %><%= j %>"
+                                                                               id="Environmental<%= i %><%= j %>"
+                                                                               name="Environmental<%= i %><%= j %>"
                                                                                type="text" placeholder=""
                                                                                value="">
 
-                                                                        <%}%>
+                                                                        <% } %>
                                                                     </td>
                                                                     <% } %>
                                                                 </tr>
                                                                 <% } %>
 
                                                             </table>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row"
-                                                    <div class="col-sm-6">
-                                                        <table class="table">
-                                                            <thead class="thead-dark">
-                                                            <tr>
-                                                                <%
-                                                                myvar = parseInt(myVar) + 1;
-                                                                for(var i = 0; i < myvar; i++){
-                                                                if(i == 0){ %>
-                                                                <th scope="col">Health</th>
-                                                                <% }else{ %>
-                                                                <th scope="col"><%= i %></th>
-                                                                <% } %>
-                                                                <% } %>
-                                                            </tr>
-                                                            </thead>
+                                                <div class="form-actions mt-10">
 
-                                                            <% for (var i = 0; i < myVar; i++) { %>
-                                                            <tr>
-                                                                <th scope="row">right <%= i %></th>
-                                                                <% for(var j = 0; j < myVar; j++) { %>
+                                                    <button type="submit" id="send"
+                                                            class="btn btn-success  mr-10">
+                                                        SEND
+                                                    </button>
 
-                                                                <td>
-
-                                                                    <%if(j==i){%>
-                                                                    <input class="form-control"
-                                                                           id="Health<%= i %><%= j %>"
-                                                                           name="Health<%= i %><%= j %>"
-                                                                           type="text" placeholder=""
-                                                                           value="1" readonly>
-                                                                    <%}else{%>
-
-                                                                    <input class="form-control"
-                                                                           id="Health<%= i %><%= j %>"
-                                                                           name="Health<%= i %><%= j %>"
-                                                                           type="text" placeholder=""
-                                                                           value="">
-
-                                                                    <%}%>
-                                                                </td>
-                                                                <% } %>
-                                                            </tr>
-                                                            <% } %>
-
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <table class="table">
-                                                            <thead class="thead-dark">
-                                                            <tr>
-                                                                <%
-                                                                myvar = parseInt(myVar) + 1;
-                                                                for(var i = 0; i < myvar; i++){
-                                                                if(i == 0){ %>
-                                                                <th scope="col">Environmental</th>
-                                                                <% }else{ %>
-                                                                <th scope="col"><%= i %></th>
-                                                                <% } %>
-                                                                <% } %>
-                                                            </tr>
-                                                            </thead>
-
-                                                            <% for (var i = 0; i < myVar; i++) { %>
-                                                            <tr>
-                                                                <th scope="row">right <%= i %></th>
-                                                                <% for(var j = 0; j < myVar; j++) { %>
-
-                                                                <td>
-
-                                                                    <%if(j==i){%>
-                                                                    <input class="form-control"
-                                                                           id="Environmental<%= i %><%= j %>"
-                                                                           name="Environmental<%= i %><%= j %>"
-                                                                           type="text" placeholder=""
-                                                                           value="1" readonly>
-                                                                    <%}else{%>
-
-                                                                    <input class="form-control"
-                                                                           id="Environmental<%= i %><%= j %>"
-                                                                           name="Environmental<%= i %><%= j %>"
-                                                                           type="text" placeholder=""
-                                                                           value="">
-
-                                                                    <%}%>
-                                                                </td>
-                                                                <% } %>
-                                                            </tr>
-                                                            <% } %>
-
-                                                        </table>
-                                                    </div>
+                                                    <button type="button" class="btn btn-default">Cancel
+                                                    </button>
                                                 </div>
+                                            </form>
                                         </div>
-                                        <div class="form-actions mt-10">
-
-                                            <button type="submit" id="send"
-                                                    class="btn btn-success  mr-10">
-                                                SEND
-                                            </button>
-
-                                            <button type="button" class="btn btn-default">Cancel
-                                            </button>
-                                        </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -556,23 +562,22 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
 
+        <!-- Footer -->
+        <footer class="footer container-fluid pl-30 pr-30">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>2017 &copy; </p>
+                </div>
+            </div>
+        </footer>
+        <!-- /Footer -->
 
     </div>
-
-    <!-- Footer -->
-    <footer class="footer container-fluid pl-30 pr-30">
-        <div class="row">
-            <div class="col-sm-12">
-                <p>2017 &copy; </p>
-            </div>
-        </div>
-    </footer>
-    <!-- /Footer -->
-
-</div>
-<!-- /Main Content -->
+    <!-- /Main Content -->
 
 </div>
 <!-- /#wrapper -->
@@ -605,14 +610,14 @@
             var p;
             p = needs + 1;
             var data = {};
-            initial = "{\"projNum\":"+ needs+",";
+            initial = "{\"projNum\":" + needs + ",";
             initial = initial + "\"Projects\": {"
-            for(var i = 0; i < needs; i++){
-                initial = initial + "\"Project"+i+"\":\""+document.getElementById("projectName"+i).value+"\"";
-                if(i==(needs-1)){
+            for (var i = 0; i < needs; i++) {
+                initial = initial + "\"Project" + i + "\":\"" + document.getElementById("projectName" + i).value + "\"";
+                if (i == (needs - 1)) {
 
-                }else{
-                    initial = initial +","
+                } else {
+                    initial = initial + ","
                 }
             }
             initial = initial + "}, \"Needs\": {"
@@ -621,134 +626,134 @@
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    nutritionString =nutritionString+"\"Nutrition"+i+""+j+"\":"+document.getElementById("Nutrition"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    nutritionString = nutritionString + "\"Nutrition" + i + "" + j + "\":" + document.getElementById("Nutrition" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        nutritionString = nutritionString +","
+                    } else {
+                        nutritionString = nutritionString + ","
                     }
 
                 }
 
             }
-            nutritionString =nutritionString+ "}";
+            nutritionString = nutritionString + "}";
             waterString = "\"WaterSanitation\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    waterString =waterString+"\"WaterSanitation"+i+""+j+"\":"+document.getElementById("WaterSanitation"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    waterString = waterString + "\"WaterSanitation" + i + "" + j + "\":" + document.getElementById("WaterSanitation" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        waterString = waterString +","
+                    } else {
+                        waterString = waterString + ","
                     }
                 }
 
             }
-            waterString =waterString+ "}";
+            waterString = waterString + "}";
             shelterString = "\"Shelter\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    shelterString =shelterString+"\"Shelter"+i+""+j+"\":"+document.getElementById("Shelter"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    shelterString = shelterString + "\"Shelter" + i + "" + j + "\":" + document.getElementById("Shelter" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        shelterString = shelterString +","
+                    } else {
+                        shelterString = shelterString + ","
                     }
                 }
 
             }
-            shelterString =shelterString+ "}";
+            shelterString = shelterString + "}";
             safetyString = "\"Safety\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    safetyString =safetyString+"\"Safety"+i+""+j+"\":"+document.getElementById("Safety"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    safetyString = safetyString + "\"Safety" + i + "" + j + "\":" + document.getElementById("Safety" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        safetyString = safetyString +","
+                    } else {
+                        safetyString = safetyString + ","
                     }
                 }
 
             }
-            safetyString =safetyString+ "}";
+            safetyString = safetyString + "}";
 
             BasicKnowledgeString = "\"BasicKnowledge\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    BasicKnowledgeString =BasicKnowledgeString+"\"BasicKnowledge"+i+""+j+"\":"+document.getElementById("BasicKnowledge"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    BasicKnowledgeString = BasicKnowledgeString + "\"BasicKnowledge" + i + "" + j + "\":" + document.getElementById("BasicKnowledge" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        BasicKnowledgeString = BasicKnowledgeString +","
+                    } else {
+                        BasicKnowledgeString = BasicKnowledgeString + ","
                     }
                 }
 
             }
-            BasicKnowledgeString =BasicKnowledgeString+ "}";
+            BasicKnowledgeString = BasicKnowledgeString + "}";
             ictString = "\"ICT\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    ictString =ictString+"\"ICT"+i+""+j+"\":"+document.getElementById("ICT"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    ictString = ictString + "\"ICT" + i + "" + j + "\":" + document.getElementById("ICT" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        ictString = ictString +","
+                    } else {
+                        ictString = ictString + ","
                     }
                 }
 
             }
-            ictString =ictString+ "}";
+            ictString = ictString + "}";
             healthString = "\"Health\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    healthString =healthString+"\"Health"+i+""+j+"\":"+document.getElementById("Health"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    healthString = healthString + "\"Health" + i + "" + j + "\":" + document.getElementById("Health" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        healthString = healthString +","
+                    } else {
+                        healthString = healthString + ","
                     }
                 }
 
             }
-            healthString =healthString+ "}";
+            healthString = healthString + "}";
             environmentalString = "\"Environmental\":{"
 
             for (var i = 0; i < needs; i++) {
 
                 for (var j = 0; j < needs; j++) {
-                    id = i+""+j
-                    environmentalString =environmentalString+"\"Environmental"+i+""+j+"\":"+document.getElementById("Environmental"+id).value;
-                    if(i==(needs-1) && j==(needs-1)){
+                    id = i + "" + j
+                    environmentalString = environmentalString + "\"Environmental" + i + "" + j + "\":" + document.getElementById("Environmental" + id).value;
+                    if (i == (needs - 1) && j == (needs - 1)) {
 
-                    }else{
-                        environmentalString = environmentalString +","
+                    } else {
+                        environmentalString = environmentalString + ","
                     }
                 }
 
             }
-            environmentalString =environmentalString+ "}";
+            environmentalString = environmentalString + "}";
 
 
-            data = initial+" "+nutritionString +","+waterString+","+shelterString+","+safetyString +","+BasicKnowledgeString+","+ictString+","+healthString+","+environmentalString+"}}";
+            data = initial + " " + nutritionString + "," + waterString + "," + shelterString + "," + safetyString + "," + BasicKnowledgeString + "," + ictString + "," + healthString + "," + environmentalString + "}}";
 //console.log(data)
             $.ajax({
                 type: 'POST',
@@ -764,6 +769,110 @@
             });
         });
 
+        /*
+Matrix table headers
+*/
+        $("#projectName0").on('input',function(e){
+
+            $("#nutrition0").text($(this).val());
+            $("#ntr1").text($(this).val());
+
+            $("#waterSanitation0").text($(this).val());
+            $("#water1").text($(this).val());
+
+            $("#shelter0").text($(this).val());
+            $("#shel1").text($(this).val());
+
+            $("#safety0").text($(this).val());
+            $("#safe1").text($(this).val());
+
+            $("#basic0").text($(this).val());
+            $("#base1").text($(this).val());
+
+            $("#ict0").text($(this).val());
+            $("#ic1").text($(this).val());
+
+            $("#health0").text($(this).val());
+            $("#hlt1").text($(this).val());
+
+            $("#environmental0").text($(this).val());
+            $("#env1").text($(this).val());
+        });
+        $("#projectName1").on('input',function(e){
+            $("#nutrition1").text($(this).val());
+            $("#ntr2").text($(this).val());
+
+            $("#waterSanitation1").text($(this).val());
+            $("#water2").text($(this).val());
+
+            $("#shelter1").text($(this).val());
+            $("#shel2").text($(this).val());
+
+            $("#safety1").text($(this).val());
+            $("#safe2").text($(this).val());
+
+            $("#basic1").text($(this).val());
+            $("#base2").text($(this).val());
+
+            $("#ict1").text($(this).val());
+            $("#ic2").text($(this).val());
+
+            $("#health1").text($(this).val());
+            $("#hlt2").text($(this).val());
+
+            $("#environmental1").text($(this).val());
+            $("#env2").text($(this).val());
+        });
+        $("#projectName2").on('input',function(e){
+            $("#nutrition2").text($(this).val());
+            $("#ntr3").text($(this).val());
+
+            $("#waterSanitation2").text($(this).val());
+            $("#water3").text($(this).val());
+
+            $("#shelter2").text($(this).val());
+            $("#shel3").text($(this).val());
+
+            $("#safety2").text($(this).val());
+            $("#safe3").text($(this).val());
+
+            $("#basic2").text($(this).val());
+            $("#base3").text($(this).val());
+
+            $("#ict2").text($(this).val());
+            $("#ic3").text($(this).val());
+
+            $("#health2").text($(this).val());
+            $("#hlt3").text($(this).val());
+
+            $("#environmental2").text($(this).val());
+            $("#env3").text($(this).val());
+        });
+        $("#projectName3").on('input',function(e){
+            $("#nutrition3").text($(this).val());
+            $("#ntr4").text($(this).val());
+
+            $("#waterSanitation3").text($(this).val());
+            $("#water4").text($(this).val());
+
+            $("#shelter3").text($(this).val());
+            $("#shel4").text($(this).val());
+
+            $("#safety3").text($(this).val());
+            $("#safe4").text($(this).val());
+
+            $("#basic3").text($(this).val());
+            $("#base4").text($(this).val());
+
+            $("#ict3").text($(this).val());
+            $("#ic4").text($(this).val());
+
+            $("#health3").text($(this).val());
+            $("#hlt4").text($(this).val());
+
+            $("#environmental3").text($(this).val());
+            $("#env4").text($(this).val());
+        });
 
     });
 
