@@ -574,6 +574,8 @@
 	p=needs+1;
 	var data = {};
 	data=$("#proj").serializeArray();
+//	alert(JSON.stringify(data));
+	console.log(JSON.stringify(data))
 	/*for(var i=1; i<=p; i++){
 
 						data.country+i = $("#country"+i).val();
@@ -598,7 +600,7 @@
                             console.log('success');
                            console.log(JSON.stringify(data));
 													//	alert(JSON.stringify(data.WeightedVector));
-													  window.location.href = '/insights';
+													//  window.location.href = '/insights';
                         }
                     });
 										  });

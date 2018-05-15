@@ -92,6 +92,7 @@ router.get('/spicountries/:code/prioritylist', function (req, res) {
 });
 
 router.post('/project', function (req, res) {
+  console.log(res.json);
     if(req.body[1]["value"]==2){
         res.send(ahpTestTwoProj(req.body));
     }
