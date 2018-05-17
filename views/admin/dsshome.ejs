@@ -25,6 +25,192 @@
 
 	<!-- Custom CSS -->
 	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+  <style>
+
+  @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+  h1{
+    margin: 50px 0;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  // Button
+
+  .btn1-container{
+    background-color: #03DAC6;
+      margin-top: 20px;
+    position: absolute;
+    left: 50%;
+
+  }
+
+
+  .btn1{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+      width: 400px;
+      height: 80px;
+      line-height: 50px;
+      background-color: #018786;
+    border-radius: 8px;
+      color: #fff;
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    font-weight: normal;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-name: hover;
+    animation-name: hover;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    &:before{
+      pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform, opacity;
+        transition-property: transform, opacity;
+        opacity: .4;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+        -webkit-animation-name: hover-shadow;
+        animation-name: hover-shadow;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+      &:hover{
+          background-color: #e16e50;
+      }
+  }
+
+  @keyframes hover {
+    50% {
+      -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+
+    100% {
+      -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }
+
+  @-webkit-keyframes hover-shadow {
+    0% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+      opacity: .4;
+    }
+
+    50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+      opacity: .4;
+    }
+  }
+
+  @keyframes hover-shadow {
+    0% {
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+      opacity: .4;
+    }
+
+    50% {
+      -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+      transform: translateY(3px);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+      opacity: .4;
+    }
+  }
+
+  @-webkit-keyframes hover {
+    50% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+
+    100% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes hover {
+    50% {
+      -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+
+    100% {
+      -webkit-transform: translateY(-6px);
+      -ms-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+  }}
+</style>
 </head>
 
 <body>
@@ -45,7 +231,7 @@
 				<!-- Title -->
 				<div class="row heading-bg">
 					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-						<h5 class="txt-dark">Home</h5>
+						<h5 class="txt-dark">Meeds Decision Support System</h5>
 					</div>
 					<!-- Breadcrumb -->
 					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
@@ -64,27 +250,58 @@
             <div class="panel panel-default card-view">
               <div class="panel-heading">
                 <div class="pull-left">
-                  <h6 class="panel-title txt-dark">Meeds Decision Support System</h6>
+                  <h3>Meeds Decision Support System</h3>
                 </div>
                 <div class="clearfix"></div>
               </div>
               <div class="panel-wrapper collapse in">
                 <div class="panel-body">
-                  <p class="text-muted">A decision support system for prioritizing the basic needs and culture of a country for Decision Making on projects or solution selection. It can determine the succes probalility and adoption rate. </p>
+                  <h5><mark> Socail sustainability</mark> and social life has received less attention in the picture of sustaianable development. Some of the dimemsion of social sustainability are  social equity, quality of life, livability, community development,
+                    social capital, social support, human rights, labour rights, placemaking, social responsibility, social justice, cultural competence, community resilience, and human adaptation.
+<br />
+<br />
+                    The main focus of this application is the  <mark>quality of life  </mark>of people in the developing countries because they have achieved less in proving the basic needs for quality life.
+                     The developing countries struggle with attaining a quality of life mosty becasue of mispalced priotities in the leadership level.
+<br />
+<br />
+                    The struggle of developing countries attaining a quality of life can be tackled from the leadership level during the decision making process.
+                    <br />If the right decsision is taken to meet the basic human needs of a country then the quality of life of a countrt could be improved.
+                    <br />
+                    This aplication presents a protptyype <mark>decision support sysyem</mark> that helps a governments of a country to take the right decsison when choosing a development project.
+<br />
+<br />
+                   <mark>This application is a decision support system </mark>for choosing <mark> the most useful project for a country </mark> by prioritizing the basic human needs and culture of a country.
+                  It can help the user to know the uselfulness of your project or the level of success of a project to a country.</h5>
 
 
 		<div class="button-list mt-25">
 
-                    	<!--<button class="btn btn-success large btn-outline fancy-button btn-1"><a href="/setProject">Choose the best Country for your project<a></button>
--->
-<h4>Set the number of Projects you want to consider for your country of choice</h4>
-  </div>
-  <div class="col-md-6">
+
+
+<div class="col-md-3">
+</div>
+  <div class="col-md-6 btn1-container" style="background-color:#EEEEEE; color:#018786; padding:20px;">
+    <h5>Select the number of Projects you want to consider for your country of choice
+
+    </h5>
     <div class="form-group">
-      <label class="control-label mb-10"> </label>
-    <input type="number" id="num" class="form-control" placeholder="enter 2, 3 or 4">
-      <span class="help-block"></span>
-      <button class="btn btn-primary" id="proj"> Go to Input Project Details </button>
+      <label class="control-label mb-10"></label>
+      <select class="form-control" id="num"
+              name="projects">
+          <option value="">Choose the number of projects</option>
+          <option value="2">Two - 2</option>
+          <option value="3">Three - 3</option>
+          <option value="4">Four - 4</option>
+      </select>
+
+
+
+      <button class="btn1" id="proj"> Click to Project Details Page </button>
+      <br />
+      <div class="alert alert-danger alert-dismissable" id="warning" style="display: none">
+											<button type="button" class="close" data-dismiss="alert"  aria-hidden="true">&times;</button>Opps! You must choose the number of projects .
+										</div>
+
 
       <!--<div id="projecrow">
         loading.....
@@ -103,7 +320,7 @@
 
         <div class="row">
           <div class="col-lg-12">
-                        <div class="panel panel-default card-view">
+                  <!--      <div class="panel panel-default card-view">
               <div class="panel-heading">
                 <div class="pull-left">
                   <h6 class="panel-title txt-dark">world map</h6>
@@ -115,7 +332,8 @@
                   <div id="world_map_marker_1" style="height: 400px"></div>
                 </div>
               </div>
-            </div>
+            </div>-->
+            <iframe src="https://www.socialprogressindex.com/?embedded=true" width="1600" height="1100" frameborder="0" frameBorder="0"></iframe>
                     </div>
                   </div>
 
@@ -143,9 +361,15 @@
     <script type="text/javascript">
        $(function(){
     $("#proj").click(function( event ) {
-
+      event.preventDefault();
+      if (!$("#num").val()){
+        //alert("you must select number of projects");
+        $("#warning").show();
+        return;
+      }
     // Stop form from submitting normally
-     event.preventDefault();
+
+
 
     //$.post( "/project", { name: "Projmame", time: "2pm" } );
     //	console.log( $("#proj").serialize())

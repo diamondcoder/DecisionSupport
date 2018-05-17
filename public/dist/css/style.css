@@ -156,17 +156,17 @@ h3, .error-comment {
 h4 {
   font-size: 24px;
   line-height: 30px;
-  text-transform: capitalize; }
+   }
 
 h5 {
   font-size: 18px;
   line-height: 26px;
-  text-transform: capitalize; }
+   }
 
 h6, .panel-title {
   font-size: 16px;
   line-height: 24px;
-  text-transform: capitalize; }
+   }
 
 p {
   font-size: 14px;

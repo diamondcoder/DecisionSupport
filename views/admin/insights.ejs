@@ -74,7 +74,7 @@
             <!-- Row -->
             <div class="row">
 
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="panel panel-default card-view">
                         <div class="panel-wrapper collapse in">
                             <div class="panel-body sm-data-box-1">
@@ -89,14 +89,24 @@
                                     var ProjecRanking = '<%= Ranking %>';
                                   //  alert(ProjecRanking)
                                     var str = "123, 124, 234,252";
+                                    var jj=0;
                                     var arr = ProjecRanking.split(",").map(function (val) {
+
+
                                      var numarr = val.split(":");
                                      var num = parseFloat(numarr[1]).toFixed(4)*100
                                         var node = document.createElement("LI");
-                                        var textnode = document.createTextNode(numarr[0]+": "+num+"%");
+                                          var textnode="";
+                                        if (jj==0){
+                                          textnode = document.createTextNode(numarr[0]+": "+num+"% most useful");
+                                        } else{
+                                       textnode = document.createTextNode(numarr[0]+": "+num+"%");
+                                     }
 
                                         node.appendChild(textnode);
                                         document.getElementById("ranking").appendChild(node);
+
+                                          jj++;
 
                                     });
 
@@ -121,7 +131,7 @@
 
                             <div class="clearfix"></div>
                         </div>
-                        <div class="panel-wrapper collapse in">Priority List
+                        <div class="panel-wrapper collapse in">
                             <div class="panel-body">
                                 <div id="result">
                           <span class="pull-left inline-block capitalize-font txt-dark">
@@ -156,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="panel panel-default card-view panel-refresh">
                         <div class="refresh-container">
                             <div class="la-anim-1"></div>
@@ -200,8 +210,8 @@
                                     <div class="">
                                         <span class="clabels clabels-lg inline-block bg-blue mr-10 pull-left"></span>
                                         <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
-                                                    class="block font-15 weight-500 mb-5">44.46% organic</span><span
-                                                    class="block txt-grey">356 visits</span></span>
+                                                    class="block font-15 weight-500 mb-5">44.46% Energy</span><span
+                                                    class="block txt-grey">356 Internet speed</span></span>
                                         <div id="sparkline_1" class="pull-right"
                                              style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
                                         <div class="clearfix"></div>
@@ -212,8 +222,8 @@
                                     <div class="">
                                         <span class="clabels clabels-lg inline-block bg-green mr-10 pull-left"></span>
                                         <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
-                                                    class="block font-15 weight-500 mb-5">5.54% Refrral</span><span
-                                                    class="block txt-grey">36 visits</span></span>
+                                                    class="block font-15 weight-500 mb-5">5.54% Transport</span><span
+                                                    class="block txt-grey">36 shelter</span></span>
                                         <div id="sparkline_2" class="pull-right"
                                              style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
                                         <div class="clearfix"></div>
@@ -235,8 +245,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+<!--
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <div class="panel panel-default card-view panel-refresh">
                         <div class="refresh-container">
                             <div class="la-anim-1"></div>
@@ -273,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- /Row -->
             <!-- Row -->
@@ -301,9 +311,8 @@
 
                                     <p></p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                      Ghana scores high on this dimension (score of 80) which means that people accept a hierarchical order in which everybody has a place and which needs no further justification. Hierarchy in an organization is seen as reflecting inherent inequalities,
+                                       centralization is popular, subordinates expect to be told what to do and the ideal boss is a benevolent autocrat
                                     </p>
 
                                 </div>
@@ -324,9 +333,8 @@
                                         <span class="counter-anim">15</span>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                        Ghana, with a score of 15 is considered a collectivistic society.
+                                        This is manifest in a close long-term commitment to the member ‘group’, be that a family, extended family, or extended relationships. Loyalty in a collectivist culture is paramount, and over-rides most other societal rules and regulations. The society fosters strong relationships where everyone takes responsibility for fellow members of their group. In collectivist societies offence leads to shame and loss of face, employer/employee relationships are perceived in moral terms (like a family link), hiring and promotion decisions take account of the employee’s in-group, management is the management of groups
                                     </p>
                                 </div>
                             </div>
@@ -346,9 +354,8 @@
                                         <span class="counter-anim">40</span>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                      Ghana scores 40 on this dimension and is thus considered a relatively Feminine society.
+                                       In Feminine countries the focus is on “working in order to live”, managers strive for consensus, people value equality, solidarity and quality in their working lives. Conflicts are resolved by compromise and negotiation. Incentives such as free time and flexibility are favoured. Focus is on well-being, status is not shown. An effective manager is a supportive one, and decision making is achieved through involvement.
                                     </p>
                                 </div>
                             </div>
@@ -373,9 +380,7 @@
                                         <span class="counter-anim">65</span>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                      Ghana scores 65 on this dimension. This is an score expresses a preference for avoiding uncertainty. Countries exhibiting high Uncertainty Avoidance maintain rigid codes of belief and behaviour and are intolerant of unorthodox behaviour and ideas. In these cultures there is an emotional need for rules (even if the rules never seem to work) time is money, people have an inner urge to be busy and work hard, precision and punctuality are the norm, innovation may be resisted, security is an important element in individual motivation.
                                     </p>
 
                                 </div>
@@ -396,9 +401,8 @@
                                         <span class="counter-anim">4</span>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                        Ghana has the incredibly low score of 4 in this dimension.
+                                        A score this low indicates a very strong preference to a normative way of thinking. People in such societies have a strong concern with establishing the absolute Truth; they are normative in their thinking. They exhibit great respect for traditions, a relatively small propensity to save for the future, and a focus on achieving quick results.
                                     </p>
 
                                 </div>
@@ -420,9 +424,8 @@
                                         <span class="counter-anim">72</span>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                                        est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                                        fringilla augue.
+                                        On this dimension, Ghana has a high score of 72. People in societies classified by a high score in Indulgence generally exhibit a willingness to realise their impulses and desires with regard to enjoying life and having fun. They possess a positive attitude and have a tendency towards optimism.
+                                         In addition, they place a higher degree of importance on leisure time, act as they please and spend money as they wish.
                                     </p>
                                 </div>
                             </div>
