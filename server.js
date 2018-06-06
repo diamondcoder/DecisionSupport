@@ -107,8 +107,8 @@ var adminRoutes = require('./routes/admin');
 app.use(mainRoutes);
 app.use(userRoutes);
 app.use(adminRoutes);
-
+//app.listen(process.env.PORT, process.env.IP);
 app.listen(secret.port, function(err) {
   if (err) throw err;
   console.log("Server is Running on port " + secret.port);
-});
+}); 

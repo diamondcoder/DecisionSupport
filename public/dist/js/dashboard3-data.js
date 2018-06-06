@@ -1,6 +1,6 @@
 /*Dashboard3 Init*/
- 
-"use strict"; 
+
+"use strict";
 
 /*****Ready function start*****/
 $(document).ready(function(){
@@ -33,7 +33,7 @@ $(document).ready(function(){
 				]
 			}]
 		};
-		
+
 		var doughnutChart = new Chart(ctx7, {
 			type: 'doughnut',
 			data: data7,
@@ -88,7 +88,7 @@ $(document).ready(function(){
 				]
 			}]
 		};
-		
+
 		var pieChart  = new Chart(ctx6,{
 			type: 'pie',
 			data: data6,
@@ -117,20 +117,20 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
+
 	if($('#morris_extra_bar_chart').length > 0)
 		// Morris bar chart
 		Morris.Bar({
 			element: 'morris_extra_bar_chart',
 			data: [{
-				y: '2006',
-				a: 100,
-				b: 90,
-				c: 60
+				y: 'Projects Usefulness',
+				a: projScoreG[0],
+				b: projScoreG[1],
+				c: projScoreG[2]
 			}],
 			xkey: 'y',
 			ykeys: ['a', 'b', 'c'],
-			labels: ['A', 'B', 'C'],
+			labels:projsG,
 			barColors:['#2ecd99', '#4e9de6', '#f0c541'],
 			barOpacity: 0.6,
 			hideHover: 'auto',
@@ -148,12 +148,12 @@ $(document).ready(function(){
 $(window).load(function(){
 	window.setTimeout(function(){
 		$.toast({
-			heading: 'Welcome to Philbert',
-			text: 'Use the predefined ones, or specify a custom position object.',
+			heading: 'Projects Ranking',
+			text: 'View the project ranking and insights about Ghana',
 			position: 'top-right',
 			loaderBg:'#f0c541',
 			icon: 'success',
-			hideAfter: 3500, 
+			hideAfter: 3500,
 			stack: 6
 		});
 	}, 3000);
@@ -161,7 +161,7 @@ $(window).load(function(){
 /*****Load function* end*****/
 
 /*****Sparkline function start*****/
-var sparklineLogin = function() { 
+var sparklineLogin = function() {
 		if( $('#sparkline_4').length > 0 ){
 			$("#sparkline_4").sparkline([2,4,4,6,8,5,6,4,8,6,6,2 ], {
 				type: 'line',
@@ -175,7 +175,7 @@ var sparklineLogin = function() {
 				highlightLineColor: 'rgba(0, 0, 0, 0.6)',
 				highlightSpotColor: '#2ecd99'
 			});
-		}	
+		}
 	}
 	var sparkResize;
 /*****Sparkline function end*****/

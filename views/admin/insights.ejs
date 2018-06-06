@@ -18,6 +18,8 @@
     <!-- Morris Charts CSS -->
     <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
 
+
+
     <!-- Data table CSS -->
     <link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet"
           type="text/css"/>
@@ -74,7 +76,7 @@
             <!-- Row -->
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="panel panel-default card-view">
                         <div class="panel-wrapper collapse in">
                             <div class="panel-body sm-data-box-1">
@@ -87,28 +89,41 @@
                                 </div>
                                 <script type="text/javascript">
                                     var ProjecRanking = '<%= Ranking %>';
-                                  //  alert(ProjecRanking)
-                                    var str = "123, 124, 234,252";
-                                    var jj=0;
+                                  //  var myranking = ProjectRanking;
+                                  //  myranking.unshift("Y: Usefulneess");
+                                    var projsG=[];
+                                    var projScoreG=[];
+
+                                  //
+
+
+                                    var projRank=[];
                                     var arr = ProjecRanking.split(",").map(function (val) {
 
 
                                      var numarr = val.split(":");
-                                     var num = parseFloat(numarr[1]).toFixed(4)*100
-                                        var node = document.createElement("LI");
+
+
+                                     var num = parseFloat(numarr[1]).toFixed(4)*100;
+
+                                     projScoreG.push(parseFloat(numarr[1]).toFixed(4)*100);
+                                     projsG.push(numarr[0]);
+
+
+                                     var node = document.createElement("LI");
                                           var textnode="";
-                                        if (jj==0){
-                                          textnode = document.createTextNode(numarr[0]+": "+num+"% most useful");
-                                        } else{
+
                                        textnode = document.createTextNode(numarr[0]+": "+num+"%");
-                                     }
 
-                                        node.appendChild(textnode);
-                                        document.getElementById("ranking").appendChild(node);
 
-                                          jj++;
+                                      node.appendChild(textnode);
+                                      document.getElementById("ranking").appendChild(node);
+
+
 
                                     });
+
+                                    aler(JSON.stringify(projScoreG));
 
 
                                 </script>
@@ -166,7 +181,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                             <div class="panel panel-default card-view panel-refresh">
+                      <div class="refresh-container">
+                        <div class="la-anim-1"></div>
+                      </div>
+                      <div class="panel-heading">
+                        <div class="pull-left">
+                          <h6 class="panel-title txt-dark">Projects Ranking Graph</h6>
+                        </div>
+                        <div class="pull-right">
+                          <a href="#" class="pull-left inline-block refresh mr-15">
+                            <i class="zmdi zmdi-replay"></i>
+                          </a>
+                          <div class="pull-left inline-block dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
+                            <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
+                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>
+                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>option 2</a></li>
+                              <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    <div class="panel-wrapper collapse in">
+                      <div class="panel-body">
+                        <div id="morris_extra_bar_chart" class="morris-chart" style="height:243px;"></div>
+                        <!--   <div class="label-chatrs mt-15">
+                          <div class="mb-5">
+                            <span class="clabels inline-block bg-yellow mr-5"></span>
+                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font">Actions pending</span>
+                          </div>
+                          <div class="mb-5">
+                            <span class="clabels inline-block bg-red mr-5"></span>
+                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font">decision pending</span>
+                          </div>
+                          <div class="">
+                            <span class="clabels inline-block bg-blue mr-5"></span>
+                            <span class="clabels-text font-12 inline-block txt-dark capitalize-font">chage request pending</span>
+                          </div>
+                        </div>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="panel panel-default card-view panel-refresh">
                         <div class="refresh-container">
                             <div class="la-anim-1"></div>
@@ -287,6 +348,7 @@
             </div>
             <!-- /Row -->
             <!-- Row -->
+          
             <div class="row">
                 <div class="row heading-bg">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
@@ -539,7 +601,12 @@
 
     <!-- Init JavaScript -->
     <script src="dist/js/init.js"></script>
+  	<script src="dist/js/dashboard3-data.js"></script>
+    <script>
+
+    </script>
     <script src="dist/js/dashboard-data.js"></script>
+
 
 
 </body>
